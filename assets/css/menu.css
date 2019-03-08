@@ -18,6 +18,7 @@ nav{
 	height:60px;
 	position:fixed;
 	width:100%;
+	z-index: 3;
 }
 
 .brand-logo{
@@ -25,7 +26,7 @@ nav{
 	bottom:0;
 	display:flex;
 	justify-content: center;
-	left:80px;
+	left:60px;
 	position:absolute;
 	top:0;
 }
@@ -47,11 +48,11 @@ nav{
 	bottom:0;
 	line-height:60px;
 	position:absolute;
-	right:80px;
+	right:60px;
 	top:0;
 }
 
-.menu-items a, a:visited {
+.menu-items a, .menu-items a:visited {
 	color:#adadad;
 	font-family: HelveticaNeue;
 	font-size:14px;
@@ -59,6 +60,71 @@ nav{
 	text-transform: uppercase;
 }
 
-.menu-items a:hover, a:active {
+.menu-items a:hover, .menu-items a:active {
 	color:#8b8b8b;
+}
+
+.hamburger-button{
+	visibility:hidden;
+	z-index: -1;
+}
+
+.hidden-menu{
+	visibility: hidden;
+	z-index:-1;
+}
+
+.hidden-menu a, .hidden-menu a:visited {
+	color:#adadad;
+	font-family: HelveticaNeue;
+	font-size:14px;
+	margin:12px 0px 12px 0px;
+	text-transform: uppercase;
+}
+
+.hidden-menu a:hover, .hidden-menu a:active {
+	color:#8b8b8b;
+}
+
+@media screen and (max-width:980px){
+	.menu-items{
+		right:30px;
+	}
+
+	.brand-logo{
+		left:30px;
+	}
+}
+
+@media screen and (max-width:930px){
+	.menu-items{
+		visibility:hidden;
+		z-index: -1;
+	}
+
+	.brand-logo{
+		left:0;
+		right:0;
+	}
+
+	.hamburger-button{
+		font-size:40px;
+		height:60px;
+		line-height:60px;
+		position:absolute;
+		right:20px;
+		visibility: visible;
+		z-index: 4;
+	}
+
+	.hidden-menu{
+		align-items:center;
+		background-color:#fff;
+		display: flex;
+		flex-direction: column;
+		left:0;
+		position:absolute;
+		right:0;
+		top:65px;
+	}
 }
