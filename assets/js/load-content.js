@@ -7,10 +7,12 @@ window.onload = function(){
 
 	request.onload = function () {
   		dataBase = JSON.parse(this.response);
+  		console.log(dataBase);
   		for (i = 0; i < dataBase.length; i++){
   			let tempASvg = document.createElement("a");
   			tempASvg.innerHTML = "SVG";
-  			tempASvg.download= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/display-image.png";
+  			tempASvg.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/display-image.png";
+  			tempASvg.download = dataBase[i].groupName + ".png"
   			let tempSpanPng = document.createElement("a");
   			tempSpanPng.innerHTML = "PNG";
   			let tempSpanAi = document.createElement("a");
