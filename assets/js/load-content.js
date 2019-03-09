@@ -7,6 +7,7 @@ var hiddenMenuItems;
 window.onload = initGridControl
 
 function initGridControl(){
+	buildGrid("simonyi");
 	menuItems = document.getElementsByClassName("menu-items")[0];
 	hiddenMenuItems = document.getElementsByClassName("hidden-menu")[0];
 	menuItems.addEventListener("click", function(){
@@ -37,7 +38,7 @@ function buildGrid(groupNameFromCaller) {
 	request.onload = function () {
   		dataBase = JSON.parse(this.response);
   		for (i = 0; i < dataBase.length; i++){
-  			if(groupNaemFromCaller == dataBase[i]..parentGroup){
+  			if(groupNameFromCaller == dataBase[i].parentGroup){
   				let tempASvg = document.createElement("a");
   				tempASvg.innerHTML = "SVG";
   				tempASvg.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/" + dataBase[i].groupName + ".svg";
