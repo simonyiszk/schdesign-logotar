@@ -67,11 +67,13 @@ nav{
 .hamburger-button{
 	visibility:hidden;
 	z-index: -1;
+	position:absolute;
 }
 
 .hidden-menu{
 	visibility: hidden;
 	z-index:-1;
+	position:absolute;
 }
 
 .hidden-menu a, .hidden-menu a:visited {
@@ -111,7 +113,6 @@ nav{
 		font-size:40px;
 		height:60px;
 		line-height:60px;
-		position:absolute;
 		right:20px;
 		visibility: visible;
 		z-index: 4;
@@ -123,8 +124,8 @@ nav{
 		display: flex;
 		flex-direction: column;
 		left:0;
-		position:absolute;
+		position:fixed;
 		right:0;
-		top:65px;
+		top:60px;
 	}
 }
