@@ -64,6 +64,10 @@ nav{
 	color:#8b8b8b;
 }
 
+.menu-active{
+	color:#8b8b8b;
+}
+
 .hamburger-button{
 	visibility:hidden;
 	z-index: -1;

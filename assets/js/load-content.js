@@ -13,6 +13,9 @@ function initGridControl(){
 	menuItems.addEventListener("click", function(){
 		let targetElement = event.target
 		if (targetElement.tagName == "A"){
+			let tempMenuActive = document.getElementsByClassName("menu-active");
+			tempMenuActive.classList.toggle("menu-active");
+			event.target.classList.toggle("menu-active");
 			buildGrid(event.target.dataset.group);
 		}
 	});
