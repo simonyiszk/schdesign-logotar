@@ -8,15 +8,15 @@ window.onload = function(){
 	request.onload = function () {
   		dataBase = JSON.parse(this.response);
   		for (i = 0; i < dataBase.length; i++){
-  			let tempSpanSvg = document.createElement("span");
-  			tempSpanSvg.innerHTML = "SVG";
+  			let tempASvg = document.createElement("a");
+  			tempASvg.innerHTML = "SVG";
   			tempSpanSvg.download= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/display-image.png";
-  			let tempSpanPng = document.createElement("span");
+  			let tempSpanPng = document.createElement("a");
   			tempSpanPng.innerHTML = "PNG";
-  			let tempSpanAi = document.createElement("span");
+  			let tempSpanAi = document.createElement("a");
   			tempSpanAi.innerHTML = "AI";
 
-  			document.getElementsByClassName("logo-library")[0].appendChild(tempSpanSvg);
+  			document.getElementsByClassName("logo-library")[0].appendChild(tempASvg);
   		}
 	}
 
