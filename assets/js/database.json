@@ -1,9 +1,9 @@
 [{
-		"name": "schdesign",
-		"parent": "simonyi"
+		"groupName": "schdesign",
+		"parentGroup": "simonyi"
 	},
 	{
-		"name": "impulzus",
+		"groupName": "impulzus",
 		"parentGroup": "kultur"
 	}
 ]
