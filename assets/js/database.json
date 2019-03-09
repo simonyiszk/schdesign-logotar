@@ -1,8 +1,10 @@
 [{
-		"groupName": "schdesign",
+		"groupFullName": "HA5KFU",
+		"groupName": "ha5kfu",
 		"parentGroup": "simonyi"
 	},
 	{
+		"groupFullName": "Impulzus",
 		"groupName": "impulzus",
 		"parentGroup": "kultur"
 	}
