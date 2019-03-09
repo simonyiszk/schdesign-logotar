@@ -16,6 +16,7 @@ function initMenu() {
 		let targetElement = event.target
 		if (targetElement.tagName == "A"){
 			toggleHamburger();
+			buildGrid(event.target.dataset.group);
 		}
 	});
 }

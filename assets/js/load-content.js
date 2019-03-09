@@ -19,12 +19,6 @@ function initGridControl(){
 			buildGrid(event.target.dataset.group);
 		}
 	});
-	hiddenMenuItems.addEventListener("click", function(){
-		let targetElement = event.target
-		if (targetElement.tagName == "A"){
-			buildGrid(event.target.dataset.group);
-		}
-	});
 }
 
 function buildGrid(groupNameFromCaller) {
