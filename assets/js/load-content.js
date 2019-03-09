@@ -3,7 +3,7 @@ var dataBase;
 
 window.onload = function(){
 	let request = new XMLHttpRequest();
-	request.open('GET', './database.json', true);
+	request.open('GET', 'assets/js/database.json', true);
 
 	request.onload = function () {
   		dataBase = JSON.parse(this.response);
