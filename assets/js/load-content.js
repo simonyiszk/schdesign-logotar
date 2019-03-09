@@ -32,7 +32,7 @@ window.onload = function(){
   			tempBotSpan.appendChild(tempAAi);
 
   			let groupFullName = document.createElement("p");
-  			p.innerHTML = dataBase[i].groupFullName;
+  			groupFullName.innerHTML = dataBase[i].groupFullName;
 
   			let tempSecondLayerSpan = document.createElement("span");
   			tempSecondLayerSpan.appendChild(groupFullName); 
