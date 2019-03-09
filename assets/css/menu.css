@@ -65,7 +65,7 @@ nav{
 }
 
 .menu-active{
-	color:#8b8b8b;
+	color:#8b8b8b !important;
 }
 
 .hamburger-button{
