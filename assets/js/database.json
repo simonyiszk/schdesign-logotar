@@ -12,5 +12,20 @@
 		"groupFullName": "Schönherz Design Stúdió",
 		"groupName": "schdesign",
 		"parentGroup": "simonyi"
+	},
+	{
+		"groupFullName": "Budavári Schönherz Stúdió",
+		"groupName": "bss",
+		"parentGroup": "simonyi"
+	},
+	{
+		"groupFullName": "Lego Kör",
+		"groupName": "lego",
+		"parentGroup": "simonyi"
+	},
+	{
+		"groupFullName": "Schönherz Elektronikai Műhely",
+		"groupName": "sem",
+		"parentGroup": "simonyi"
 	}
 ]
