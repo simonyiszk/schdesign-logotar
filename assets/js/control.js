@@ -1,15 +1,22 @@
+var hamburger;
+var hiddenMenu;
+var hamburgerButton;
 var dataBase;
 var cardGrid;
 var menuItems;
-var hiddenMenuItems;
+var isHiddenMenuActive = false;
 
+window.onload = initMenu;
 
-window.onload = initGridControl
+function initMenu() {
+	hamburger = document.getElementsByClassName("hamburger-button")[0];
+	hiddenMenu = document.getElementsByClassName("hidden-menu")[0];
+	hamburgerButton = hamburger.getElementsByClassName("fa-bars")[0];
 
-function initGridControl(){
+	hamburger.onclick = toggleHamburger;
+
 	buildGrid("simonyi");
 	menuItems = document.getElementsByClassName("menu-items")[0];
-	hiddenMenuItems = document.getElementsByClassName("hidden-menu")[0];
 	menuItems.addEventListener("click", function(){
 		let targetElement = event.target
 		if (targetElement.tagName == "A"){
@@ -19,6 +26,32 @@ function initGridControl(){
 			buildGrid(event.target.dataset.group);
 		}
 	});
+
+	hiddenMenu.addEventListener("click", function(){
+		let targetElement = event.target
+		if (targetElement.tagName == "A"){
+			toggleHamburger();
+			buildGrid(targetElement.dataset.group);
+		}
+	});
+}
+
+function toggleHamburger(){
+	if (!isHiddenMenuActive){
+		isHiddenMenuActive = true;
+		hiddenMenu.style.visibility = "visible";
+		hiddenMenu.style.zIndex = "2";
+		hamburgerButton.classList.toggle("fa-times");
+	}
+	else if(isHiddenMenuActive){
+		isHiddenMenuActive = false;
+		hiddenMenu.style.visibility = "hidden";
+		hiddenMenu.style.zIndex = "-1";
+		hamburgerButton.classList.toggle("fa-times");
+	}
+	else{
+		console.log("Error #1: isHiddenMenuActive has invalid data");
+	}
 }
 
 function buildGrid(groupNameFromCaller) {
@@ -78,3 +111,5 @@ function buildGrid(groupNameFromCaller) {
 
 	request.send();
 }
+
+
