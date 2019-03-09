@@ -1,0 +1,10 @@
+.logo-library{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	min-width:272px;
+	position:relative;
+	top:110px;
+	width:80%;
+}
