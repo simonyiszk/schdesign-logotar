@@ -2,7 +2,7 @@ var dataBase;
 
 
 window.onload = function(){
-	fetch('./database.json').then(response => {
+	fetch('https://schdesign-logotar.netlify.com/database.json').then(response => {
   return response.json();
 }).then(data => {
   dataBase = JSON.parse(data);
