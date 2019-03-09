@@ -17,7 +17,7 @@ window.onload = function(){
   			tempASvg.download = dataBase[i].groupName + ".svg"
 
   			let tempAPng = document.createElement("a");
-  			tempSpanPng.innerHTML = "PNG";
+  			tempAPng.innerHTML = "PNG";
   			tempAPng.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/" + dataBase[i].groupName + ".png";
   			tempAPng.download = dataBase[i].groupName + ".png"
 
