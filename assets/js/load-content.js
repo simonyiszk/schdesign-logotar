@@ -1,9 +1,30 @@
 var dataBase;
 var cardGrid;
+var menuItems;
+var hiddenMenuItems;
 
 
-window.onload = function(){
+window.onload = initGridControl
+
+function initGridControl(){
+	menuItems = document.getElementsByClassName("menu-items")[0];
+	menuItems.addEventListener("click", function(){
+		let targetElement = event.target
+		if (targetElement.tagName == "A"){
+			buildGrid(event.target.dataset.group);
+		}
+	});
+}
+
+function buildGrid(groupNameFromCaller) {
+	console.log(groupNameFromCaller);
+
 	cardGrid = document.getElementsByClassName("logo-library")[0];
+	document.body.removeChild(cardGrid);
+	cardGrid = document.createElement("div");
+	cardGrid.classList.addClass("logo-library");
+	document.body.appendChild(cardGrid);
+
 	let request = new XMLHttpRequest();
 	request.open('GET', 'assets/js/database.json', true);
 
