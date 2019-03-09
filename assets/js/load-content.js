@@ -2,7 +2,7 @@ var dataBase;
 
 
 window.onload = function(){
-	fetch('./assets/js/database.json').then(response => {
+	fetch('./database.json').then(response => {
   return response.json();
 }).then(data => {
   dataBase = JSON.parse(data);
