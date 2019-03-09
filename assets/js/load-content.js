@@ -22,7 +22,7 @@ function buildGrid(groupNameFromCaller) {
 	cardGrid = document.getElementsByClassName("logo-library")[0];
 	document.body.removeChild(cardGrid);
 	cardGrid = document.createElement("div");
-	cardGrid.classList.addClass("logo-library");
+	cardGrid.classList.add("logo-library");
 	document.body.appendChild(cardGrid);
 
 	let request = new XMLHttpRequest();
