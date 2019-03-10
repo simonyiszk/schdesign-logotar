@@ -17,46 +17,47 @@
 	background-color: #fff;
 	border-radius: 16px;
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
-	height:240px;
 	width:240px;
 }
 
 .logo-library>span>img {
+	display:block;
 	height:180px;
 	width:240px;
 }
 
 .logo-library>span>span {
-	border-top:0.8px solid #E5E5E5;
+	border-top:1px solid #E5E5E5;
 	display:block;
-	height:60px;
 	position:relative;
-	width:240px;
 }
 
 .logo-library>span>span p{
 	color:#636363;
+	display:block;
 	font-family:HelveticaNeue;
 	font-size:18px;
-	line-height:30px;
-	margin:0px 10px 0px 10px;
+	line-height: 30px;
+	margin:0 auto;
 	overflow: hidden;
 	text-align: center;
 	text-overflow:ellipsis;
 	white-space: nowrap;
+	width:220px;
 }
 
 .logo-library>span>span span{
 	align-items:center;
-	border-top:0.8px solid #EFEFEF;
+	border-top:1px solid #EFEFEF;
 	display:flex;
-	height:30px;
-	justify-content: center;
 }
 
 .logo-library>span>span span a{
 	color:#adadad;
+	display:block;
 	font-family:HelveticaNeue;
 	font-size:14px;
-	margin:0px 23px 0px 23px;
+	line-height: 30px;
+	text-align: center;
+	width:80px;
 }
