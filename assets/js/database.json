@@ -1,31 +1,31 @@
 [{
 		"groupFullName": "HA5KFU",
-		"groupName": "ha5kfu",
+		"groupId": "ha5kfu",
 		"parentGroup": "simonyi"
 	},
 	{
 		"groupFullName": "Impulzus",
-		"groupName": "impulzus",
+		"groupNId": "impulzus",
 		"parentGroup": "kultur"
 	},
 	{
 		"groupFullName": "Schönherz Design Stúdió",
-		"groupName": "schdesign",
+		"groupId": "schdesign",
 		"parentGroup": "simonyi"
 	},
 	{
 		"groupFullName": "Budavári Schönherz Stúdió",
-		"groupName": "bss",
+		"groupId": "bss",
 		"parentGroup": "simonyi"
 	},
 	{
 		"groupFullName": "Lego Kör",
-		"groupName": "lego",
+		"groupId": "lego",
 		"parentGroup": "simonyi"
 	},
 	{
 		"groupFullName": "Schönherz Elektronikai Műhely",
-		"groupName": "sem",
+		"groupId": "sem",
 		"parentGroup": "simonyi"
 	}
 ]

@@ -30,15 +30,13 @@ For Group ID you should use a lowercase plain text version of the group's name (
 - impulzus
 ### JSON Structure
 #### Variables
-You **MUST** ensure that these variables have value in their JSON record:
+You **MUST** ensure that value for these variables are provided in their JSON record:
 > **groupFullName:** The full name of the group.\
-> **groupName:** The group's ID created by rules given at chapter **_ID and file path rules_**.\
+> **groupId:** The group's ID created by rules given at chapter **_ID and file path rules_**.\
 > **parentGroup**: The parent group's ID. You must use one of the options from chapter **_ID and file path rules_**.\
 
+
 Example record:\
-`{\
- "groupFullName": "Schönherz Design Stúdió",\
- "groupName": "schdesign",\
- "parentGroup": "simonyi"\
-}`
+`{ "groupFullName": "Schönherz Design Stúdió", "groupName": "schdesign", "parentGroup": "simonyi"}`
+
 

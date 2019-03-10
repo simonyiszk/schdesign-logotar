@@ -54,7 +54,7 @@ function toggleHamburger(){
 	}
 }
 
-function buildGrid(groupNameFromCaller) {
+function buildGrid(parentGroupNameFromCaller) {
 
 	cardGrid = document.getElementsByClassName("logo-library")[0];
 	document.body.removeChild(cardGrid);
@@ -68,21 +68,21 @@ function buildGrid(groupNameFromCaller) {
 	request.onload = function () {
   		dataBase = JSON.parse(this.response);
   		for (i = 0; i < dataBase.length; i++){
-  			if(groupNameFromCaller == dataBase[i].parentGroup){
+  			if(parentGroupNameFromCaller == dataBase[i].parentGroup){
   				let tempASvg = document.createElement("a");
   				tempASvg.innerHTML = "SVG";
-  				tempASvg.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/" + dataBase[i].groupName + ".svg";
-	  			tempASvg.download = dataBase[i].groupName + ".svg"
+  				tempASvg.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupId + "/" + dataBase[i].groupId + ".svg";
+	  			tempASvg.download = dataBase[i].groupId + ".svg"
 	
 	  			let tempAPng = document.createElement("a");
 	  			tempAPng.innerHTML = "PNG";
-	  			tempAPng.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/" + dataBase[i].groupName + ".png";
-	 			tempAPng.download = dataBase[i].groupName + ".png"
+	  			tempAPng.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupId + "/" + dataBase[i].groupId + ".png";
+	 			tempAPng.download = dataBase[i].groupId + ".png"
 	
 	  			let tempAAi = document.createElement("a");
 	  			tempAAi.innerHTML = "AI";
-	  			tempAAi.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/" + dataBase[i].groupName + ".ai";
-	  			tempAAi.download = dataBase[i].groupName + ".ai"
+	  			tempAAi.href= "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupId + "/" + dataBase[i].groupId + ".ai";
+	  			tempAAi.download = dataBase[i].groupId + ".ai"
 	
 	  			let tempBotSpan = document.createElement("span");
 	  			tempBotSpan.appendChild(tempASvg);
@@ -97,7 +97,7 @@ function buildGrid(groupNameFromCaller) {
 	  			tempSecondLayerSpan.appendChild(tempBotSpan);
 	
 	  			let groupLogoImage = document.createElement("img");
-	  			groupLogoImage.src = "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupName + "/display-image.png";
+	  			groupLogoImage.src = "assets/database/" + dataBase[i].parentGroup + "/" + dataBase[i].groupId + "/display-image.png";
 	  			groupLogoImage.alt = dataBase[i].groupFullName;
 	
 	  			let tempCard = document.createElement("span");
