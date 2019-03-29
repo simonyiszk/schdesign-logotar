@@ -21,7 +21,11 @@ class DatabaseService {
     return this._database;
   }
 
-  queryByParentGroup(parentGroup) {
-    return this.database.filter(row => row.parentGroup == parentGroup);
+  getReszortNames() {
+    return Object.keys(this.database);
+  }
+
+  getReszortByName(reszort) {
+    return this.database[reszort];
   }
 }

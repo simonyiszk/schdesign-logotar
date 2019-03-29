@@ -15,6 +15,18 @@ class MenuHandler {
     )[0];
   }
 
+  addMenuItems(menuItems) {
+    menuItems.forEach(item => {
+      const html = `<a href="#" data-group="${item}">${item}</a>`;
+      this._menuItems.innerHTML += html;
+      this._hiddenMenu.innerHTML += html;
+    });
+
+    const defaultSelected = this._menuItems.getElementsByTagName("A")[0];
+    defaultSelected.classList += "menu-active";
+    this._updateFunc(defaultSelected.dataset.group);
+  }
+
   addEventListeners() {
     this._hamburger.onclick = () => this.toggleHamburger();
     this._hiddenMenu.onclick = event => this.hiddenMenuClick(event);
