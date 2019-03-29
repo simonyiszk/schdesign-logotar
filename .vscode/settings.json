@@ -1,5 +1,49 @@
 {
-    "cSpell.words": [
-        "simonyi"
-    ]
+  "cSpell.words": [
+    "curdir",
+    "isdir",
+    "isfile",
+    "reszort",
+    "scandir",
+    "simonyi",
+    "webify"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.pep8Enabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "autopep8",
+  "editor.tabSize": 4,
+  "editor.fontSize": 13,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "python.pythonPath": "C:\\Python\\python.exe",
+  "cSpell.language": "en-GB",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pub",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ]
 }

@@ -1,31 +1,27 @@
-[{
-		"groupFullName": "HA5KFU",
-		"groupId": "ha5kfu",
-		"parentGroup": "simonyi"
-	},
-	{
-		"groupFullName": "Impulzus",
-		"groupId": "impulzus",
-		"parentGroup": "kultur"
-	},
-	{
-		"groupFullName": "Schönherz Design Stúdió",
-		"groupId": "schdesign",
-		"parentGroup": "simonyi"
-	},
-	{
-		"groupFullName": "Budavári Schönherz Stúdió",
-		"groupId": "bss",
-		"parentGroup": "simonyi"
-	},
-	{
-		"groupFullName": "Lego Kör",
-		"groupId": "lego",
-		"parentGroup": "simonyi"
-	},
-	{
-		"groupFullName": "Schönherz Elektronikai Műhely",
-		"groupId": "sem",
-		"parentGroup": "simonyi"
-	}
-]
+{
+  "Bulis": {},
+  "KoFER": {},
+  "Kult\u00far": {
+    "impulzus": {
+      "ai": "assets/database/Kult\u00far/impulzus/impulzus.ai",
+      "png": "assets/database/Kult\u00far/impulzus/display-image.png",
+      "svg": null
+    }
+  },
+  "SCH": {},
+  "SSSL": {},
+  "SZOR": {},
+  "Simonyi": {
+    "ha5kfu": {
+      "ai": "assets/database/Simonyi/ha5kfu/ha5kfu.ai",
+      "png": "assets/database/Simonyi/ha5kfu/display-image.png",
+      "svg": null
+    },
+    "schdesign": {
+      "ai": null,
+      "png": "assets/database/Simonyi/schdesign/display-image.png",
+      "svg": null
+    }
+  },
+  "Sport": {}
+}

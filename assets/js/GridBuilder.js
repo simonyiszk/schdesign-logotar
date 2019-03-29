@@ -1,46 +1,40 @@
 class GridBuilder {
-  constructor({ gridClassName, filesRoot }) {
-    this._gridClassName = gridClassName;
-
-    // Ennek nem itt kéne lennie, hanem inkább a válaszban.
-    this._filesRoot = filesRoot;
+  constructor({ gridClassName }) {
+    this._grid = document.getElementsByClassName(gridClassName)[0];
+    this._counter = 0;
   }
 
-  build(rows) {
-    const grid = document.getElementsByClassName(this._gridClassName)[0];
-
+  build(groups) {
     let content = "";
-    for (const row of rows) content += this.buildCard(row);
+    for (name in groups) content += this.buildCard(name, groups[name]);
+    this._grid.innerHTML = content;
 
-    grid.innerHTML = content;
+    this.animateCards();
   }
 
-  buildCard({ groupFullName, groupId, parentGroup }) {
-    const fileTypes = ["SVG", "PNG", "AI"];
-
+  buildCard(name, logos) {
     let content = "";
-    for (const type of fileTypes) {
-      const filename = `${groupId}.${type.toLowerCase()}`;
-      const href = this.urlFrom(parentGroup, groupId, filename);
-      content += `<a href=${href} download>${type}</a>`;
-    }
 
-    const imageURL = this.urlFrom(parentGroup, groupId, "display-image.png");
+    for (const logoType in logos)
+      if (logos[logoType])
+        content += `<a href=${logos[logoType]} download>${logoType}</a>`;
 
-    return `<span>
-              <img src="${imageURL}" />
+    return `<span class="card" id="card${this._counter++}">
+              <img src="${logos["png"]}" />
               <span>
-                  <p>
-                    ${groupFullName}
-                  </p>
-                  <span>
-                    ${content}
-                  </span>
+                <p>${name}</p>
+                <span>${content}</span>
               </span>
             </span>`;
   }
 
-  urlFrom(parentGroup, groupId, filename) {
-    return `${this._filesRoot}/${parentGroup}/${groupId}/${filename}`;
+  async animateCards() {
+    const counterState = this._counter;
+    this._counter = 0;
+
+    for (let i = 0; i < counterState; i++) {
+      await new Promise(resolve => setTimeout(resolve, 50));
+      document.getElementById(`card${i}`).style.transform = "none";
+    }
   }
 }

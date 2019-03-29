@@ -1,63 +1,68 @@
-.logo-library{
-	display:grid;
-	grid-column-gap: 36px;
-	grid-row-gap: 40px;
-	grid-template-columns: repeat(auto-fill, 240px);
-	grid-template-rows: 240px;
-	justify-content: center;
-	justify-items:center;
-	margin: 0 auto;
-	min-width:240px;
-	position:relative;
-	top:110px;
-	width:90%;
+.logo-library {
+  display: grid;
+  grid-column-gap: 36px;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-rows: 240px;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  min-width: 240px;
+  position: relative;
+  top: 110px;
+  width: 90%;
 }
 
-.logo-library>span {
-	background-color: #fff;
-	border-radius: 16px;
-	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-	width:240px;
+.logo-library > span {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 240px;
 }
 
-.logo-library>span>img {
-	display:block;
-	height:180px;
-	width:240px;
+.logo-library > span > img {
+  display: block;
+  height: 180px;
+  width: 240px;
 }
 
-.logo-library>span>span {
-	border-top:1px solid #E5E5E5;
-	display:block;
-	position:relative;
+.card {
+  transition: transform 500ms;
+  transform: translateY(1000px);
 }
 
-.logo-library>span>span p{
-	color:#636363;
-	display:block;
-	font-family:HelveticaNeue;
-	font-size:18px;
-	line-height: 30px;
-	margin:0 auto;
-	overflow: hidden;
-	text-align: center;
-	text-overflow:ellipsis;
-	white-space: nowrap;
-	width:220px;
+.logo-library > span > span {
+  border-top: 1px solid #e5e5e5;
+  display: block;
+  position: relative;
 }
 
-.logo-library>span>span span{
-	align-items:center;
-	border-top:1px solid #EFEFEF;
-	display:flex;
+.logo-library > span > span p {
+  color: #636363;
+  display: block;
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
 }
 
-.logo-library>span>span span a{
-	color:#adadad;
-	display:block;
-	font-family:HelveticaNeue;
-	font-size:14px;
-	line-height: 30px;
-	text-align: center;
-	width:80px;
+.logo-library > span > span span {
+  align-items: center;
+  border-top: 1px solid #efefef;
+  display: flex;
+}
+
+.logo-library > span > span span a {
+  color: #adadad;
+  display: block;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: 80px;
 }

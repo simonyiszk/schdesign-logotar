@@ -1,12 +1,9 @@
 const db = new DatabaseService("assets/database/database.json");
 
-const builder = new GridBuilder({
-  gridClassName: "logo-library",
-  filesRoot: "assets/database"
-});
+const builder = new GridBuilder({ gridClassName: "logo-library" });
 
-const buildGrid = parentGroup => {
-  const rows = db.queryByParentGroup(parentGroup);
+const buildGrid = reszort => {
+  const rows = db.getReszortByName(reszort);
   builder.build(rows);
 };
 
@@ -17,9 +14,15 @@ const menu = new MenuHandler(buildGrid, {
   menuItemsClass: "menu-items"
 });
 
-const init = async () => {
+const buildMenu = () => {
+  const menuItems = db.getReszortNames();
+  menu.addMenuItems(menuItems);
   menu.addEventListeners();
+};
+
+const init = async () => {
   await db.update();
+  buildMenu();
   buildGrid("simonyi");
 };
 
