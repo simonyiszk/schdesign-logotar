@@ -29,7 +29,7 @@ class GridBuilder {
   }
 
   async animateCards() {
-    const counterState = this.counter;
+    const counterState = this._counter;
     this._counter = 0;
 
     for (let i = 0; i < counterState; i++) {
