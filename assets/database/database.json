@@ -1,32 +1,110 @@
 {
+  "Kult\u00far": {
+    "impulzus": {
+      "ai": "assets/database/Kult\u00far/impulzus/impulzus.ai",
+      "png": "assets/database/Kult\u00far/impulzus/display-image.png"
+    }
+  },
   "Simonyi": {
-    "schdesign": {
-      "logo": "assets/database/Simonyi/schdesign/schdesign.png",
-      "ai": "assets/database/Simonyi/schdesign/schdesign.ai",
-      "png": "assets/database/Simonyi/schdesign/schdesign_transp_720p.png",
-      "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
-    },
-    "schdesign colors": {
-      "logo": "assets/database/Simonyi/schdesign/schdesign_gray.png",
-      "gray": "assets/database/Simonyi/schdesign/schdesign_gray_720p.png",
-      "pink": "assets/database/Simonyi/schdesign/schdesign_pink_720p.png",
-      "idk": "assets/database/Simonyi/schdesign/schdesign_idk_720p.png"
-    },
-    "Simonyi": {
-      "ai": "assets/database/Simonyi/Simonyi/logo_normal_colored.ai",
-      "png": "assets/database/Simonyi/Simonyi/simonyi_color.png",
-      "logo": "assets/database/Simonyi/Simonyi/simonyi_color.png"
-    },
     "AC": {
-      "logo": "assets/database/Simonyi/AC/ac_logo.png",
       "ai": "assets/database/Simonyi/AC/AC.ai",
       "png": "assets/database/Simonyi/AC/ac.png",
       "svg": "assets/database/Simonyi/AC/AC.svg"
+    },
+    "Simonyi": {
+      "ai": "assets/database/Simonyi/Simonyi/logo_normal_colored.ai",
+      "png": "assets/database/Simonyi/Simonyi/simonyi_color.png"
+    },
+    "schdesign": {
+      "ai": "assets/database/Simonyi/schdesign/schdesign.ai",
+      "png": "assets/database/Simonyi/schdesign/schdesign.png",
+      "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
     }
   },
-
-  "SCH": {},
-
-  "SSSL": {}
-
+  "Temp": {
+    "BBK": {
+      "png": "assets/database/Temp/BBK/bbk logo.png"
+    },
+    "Body": {
+      "svg": "assets/database/Temp/Body/sch_body.svg"
+    },
+    "Budav\u00e1ri Sch\u00f6nherz St\u00fadi\u00f3": {
+      "ai": "assets/database/Temp/Budav\u00e1ri Sch\u00f6nherz St\u00fadi\u00f3/bss_logo_kiindulas.ai",
+      "ttf": "assets/database/Temp/Budav\u00e1ri Sch\u00f6nherz St\u00fadi\u00f3/Bankgothic.ttf"
+    },
+    "Dzs\u00e1jrosz": {
+      "png": "assets/database/Temp/Dzs\u00e1jrosz/Back.png"
+    },
+    "Impulzus": {
+      "png": "assets/database/Temp/Impulzus/logo_bk.png"
+    },
+    "Just Dance": {
+      "ai": "assets/database/Temp/Just Dance/jdlogo.ai"
+    },
+    "J\u00e1tsz\u00f3h\u00e1z": {
+      "svg": "assets/database/Temp/J\u00e1tsz\u00f3h\u00e1z/JHlogo.svg"
+    },
+    "KB-PR": {},
+    "KSZK": {
+      "png": "assets/database/Temp/KSZK/Koll\u00e9giumi Sz\u00e1m\u00edt\u00e1stechnikai K\u00f6r.png",
+      "svg": "assets/database/Temp/KSZK/Koll\u00e9giumi Sz\u00e1m\u00edt\u00e1stechnikai K\u00f6r.svg"
+    },
+    "Kir-Dev": {
+      "ai": "assets/database/Temp/Kir-Dev/kir-dev_new.ai",
+      "png": "assets/database/Temp/Kir-Dev/kir-dev_new.png"
+    },
+    "Koll\u00e9giumi Felv\u00e9teli \u00e9s \u00c9rdekv\u00e9delmi Reszort": {
+      "png": "assets/database/Temp/Koll\u00e9giumi Felv\u00e9teli \u00e9s \u00c9rdekv\u00e9delmi Reszort/kofer.png"
+    },
+    "Kult\u00far Reszort": {},
+    "La_Place": {
+      "png": "assets/database/Temp/La_Place/laplace.png"
+    },
+    "LevelUp": {
+      "ai": "assets/database/Temp/LevelUp/levelup_logo.ai",
+      "png": "assets/database/Temp/LevelUp/leveup_color-2.png"
+    },
+    "Local Heroes": {
+      "png": "assets/database/Temp/Local Heroes/b\u00e9lyegk\u00e9p.png"
+    },
+    "L\u00e1ngosch": {
+      "ai": "assets/database/Temp/L\u00e1ngosch/lalogo.ai",
+      "svg": "assets/database/Temp/L\u00e1ngosch/lango_st2.svg"
+    },
+    "Palacsint\u00e1z\u00f3": {
+      "png": "assets/database/Temp/Palacsint\u00e1z\u00f3/pala_logo_uj_nemvektoros.png"
+    },
+    "ParkettKlub": {
+      "ai": "assets/database/Temp/ParkettKlub/ParkettWithText.ai"
+    },
+    "ReggeliSCH": {
+      "ai": "assets/database/Temp/ReggeliSCH/reggelisch.ai"
+    },
+    "SEM": {
+      "png": "assets/database/Temp/SEM/semlogo.png"
+    },
+    "SPOT": {
+      "png": "assets/database/Temp/SPOT/logo.png"
+    },
+    "SSSL reszort log\u00f3": {
+      "jpg": "assets/database/Temp/SSSL reszort log\u00f3/sssl_sarkany.jpg"
+    },
+    "SVK": {
+      "ai": "assets/database/Temp/SVK/svk.ai"
+    },
+    "SZOR reszort log\u00f3": {
+      "png": "assets/database/Temp/SZOR reszort log\u00f3/SZOR_my_edit_3.png"
+    },
+    "Sch\u00f6rpong": {
+      "png": "assets/database/Temp/Sch\u00f6rpong/Schorpong_logo_hatternelkul.png"
+    },
+    "Szintk\u00e9pvisel\u0151k Tan\u00e1csa": {
+      "png": "assets/database/Temp/Szintk\u00e9pvisel\u0151k Tan\u00e1csa/SziTa.png"
+    },
+    "VIK HK": {
+      "ai": "assets/database/Temp/VIK HK/BMEVIK_HK_logo_ketszin.ai",
+      "png": "assets/database/Temp/VIK HK/BMEVIK_HK_logo (1).png"
+    },
+    "V\u00f6r\u00f6s Kakas Fogad\u00f3": {}
+  }
 }

@@ -8,7 +8,7 @@ config = {
     "database_root": os.path.join("..", "assets", "database"),
     "database_root_url": "assets/database",
     "target_json": os.path.join("..", "assets", "database", "database.json"),
-    "extensions": ["ai", "svg", "png"]
+    "extensions": ["ai", "svg", "png", "ttf", "otf", "jpg"]
 }
 
 root = Path(os.path.join(os.path.realpath(os.curdir), config["database_root"]))
@@ -33,10 +33,21 @@ def object2json2file(obj, file_name):
 
 
 if __name__ == '__main__':
-    object2json2file({
+
+    obj = {
         reszort.name: {
             kör.name: {
                 ext: get_file(kör, ext) for ext in config["extensions"]
             } for kör in reszort.directories
         } for reszort in root.directories
-    }, config["target_json"])
+    }
+
+    # Remove not found files
+    for k1 in list(obj):
+        for k2 in list(obj[k1]):
+            for k3 in list(obj[k1][k2]):
+                if obj[k1][k2][k3] == None:
+                    # print(obj[k1][k2][k3])
+                    del obj[k1][k2][k3]
+
+    object2json2file(obj, config["target_json"])
