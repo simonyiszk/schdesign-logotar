@@ -16,7 +16,7 @@ class GridBuilder {
     let content = "";
 
     for (const logoType in logos)
-      if (logoType == "png") continue;
+      if (logoType == "jpg") continue;
       else if (logos[logoType])
       content += `<a href=${logos[logoType]} download>${logoType}</a>`;
 
