@@ -18,7 +18,7 @@ The necessary files for the database are available at this location:
 
 It should have 2 levels of directories. The first level is dynamically displayed on the website. The second level of folders are displayed as cards.
 
-**The database is case-sensitive!**
+**The database is case-sensitive in the database and also in the file structure!**
 
 Logos should be created with the name `logo` in the database, these won't get a download link generated.
 
