@@ -18,7 +18,7 @@ It should have 2 levels of directories. The first level is dynamically displayed
 
 **The database is case-sensitive!**
 
-Logos should be created with the name 'Logo' in the database, these won't get a download link generated.
+Logos should be created with the name `Logo` in the database, these won't get a download link generated.
 
 ### Necessary files
 
