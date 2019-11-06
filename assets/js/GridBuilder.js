@@ -16,11 +16,12 @@ class GridBuilder {
     let content = "";
 
     for (const logoType in logos)
-      if (logos[logoType])
-        content += `<a href=${logos[logoType]} download>${logoType}</a>`;
+      if (logoType == "logo") continue;
+      else if (logos[logoType])
+      content += `<a href=${logos[logoType]} download>${logoType}</a>`;
 
     return `<span class="card" id="card${this._counter++}">
-              <img src="${logos["png"]}" />
+              <img src="${logos["logo"]}" />
               <span>
                 <p>${name}</p>
                 <span>${content}</span>

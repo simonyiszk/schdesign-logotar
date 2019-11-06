@@ -1,7 +1,6 @@
 class MenuHandler {
   constructor(
-    updateFunc,
-    { hamburgerClass, hiddenMenuClass, hamburgerButtonClass, menuItemsClass }
+    updateFunc, { hamburgerClass, hiddenMenuClass, hamburgerButtonClass, menuItemsClass }
   ) {
     this._updateFunc = updateFunc;
 

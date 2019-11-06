@@ -41,9 +41,19 @@ nav {
 
 .brand-logo p {
   color: #adadad;
-  font-family: HelveticaNeue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.brand-drive {
+  color: #adadad;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-transform: uppercase;
 }
 
@@ -58,7 +68,7 @@ nav {
 .menu-items a,
 .menu-items a:visited {
   color: #adadad;
-  font-family: HelveticaNeue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   margin: 0px 10px 0px 10px;
   text-transform: uppercase;
@@ -103,7 +113,6 @@ nav {
   .menu-items {
     right: 30px;
   }
-
   .brand-logo {
     left: 30px;
   }
@@ -114,12 +123,10 @@ nav {
     visibility: hidden;
     z-index: -1;
   }
-
   .brand-logo {
     left: 0;
     right: 0;
   }
-
   .hamburger-button {
     font-size: 40px;
     height: 60px;
@@ -128,7 +135,6 @@ nav {
     visibility: visible;
     z-index: 4;
   }
-
   .hidden-menu {
     align-items: center;
     background-color: #fff;

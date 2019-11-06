@@ -20,10 +20,10 @@ const buildMenu = () => {
   menu.addEventListeners();
 };
 
-const init = async () => {
+const init = async() => {
   await db.update();
   buildMenu();
-  buildGrid("simonyi");
+  buildGrid("Simonyi");
 };
 
 init();

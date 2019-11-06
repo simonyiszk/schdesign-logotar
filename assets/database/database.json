@@ -1,27 +1,32 @@
 {
-  "Bulis": {},
-  "KoFER": {},
-  "Kult\u00far": {
-    "impulzus": {
-      "ai": "assets/database/Kult\u00far/impulzus/impulzus.ai",
-      "png": "assets/database/Kult\u00far/impulzus/display-image.png",
-      "svg": null
-    }
-  },
-  "SCH": {},
-  "SSSL": {},
-  "SZOR": {},
   "Simonyi": {
-    "ha5kfu": {
-      "ai": "assets/database/Simonyi/ha5kfu/ha5kfu.ai",
-      "png": "assets/database/Simonyi/ha5kfu/display-image.png",
-      "svg": null
-    },
     "schdesign": {
-      "ai": null,
-      "png": "assets/database/Simonyi/schdesign/display-image.png",
-      "svg": null
+      "logo": "assets/database/Simonyi/schdesign/schdesign.png",
+      "ai": "assets/database/Simonyi/schdesign/schdesign.ai",
+      "png": "assets/database/Simonyi/schdesign/schdesign_transp_720p.png",
+      "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
+    },
+    "schdesign colors": {
+      "logo": "assets/database/Simonyi/schdesign/schdesign_gray.png",
+      "gray": "assets/database/Simonyi/schdesign/schdesign_gray_720p.png",
+      "pink": "assets/database/Simonyi/schdesign/schdesign_pink_720p.png",
+      "idk": "assets/database/Simonyi/schdesign/schdesign_idk_720p.png"
+    },
+    "Simonyi": {
+      "ai": "assets/database/Simonyi/Simonyi/logo_normal_colored.ai",
+      "png": "assets/database/Simonyi/Simonyi/simonyi_color.png",
+      "logo": "assets/database/Simonyi/Simonyi/simonyi_color.png"
+    },
+    "AC": {
+      "logo": "assets/database/Simonyi/AC/ac_logo.png",
+      "ai": "assets/database/Simonyi/AC/AC.ai",
+      "png": "assets/database/Simonyi/AC/ac.png",
+      "svg": "assets/database/Simonyi/AC/AC.svg"
     }
   },
-  "Sport": {}
+
+  "SCH": {},
+
+  "SSSL": {}
+
 }
