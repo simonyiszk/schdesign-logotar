@@ -18,16 +18,17 @@ The necessary files for the database are available at this location:
 
 It should have 2 levels of directories. The first level is dynamically displayed on the website. The second level of folders are displayed as cards. The third level are the files which are represented as download buttons ont the cards.
 
-**The database is case-sensitive in the database and also in the file structure!**
+**The database is case-sensitive in the database keys and also in the file structure!**
 
-Logos should be created with the name `jpg` in the database, these won't get a download link generated.
+Previews should be created with the name `jpg` in the database, these won't get a download link generated.
 
 ### Necessary files
 
-~~Currently supported file formats: `svg`, `png`, `ai`.~~
-Any file can be added, logos should be ~~jpg~~ the highres pngs are used for now.
+Currently supported file formats: `svg`, `png`, `ai`, `ttf`, `otf`.
 
-On the website ~~only the `.jpg` files will be displayed as a preview~~. The others may be downloaded by clicking a link.
+Previews should be ~~jpg~~ the highres pngs are used for now.
+
+~~On the website only the `.jpg` files will be displayed as a preview~~. The others may be downloaded by clicking a link.
 
 ### Changing the "database"
 
