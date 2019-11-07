@@ -2,31 +2,35 @@
   "Kult\u00far": {
     "impulzus": {
       "ai": "assets/database/Kult\u00far/impulzus/impulzus.ai",
-      "png": "assets/database/Kult\u00far/impulzus/display-image.png"
+      "png": "assets/database/Kult\u00far/impulzus/display-image.png",
+      "preview": "assets/database/Kult\u00far/impulzus/impulzus.png"
     }
   },
   "Simonyi": {
     "AC": {
       "ai": "assets/database/Simonyi/AC/AC.ai",
-      "jpg": "assets/database/Simonyi/AC/ac_logo.jpg",
       "png": "assets/database/Simonyi/AC/ac.png",
+      "preview": "assets/database/Simonyi/AC/ac_preview.png",
       "svg": "assets/database/Simonyi/AC/AC.svg"
     },
     "Simonyi": {
       "ai": "assets/database/Simonyi/Simonyi/logo_normal_colored.ai",
-      "png": "assets/database/Simonyi/Simonyi/simonyi_color.png"
+      "png": "assets/database/Simonyi/Simonyi/simonyi_color.png",
+      "preview": "assets/database/Simonyi/Simonyi/simonyi_color_preview.png"
     },
     "schdesign": {
       "ai": "assets/database/Simonyi/schdesign/schdesign.ai",
       "png": "assets/database/Simonyi/schdesign/schdesign.png",
+      "preview": "assets/database/Simonyi/schdesign/schdesign_preview.png",
       "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
     },
     "schdesign gray": {
       "png": "assets/database/Simonyi/schdesign gray/schdesign_gray.png",
-      "preview": "assets/database/Simonyi/schdesign gray/schdesign_gray.png.preview"
+      "preview": "assets/database/Simonyi/schdesign gray/schdesign_gray_preview.png"
     },
     "schdesign pink": {
-      "png": "assets/database/Simonyi/schdesign pink/schdesign_pink_720p.png"
+      "png": "assets/database/Simonyi/schdesign pink/schdesign_pink.png",
+      "preview": "assets/database/Simonyi/schdesign pink/schdesign_pink_preview.png"
     }
   },
   "Temp": {
@@ -73,7 +77,8 @@
       "png": "assets/database/Temp/LevelUp/leveup_color-2.png"
     },
     "Local Heroes": {
-      "png": "assets/database/Temp/Local Heroes/b\u00e9lyegk\u00e9p.png"
+      "png": "assets/database/Temp/Local Heroes/b\u00e9lyegk\u00e9p.png",
+      "preview": "assets/database/Temp/Local Heroes/logo_atlatszo.png"
     },
     "L\u00e1ngosch": {
       "ai": "assets/database/Temp/L\u00e1ngosch/lalogo.ai",
@@ -101,7 +106,8 @@
       "ai": "assets/database/Temp/SVK/svk.ai"
     },
     "SZOR reszort log\u00f3": {
-      "png": "assets/database/Temp/SZOR reszort log\u00f3/SZOR_my_edit_3.png"
+      "png": "assets/database/Temp/SZOR reszort log\u00f3/SZOR_my_edit_3.png",
+      "preview": "assets/database/Temp/SZOR reszort log\u00f3/SZOR_white_transparent.png"
     },
     "Sch\u00f6rpong": {
       "png": "assets/database/Temp/Sch\u00f6rpong/Schorpong_logo_hatternelkul.png"
