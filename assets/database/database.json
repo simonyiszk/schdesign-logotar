@@ -8,6 +8,7 @@
   "Simonyi": {
     "AC": {
       "ai": "assets/database/Simonyi/AC/AC.ai",
+      "jpg": "assets/database/Simonyi/AC/ac_logo.jpg",
       "png": "assets/database/Simonyi/AC/ac.png",
       "svg": "assets/database/Simonyi/AC/AC.svg"
     },
@@ -19,6 +20,13 @@
       "ai": "assets/database/Simonyi/schdesign/schdesign.ai",
       "png": "assets/database/Simonyi/schdesign/schdesign.png",
       "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
+    },
+    "schdesign gray": {
+      "png": "assets/database/Simonyi/schdesign gray/schdesign_gray_720p.png",
+      "preview": "assets/database/Simonyi/schdesign gray/schdesign_gray_preview.png"
+    },
+    "schdesign pink": {
+      "png": "assets/database/Simonyi/schdesign pink/schdesign_pink_720p.png"
     }
   },
   "Temp": {
