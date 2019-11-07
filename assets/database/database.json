@@ -22,8 +22,8 @@
       "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
     },
     "schdesign gray": {
-      "png": "assets/database/Simonyi/schdesign gray/schdesign_gray_720p.png",
-      "preview": "assets/database/Simonyi/schdesign gray/schdesign_gray_preview.png"
+      "png": "assets/database/Simonyi/schdesign gray/schdesign_gray.png",
+      "preview": "assets/database/Simonyi/schdesign gray/schdesign_gray.png.preview"
     },
     "schdesign pink": {
       "png": "assets/database/Simonyi/schdesign pink/schdesign_pink_720p.png"

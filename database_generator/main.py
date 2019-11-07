@@ -47,9 +47,9 @@ if __name__ == '__main__':
             for k3 in list(obj[k1][k2]):
 
                 # Check for preview files
-                if k3 == "preview":
-                    if obj[k1][k2][k3] != None:
-                        obj[k1][k2][k3] = obj[k1][k2][k3][:-8]
+                #if k3 == "preview":
+                    #if obj[k1][k2][k3] != None:
+                        #obj[k1][k2][k3] = obj[k1][k2][k3][:-8]
                         #print(obj[k1][k2][k3])
 
                 # Remove not found files
