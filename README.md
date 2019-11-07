@@ -24,7 +24,7 @@ Previews should be created with the name `jpg` in the database, these won't get 
 
 ### Necessary files
 
-Currently supported file formats: `svg`, `png`, `ai`, `ttf`, `otf`.
+Currently supported file formats: `svg`, `png`, `ai`, `ttf`, `otf`. (This is only a limitation in the database generator, any other file can be added by hand.)
 
 Previews should be ~~jpg~~ the highres pngs are used for now.
 
