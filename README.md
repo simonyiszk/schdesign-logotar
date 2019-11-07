@@ -26,7 +26,7 @@ Previews should be created with the name `preview` in the database, these won't 
 
 Currently supported file formats: `svg`, `png`, `ai`, `ttf`, `otf`. (This is only a limitation in the database generator, any other file can be added by hand.)
 
-Previews should be png files with .preview added to their name as a fake extension.
+Previews should be png files with the same name as the highres ones, but with `_preview` added to the end of their name.
 
 The others may be downloaded by clicking a link.
 
