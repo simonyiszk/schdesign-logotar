@@ -56,9 +56,11 @@ class MenuHandler {
     if (this._isHiddenMenuActive) {
       style.visibility = "hidden";
       style.zIndex = "-1";
+      style.transform = "translateY(-120px)";
     } else {
       style.visibility = "visible";
       style.zIndex = "2";
+      style.transform = "translateY(0px)";
     }
 
     this._hamburgerButton.classList.toggle("fa-times");
