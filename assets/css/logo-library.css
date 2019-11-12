@@ -11,6 +11,7 @@
   position: relative;
   top: 110px;
   width: 90%;
+  padding-bottom: 40px;
 }
 
 .logo-library>span {
@@ -26,6 +27,8 @@
   width: 240px;
   object-fit: contain;
   border-radius: 16px 16px 0px 0px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .card {
