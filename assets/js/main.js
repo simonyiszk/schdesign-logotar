@@ -10,7 +10,6 @@ const buildGrid = reszort => {
 const menu = new MenuHandler(buildGrid, {
   hamburgerClass: "hamburger-button",
   hiddenMenuClass: "hidden-menu",
-  hamburgerButtonClass: "fa-bars",
   menuItemsClass: "menu-items"
 });
 

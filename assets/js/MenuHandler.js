@@ -1,6 +1,6 @@
 class MenuHandler {
   constructor(
-    updateFunc, { hamburgerClass, hiddenMenuClass, hamburgerButtonClass, menuItemsClass }
+    updateFunc, { hamburgerClass, hiddenMenuClass, menuItemsClass }
   ) {
     this._updateFunc = updateFunc;
 
@@ -9,9 +9,6 @@ class MenuHandler {
     this._hamburger = document.getElementsByClassName(hamburgerClass)[0];
     this._hiddenMenu = document.getElementsByClassName(hiddenMenuClass)[0];
     this._menuItems = document.getElementsByClassName(menuItemsClass)[0];
-    this._hamburgerButton = this._hamburger.getElementsByClassName(
-      hamburgerButtonClass
-    )[0];
   }
 
   addMenuItems(menuItems) {
@@ -21,9 +18,12 @@ class MenuHandler {
       this._hiddenMenu.innerHTML += html;
     });
 
-    const defaultSelected = this._menuItems.getElementsByTagName("A")[0];
+    const defaultSelected = this._menuItems.getElementsByTagName("A")[1];
+    const defaultHiddenSelected = this._hiddenMenu.getElementsByTagName("A")[1];
     defaultSelected.classList += "menu-active";
+    defaultHiddenSelected.classList += "menu-active";
     this._updateFunc(defaultSelected.dataset.group);
+    this._updateFunc(defaultHiddenSelected.dataset.group);
   }
 
   addEventListeners() {
@@ -36,6 +36,11 @@ class MenuHandler {
     let targetElement = event.target;
     if (targetElement.tagName == "A") {
       this.toggleHamburger();
+      for (let i = 0; i < 1; i++) {
+        let tempHiddenMenuActive = document.getElementsByClassName("menu-active")[1];
+        tempHiddenMenuActive.classList.toggle("menu-active");
+      }
+      targetElement.classList.toggle("menu-active");
       this._updateFunc(targetElement.dataset.group);
     }
   }
@@ -43,8 +48,10 @@ class MenuHandler {
   menuItemsClick(event) {
     let targetElement = event.target;
     if (targetElement.tagName == "A") {
-      let tempMenuActive = document.getElementsByClassName("menu-active")[0];
-      tempMenuActive.classList.toggle("menu-active");
+      for (let i = 0; i < 1; i++) {
+        let tempMenuActive = document.getElementsByClassName("menu-active")[0];
+        tempMenuActive.classList.toggle("menu-active");
+      }
       targetElement.classList.toggle("menu-active");
       this._updateFunc(event.target.dataset.group);
     }
@@ -63,7 +70,7 @@ class MenuHandler {
       style.transform = "translateY(0px)";
     }
 
-    this._hamburgerButton.classList.toggle("fa-times");
+    this._hamburger.classList.toggle("open");
     this._isHiddenMenuActive = !this._isHiddenMenuActive;
   }
 }
