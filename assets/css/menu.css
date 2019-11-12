@@ -1,7 +1,18 @@
+@font-face {
+  font-family: 'schdesign';
+  src: url('../font/schdesign.eot');
+  src: local('schdesign Condensed'), local('schdesign-Condensed'), local('schdesign'), local('schdesign-Cond'), local('schdesign Cond'), url('../font/schdesign.eot?#iefix') format('embedded-opentype'), url('../font/schdesign.woff2') format('woff2'), url('../font/schdesign.woff') format('woff'), url('../font/schdesign.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.fa,
+.fas {
+  color: #8b8b8b;
 }
 
 a,
