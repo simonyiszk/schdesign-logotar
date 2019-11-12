@@ -20,15 +20,15 @@ It should have 2 levels of directories. The first level is dynamically displayed
 
 **The database is case-sensitive in the database keys and also in the file structure!**
 
-Previews should be created with the name `jpg` in the database, these won't get a download link generated.
+Previews should be created with the name `preview` in the database, these won't get a download link generated.
 
 ### Necessary files
 
 Currently supported file formats: `svg`, `png`, `ai`, `ttf`, `otf`. (This is only a limitation in the database generator, any other file can be added by hand.)
 
-Previews should be ~~jpg~~ the highres pngs are used for now.
+Previews should be png files with the same name as the highres ones, but with `_preview` added to the end of their name.
 
-~~On the website only the `.jpg` files will be displayed as a preview~~. The others may be downloaded by clicking a link.
+The others may be downloaded by clicking a link.
 
 ### Changing the "database"
 

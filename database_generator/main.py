@@ -8,18 +8,35 @@ config = {
     "database_root": os.path.join("..", "assets", "database"),
     "database_root_url": "assets/database",
     "target_json": os.path.join("..", "assets", "database", "database.json"),
-    "extensions": ["ai", "svg", "png", "ttf", "otf", "jpg"]
+    "extensions": ["ai", "svg", "png", "ttf", "otf", "jpg", "preview"]
 }
 
 root = Path(os.path.join(os.path.realpath(os.curdir), config["database_root"]))
 
+allfiles = ["asd"]
+
+def check_file(fname):
+    for ef in allfiles:
+        if fname == ef:
+            return True
+    return False
 
 def get_file(path, extension):
+    if extension=="preview":
+        extension="png"
     for file in path.files:
         if file.name.endswith(extension):
-            return file.webify(root.real_path, config["database_root_url"])
+            #print(file.real_path)
+            if check_file(file.real_path):
+                #print(allfiles)
+                continue
+            else:
+                allfiles.append(file.real_path)
+                asd = file.webify(root.real_path, config["database_root_url"])
+                #print(asd)
+                return asd
 
-    print(f"Can't find file in {path.real_path} with extension .{extension}.")
+    #print(f"Can't find file in {path.real_path} with extension .{extension}.")
     return None
 
 
@@ -41,13 +58,22 @@ if __name__ == '__main__':
             } for kör in reszort.directories
         } for reszort in root.directories
     }
-
-    # Remove not found files
+    
     for k1 in list(obj):
         for k2 in list(obj[k1]):
             for k3 in list(obj[k1][k2]):
+                """
+                # Check for preview files
+                if k3 == "preview":
+                    if obj[k1][k2][k3] != None:
+                        obj[k1][k2][k3] = obj[k1][k2][k3][:-8]
+                        #print(obj[k1][k2][k3])
+                """
+                # Remove not found files
                 if obj[k1][k2][k3] == None:
-                    # print(obj[k1][k2][k3])
+                    #print(obj[k1][k2][k3])
                     del obj[k1][k2][k3]
+    
+    #print(obj)
 
     object2json2file(obj, config["target_json"])

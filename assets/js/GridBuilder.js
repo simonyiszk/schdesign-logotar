@@ -14,10 +14,10 @@ class GridBuilder {
 
   buildCard(name, logos) {
     let content = "";
-    const previewType = "png";
+    const previewType = "preview";
 
     for (const logoType in logos)
-      if (logoType == "jpg") continue;
+      if (logoType == "preview") continue;
       else if (logos[logoType])
       content += `<a href="${logos[logoType]}" download>${logoType}</a>`;
 
