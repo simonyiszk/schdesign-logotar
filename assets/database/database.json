@@ -157,14 +157,6 @@
       "png": "assets/database/Simonyi/schdesign/schdesign.png",
       "preview": "assets/database/Simonyi/schdesign/schdesign_preview.png",
       "ttf": "assets/database/Simonyi/schdesign/schdesign.ttf"
-    },
-    "schdesign gray": {
-      "png": "assets/database/Simonyi/schdesign gray/schdesign_gray.png",
-      "preview": "assets/database/Simonyi/schdesign gray/schdesign_gray_preview.png"
-    },
-    "schdesign pink": {
-      "png": "assets/database/Simonyi/schdesign pink/schdesign_pink.png",
-      "preview": "assets/database/Simonyi/schdesign pink/schdesign_pink_preview.png"
     }
   }
 }
