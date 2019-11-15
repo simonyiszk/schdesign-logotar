@@ -2,12 +2,16 @@
   font-family: 'schdesign';
   src: url('../font/schdesign.eot');
   src: local('schdesign Condensed'), local('schdesign-Condensed'), local('schdesign'), local('schdesign-Cond'), local('schdesign Cond'), url('../font/schdesign.eot?#iefix') format('embedded-opentype'), url('../font/schdesign.woff2') format('woff2'), url('../font/schdesign.woff') format('woff'), url('../font/schdesign.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 a,
@@ -19,6 +23,20 @@ a:visited {
 
 body {
   background-color: #fbfbfb;
+}
+
+.title {
+  font-family: 'schdesign';
+  color: #444;
+  font-size: 36px;
+}
+
+.sch {
+  color: #444;
+}
+
+.design {
+  color: #f8485e;
 }
 
 nav {

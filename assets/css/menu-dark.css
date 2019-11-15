@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'schdesign';
+  src: url('../font/schdesign.eot');
+  src: local('schdesign Condensed'), local('schdesign-Condensed'), local('schdesign'), local('schdesign-Cond'), local('schdesign Cond'), url('../font/schdesign.eot?#iefix') format('embedded-opentype'), url('../font/schdesign.woff2') format('woff2'), url('../font/schdesign.woff') format('woff'), url('../font/schdesign.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.dark {
+  color: #ccc;
+  background: #222;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.dark>nav {
+  color: #ccc;
+  background: #222;
+  box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.dark>nav>.brand-logo>.sch {
+  color: #eee;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 30px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 18px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 18px;
+}
+
+.dark>nav>.brand-logo>.switch>.slider:before {
+  background-color: #aaa;
+}
+
+input:checked+.slider {
+  background-color: #444;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #444;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
