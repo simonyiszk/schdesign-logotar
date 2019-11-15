@@ -10,8 +10,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  /*-webkit-transition: .3s;
+  transition: .3s;*/
 }
 
 a,

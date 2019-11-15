@@ -29,7 +29,18 @@ init();
 
 document.addEventListener('DOMContentLoaded', function() {
   var checkbox = document.querySelector('input[type="checkbox"]');
-  checkbox.checked = false;
+
+  if (checkbox.checked) {
+    let navBar = document.getElementsByTagName('body')[0];
+    let logoLibrary = document.getElementsByClassName('logo-library')[0];
+    navBar.classList.toggle("dark");
+    logoLibrary.classList.toggle("dark");
+  } else {
+    let navBar = document.getElementsByTagName('body')[0];
+    let logoLibrary = document.getElementsByClassName('logo-library')[0];
+    navBar.classList.toggle("dark");
+    logoLibrary.classList.toggle("dark");
+  }
 
   checkbox.addEventListener('change', function() {
     if (checkbox.checked) {
@@ -37,13 +48,11 @@ document.addEventListener('DOMContentLoaded', function() {
       let logoLibrary = document.getElementsByClassName('logo-library')[0];
       navBar.classList.toggle("dark");
       logoLibrary.classList.toggle("dark");
-      console.log('Checked');
     } else {
       let navBar = document.getElementsByTagName('body')[0];
       let logoLibrary = document.getElementsByClassName('logo-library')[0];
       navBar.classList.toggle("dark");
       logoLibrary.classList.toggle("dark");
-      console.log('Not checked');
     }
   });
 });

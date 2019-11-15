@@ -13,6 +13,16 @@
   border-top: 1px solid #444;
 }
 
+.logo-library.dark>span>span span a {
+  color: #aaa;
+}
+
+.logo-library.dark>span>img {
+  /*filter: brightness(0.5) saturate(2);*/
+  background: #fff;
+}
+
 .logo-library.dark>span>span span a:hover {
   background: rgba(255, 255, 255, 0.125);
+  color: #ddd;
 }

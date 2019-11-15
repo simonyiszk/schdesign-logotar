@@ -20,19 +20,25 @@ a:visited {
 .dark {
   color: #ccc;
   background: #222;
-  -webkit-transition: .3s;
-  transition: .3s;
+  /*-webkit-transition: .3s;
+  transition: .3s;*/
 }
 
 .dark>nav {
   color: #ccc;
   background: #222;
   box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.1);
-  -webkit-transition: .3s;
-  transition: .3s;
+  /*-webkit-transition: .3s;
+  transition: .3s;*/
 }
 
 .dark>nav>.brand-logo>.sch {
+  color: #eee;
+}
+
+.dark>.hidden-menu,
+.dark>.hidden-menu a {
+  background: #333;
   color: #eee;
 }
 
