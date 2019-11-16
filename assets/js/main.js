@@ -52,7 +52,8 @@ init();
 
 document.addEventListener('DOMContentLoaded', function() {
   var checkbox = document.querySelector('input[type="checkbox"]');
-  var isDarkMode = getCookie('isDarkMode');
+  var darkMode = getCookie('isDarkMode');
+  var isDarkMode = (darkMode == 'true');
   if (isDarkMode) checkbox.checked = true;
   else checkbox.checked = false;
 
