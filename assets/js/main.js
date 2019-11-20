@@ -62,13 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let logoLibrary = document.getElementsByClassName('logo-library')[0];
     navBar.classList.toggle("dark", true);
     logoLibrary.classList.toggle("dark", true);
-    setCookie('isDarkMode', true, 7);
+    setCookie('isDarkMode', true, 90);
   } else {
     let navBar = document.getElementsByTagName('body')[0];
     let logoLibrary = document.getElementsByClassName('logo-library')[0];
     navBar.classList.toggle("dark", false);
     logoLibrary.classList.toggle("dark", false);
-    setCookie('isDarkMode', false, 7);
+    setCookie('isDarkMode', false, 90);
   }
 
   checkbox.addEventListener('change', function() {
@@ -77,13 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
       let logoLibrary = document.getElementsByClassName('logo-library')[0];
       navBar.classList.toggle("dark", true);
       logoLibrary.classList.toggle("dark", true);
-      setCookie('isDarkMode', true, 7);
+      setCookie('isDarkMode', true, 90);
     } else {
       let navBar = document.getElementsByTagName('body')[0];
       let logoLibrary = document.getElementsByClassName('logo-library')[0];
       navBar.classList.toggle("dark", false);
       logoLibrary.classList.toggle("dark", false);
-      setCookie('isDarkMode', false, 7);
+      setCookie('isDarkMode', false, 90);
     }
   });
 });
