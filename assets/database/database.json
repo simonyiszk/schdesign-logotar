@@ -12,11 +12,29 @@
       "preview": "assets/database/Sch\u00f6nherz/BBK/bbk_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/BBK/bbk.svg"
     },
+    "DevTeam": {
+      "ai": "assets/database/Sch\u00f6nherz/DevTeam/devteam_1080.ai",
+      "png": "assets/database/Sch\u00f6nherz/DevTeam/devteam.png",
+      "preview": "assets/database/Sch\u00f6nherz/DevTeam/devteam_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/DevTeam/devteam.svg"
+    },
+    "Dzs\u00e1jrosz": {
+      "ai": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dszajrosz.ai",
+      "png": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dzsajrosz.png",
+      "preview": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dzsajrosz_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dzsajrosz.svg"
+    },
     "FoodEx": {
       "ai": "assets/database/Sch\u00f6nherz/FoodEx/foodex.ai",
       "png": "assets/database/Sch\u00f6nherz/FoodEx/foodex.png",
       "preview": "assets/database/Sch\u00f6nherz/FoodEx/foodex_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/FoodEx/foodex.svg"
+    },
+    "Hallgat\u00f3i Tud\u00e1sb\u00e1zis": {
+      "ai": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis_1080.ai",
+      "png": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.png",
+      "preview": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.svg"
     },
     "Impulzus": {
       "ai": "assets/database/Sch\u00f6nherz/Impulzus/impulzus.ai",
@@ -24,11 +42,29 @@
       "preview": "assets/database/Sch\u00f6nherz/Impulzus/impulzus_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Impulzus/impulzus.svg"
     },
+    "Just Dance": {
+      "ai": "assets/database/Sch\u00f6nherz/Just Dance/jdlogo.ai",
+      "png": "assets/database/Sch\u00f6nherz/Just Dance/justdance.png",
+      "preview": "assets/database/Sch\u00f6nherz/Just Dance/justdance_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Just Dance/justdance.svg"
+    },
+    "J\u00e1tsz\u00f3h\u00e1z": {
+      "ai": "assets/database/Sch\u00f6nherz/J\u00e1tsz\u00f3h\u00e1z/JHlogo.ai",
+      "png": "assets/database/Sch\u00f6nherz/J\u00e1tsz\u00f3h\u00e1z/jhlogo.png",
+      "preview": "assets/database/Sch\u00f6nherz/J\u00e1tsz\u00f3h\u00e1z/jhlogo_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/J\u00e1tsz\u00f3h\u00e1z/jhlogo.svg"
+    },
     "KFB": {
       "ai": "assets/database/Sch\u00f6nherz/KFB/kfb.ai",
       "png": "assets/database/Sch\u00f6nherz/KFB/kfb.png",
       "preview": "assets/database/Sch\u00f6nherz/KFB/kfb_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/KFB/kfb.svg"
+    },
+    "KSZK Reszort": {
+      "ai": "assets/database/Sch\u00f6nherz/KSZK Reszort/reszort_logo_1080.ai",
+      "png": "assets/database/Sch\u00f6nherz/KSZK Reszort/kszk.png",
+      "preview": "assets/database/Sch\u00f6nherz/KSZK Reszort/kszk_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/KSZK Reszort/kszk.svg"
     },
     "Kakas": {
       "ai": "assets/database/Sch\u00f6nherz/Kakas/kakas.ai",
@@ -48,6 +84,36 @@
       "preview": "assets/database/Sch\u00f6nherz/Lanosch/lanosch_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Lanosch/lanosch.svg"
     },
+    "LevelUp": {
+      "ai": "assets/database/Sch\u00f6nherz/LevelUp/levelup_logo.ai",
+      "png": "assets/database/Sch\u00f6nherz/LevelUp/levelup.png",
+      "preview": "assets/database/Sch\u00f6nherz/LevelUp/levelup_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/LevelUp/levelup.svg"
+    },
+    "Local Heroes": {
+      "ai": "assets/database/Sch\u00f6nherz/Local Heroes/localheroes.ai",
+      "png": "assets/database/Sch\u00f6nherz/Local Heroes/localheroes.png",
+      "preview": "assets/database/Sch\u00f6nherz/Local Heroes/localheroes_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Local Heroes/localheroes.svg"
+    },
+    "L\u00e1ngosch": {
+      "ai": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/lalogo.ai",
+      "png": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/langosch.png",
+      "preview": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/langosch_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/langosch.svg"
+    },
+    "NETeam": {
+      "ai": "assets/database/Sch\u00f6nherz/NETeam/neteam_1080.ai",
+      "png": "assets/database/Sch\u00f6nherz/NETeam/neteam.png",
+      "preview": "assets/database/Sch\u00f6nherz/NETeam/neteam_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/NETeam/neteam.svg"
+    },
+    "Palacsint\u00e1z\u00f3": {
+      "ai": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala.ai",
+      "png": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala.png",
+      "preview": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala.svg"
+    },
     "Parkett": {
       "ai": "assets/database/Sch\u00f6nherz/Parkett/parkett.ai",
       "png": "assets/database/Sch\u00f6nherz/Parkett/parkett.png",
@@ -59,6 +125,18 @@
       "png": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch.png",
       "preview": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch.svg"
+    },
+    "ReggeliSCH": {
+      "ai": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch.ai",
+      "png": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch.png",
+      "preview": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch.svg"
+    },
+    "SSSL": {
+      "ai": "assets/database/Sch\u00f6nherz/SSSL/sssl_sarkany.ai",
+      "png": "assets/database/Sch\u00f6nherz/SSSL/sssl.png",
+      "preview": "assets/database/Sch\u00f6nherz/SSSL/sssl_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/SSSL/sssl.svg"
     },
     "SVK": {
       "ai": "assets/database/Sch\u00f6nherz/SVK/svk.ai",
@@ -72,6 +150,12 @@
       "preview": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz/sch_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz/sch.svg"
     },
+    "Sch\u00f6nherz Body": {
+      "ai": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz Body/sch_body.ai",
+      "png": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz Body/body.png",
+      "preview": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz Body/body_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz Body/body.svg"
+    },
     "Sch\u00f6nherz B\u00e1zis": {
       "ai": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz B\u00e1zis/bazis.ai",
       "png": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz B\u00e1zis/bazis.png",
@@ -84,17 +168,48 @@
       "preview": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz Iskolasz\u00f6vetkezet/iskolaszovetkezet_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Sch\u00f6nherz Iskolasz\u00f6vetkezet/iskolaszovetkezet.svg"
     },
+    "Sch\u00f6rpong": {
+      "ai": "assets/database/Sch\u00f6nherz/Sch\u00f6rpong/Schorpong.ai",
+      "png": "assets/database/Sch\u00f6nherz/Sch\u00f6rpong/Schorpong.png",
+      "preview": "assets/database/Sch\u00f6nherz/Sch\u00f6rpong/schorpong_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Sch\u00f6rpong/schorpong.svg"
+    },
+    "SecurITeam": {
+      "ai": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam_1080.ai",
+      "png": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam.png",
+      "preview": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam.svg"
+    },
+    "Sysadmin": {
+      "ai": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin_1080.ai",
+      "png": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin.png",
+      "preview": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin.svg"
+    },
     "Szauna": {
       "ai": "assets/database/Sch\u00f6nherz/Szauna/szauna.ai",
       "png": "assets/database/Sch\u00f6nherz/Szauna/szauna.png",
       "preview": "assets/database/Sch\u00f6nherz/Szauna/szauna_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Szauna/szauna.svg"
     },
+    "VIK HK": {
+      "ai": "assets/database/Sch\u00f6nherz/VIK HK/VIKHK.ai",
+      "png": "assets/database/Sch\u00f6nherz/VIK HK/vikhk.png",
+      "preview": "assets/database/Sch\u00f6nherz/VIK HK/vikhk_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/VIK HK/vikhk.svg"
+    },
     "V\u00f6d\u00f6r": {
       "ai": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor.ai",
       "png": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor.png",
       "preview": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor.svg"
+    },
+    "V\u00f6r\u00f6s Kakas Fogad\u00f3": {
+      "ai": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.ai",
+      "png": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.png",
+      "preview": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas_preview.png",
+      "psd": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.psd",
+      "svg": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.svg"
     },
     "WTF": {
       "ai": "assets/database/Sch\u00f6nherz/WTF/wtf.ai",
@@ -135,7 +250,7 @@
       "svg": "assets/database/Simonyi/LEGO/LEGO.svg"
     },
     "SEM": {
-      "ai": "assets/database/Simonyi/SEM/sem.ai",
+      "ai": "assets/database/Simonyi/SEM/sem-logo-big.ai",
       "png": "assets/database/Simonyi/SEM/sem.png",
       "preview": "assets/database/Simonyi/SEM/sem_preview.png",
       "svg": "assets/database/Simonyi/SEM/sem.svg"

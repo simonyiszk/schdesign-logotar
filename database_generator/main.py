@@ -8,7 +8,7 @@ config = {
     "database_root": os.path.join("..", "assets", "database"),
     "database_root_url": "assets/database",
     "target_json": os.path.join("..", "assets", "database", "database.json"),
-    "extensions": ["ai", "svg", "png", "ttf", "otf", "jpg", "preview"]
+    "extensions": ["ai", "psd", "svg", "png", "ttf", "otf", "jpg", "preview"]
 }
 
 root = Path(os.path.join(os.path.realpath(os.curdir), config["database_root"]))
