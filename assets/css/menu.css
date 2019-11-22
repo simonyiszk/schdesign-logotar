@@ -124,7 +124,7 @@ nav {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f054";
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
   transition: all 300ms;
   /*text-shadow: -2px 2px 5px #888;*/
 }
