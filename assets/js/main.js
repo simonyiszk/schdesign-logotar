@@ -42,11 +42,33 @@ function getCookie(cname) {
   return "";
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function calculateNavBarPos() {
+  var logoLibrary = document.getElementsByClassName('logo-library')[0];
+  var lw = logoLibrary.offsetWidth;
+  var mw = window.getComputedStyle(logoLibrary, null).getPropertyValue("margin-left");
+  mw = parseInt(mw);
+  var inset = Math.floor((window.innerWidth - lw + mw + 40));
+
+  var menuItemsList = document.getElementsByClassName('menu-items')[0];
+  var brandLogo = document.getElementsByClassName('brand-logo')[0];
+  console.log(inset);
+  menuItemsList.style["right"] = inset + "px";
+  brandLogo.style["left"] = inset + "px";
+}
+
 const init = async() => {
   await db.update();
   buildMenu();
   buildGrid("Simonyi");
+
+  //calculateNavBarPos();
 };
+
+//window.onresize = calculateNavBarPos;
 
 init();
 

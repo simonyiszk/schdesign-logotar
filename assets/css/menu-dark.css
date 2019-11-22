@@ -47,6 +47,7 @@ a:visited {
   display: inline-block;
   width: 46px;
   height: 30px;
+  left: 0px;
 }
 
 .switch input {
@@ -95,4 +96,11 @@ input:checked+.slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
+}
+
+@media screen and (max-width: 930px) {
+  .switch {
+    position: absolute;
+    left: 8px;
+  }
 }

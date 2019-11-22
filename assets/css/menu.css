@@ -28,11 +28,14 @@ body {
 .title {
   font-family: 'schdesign';
   color: #444;
-  font-size: 36px;
+  font-size: 60px;
+  position: relative;
+  top: 4px;
+  left: 0px;
 }
 
 .sch {
-  color: #444;
+  color: #f8485e;
 }
 
 .design {
@@ -53,7 +56,7 @@ nav {
   bottom: 0;
   display: flex;
   justify-content: center;
-  left: 60px;
+  left: 180px;
   position: absolute;
   top: 0;
 }
@@ -86,7 +89,7 @@ nav {
   bottom: 0;
   line-height: 60px;
   position: absolute;
-  right: 60px;
+  right: 180px;
   top: 0;
 }
 
@@ -157,7 +160,25 @@ nav {
   color: #8b8b8b;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1716px) {
+  .menu-items {
+    right: 100px;
+  }
+  .brand-logo {
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .menu-items {
+    right: 60px;
+  }
+  .brand-logo {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 1012px) {
   .menu-items {
     right: 30px;
   }
