@@ -36,7 +36,12 @@ a:visited {
   color: #eee;
 }
 
-.dark>.hidden-menu,
+.dark>.hidden-menu {
+  background: #333;
+  color: #eee;
+  box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.2);
+}
+
 .dark>.hidden-menu a {
   background: #333;
   color: #eee;
@@ -48,6 +53,7 @@ a:visited {
   width: 46px;
   height: 30px;
   left: 0px;
+  transition: all;
 }
 
 .switch input {
@@ -61,9 +67,9 @@ a:visited {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .3s;
-  transition: .3s;
+  background-color: rgb(129, 205, 255);
+  -webkit-transition: all .3s;
+  transition: all .3s;
   border-radius: 18px;
 }
 
@@ -74,18 +80,21 @@ a:visited {
   width: 22px;
   left: 4px;
   bottom: 4px;
-  background-color: #fff;
-  -webkit-transition: .3s;
-  transition: .3s;
+  background-color: rgba(255, 248, 146, 1);
+  -webkit-transition: all .3s;
+  transition: all .3s;
   border-radius: 18px;
+  box-shadow: 0px 0px 1px 1px rgba(255, 248, 146, 1);
 }
 
 .dark>nav>.brand-logo>.switch>.slider:before {
-  background-color: #aaa;
+  background-color: #4440;
+  box-shadow: inset -8px 0px 1px 1px #d9d485, 1px 0px 1px 0px #d9d485;
+  -moz-box-shadow: inset -8px 0px 1px 1px #d9d485, 1px 0px 1px 0px #d9d485;
 }
 
 input:checked+.slider {
-  background-color: #444;
+  background-color: rgb(51, 100, 133);
 }
 
 input:focus+.slider {

@@ -72,14 +72,8 @@ const init = async() => {
 
 init();
 
-document.addEventListener('DOMContentLoaded', function() {
-  var checkbox = document.querySelector('input[type="checkbox"]');
-  var darkMode = getCookie('isDarkMode');
-  var isDarkMode = (darkMode == 'true');
-  if (isDarkMode) checkbox.checked = true;
-  else checkbox.checked = false;
-
-  if (checkbox.checked) {
+function toggleDarkMode(bool) {
+  if (bool) {
     let navBar = document.getElementsByTagName('body')[0];
     let logoLibrary = document.getElementsByClassName('logo-library')[0];
     navBar.classList.toggle("dark", true);
@@ -92,20 +86,19 @@ document.addEventListener('DOMContentLoaded', function() {
     logoLibrary.classList.toggle("dark", false);
     setCookie('isDarkMode', false, 90);
   }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var checkbox = document.querySelector('input[type="checkbox"]');
+  var darkMode = getCookie('isDarkMode');
+  var isDarkMode = (darkMode == 'true');
+  if (isDarkMode) checkbox.checked = true;
+  else checkbox.checked = false;
+
+  toggleDarkMode(checkbox.checked);
 
   checkbox.addEventListener('change', function() {
-    if (checkbox.checked) {
-      let navBar = document.getElementsByTagName('body')[0];
-      let logoLibrary = document.getElementsByClassName('logo-library')[0];
-      navBar.classList.toggle("dark", true);
-      logoLibrary.classList.toggle("dark", true);
-      setCookie('isDarkMode', true, 90);
-    } else {
-      let navBar = document.getElementsByTagName('body')[0];
-      let logoLibrary = document.getElementsByClassName('logo-library')[0];
-      navBar.classList.toggle("dark", false);
-      logoLibrary.classList.toggle("dark", false);
-      setCookie('isDarkMode', false, 90);
-    }
+    toggleDarkMode(checkbox.checked);
   });
+
 });
