@@ -241,11 +241,11 @@
       "preview": "assets/database/Simonyi/HA5KFU/ha5kfu_preview.png",
       "svg": "assets/database/Simonyi/HA5KFU/ha5kfu.svg"
     },
-    "KirDev": {
-      "ai": "assets/database/Simonyi/KirDev/kirdev.ai",
-      "png": "assets/database/Simonyi/KirDev/kidev.png",
-      "preview": "assets/database/Simonyi/KirDev/kidev_preview.png",
-      "svg": "assets/database/Simonyi/KirDev/kidev.svg"
+    "Kir-Dev": {
+      "ai": "assets/database/Simonyi/Kir-Dev/kirdev.ai",
+      "png": "assets/database/Simonyi/Kir-Dev/kirdev.png",
+      "preview": "assets/database/Simonyi/Kir-Dev/kirdev_preview.png",
+      "svg": "assets/database/Simonyi/Kir-Dev/kirdev.svg"
     },
     "LEGO": {
       "ai": "assets/database/Simonyi/LEGO/lego.ai",
