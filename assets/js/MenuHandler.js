@@ -18,8 +18,8 @@ class MenuHandler {
       this._hiddenMenu.innerHTML += html;
     });
 
-    const defaultSelected = this._menuItems.getElementsByTagName("A")[1];
-    const defaultHiddenSelected = this._hiddenMenu.getElementsByTagName("A")[1];
+    const defaultSelected = this._menuItems.getElementsByTagName("A")[3];
+    const defaultHiddenSelected = this._hiddenMenu.getElementsByTagName("A")[3];
     defaultSelected.classList += "menu-active";
     defaultHiddenSelected.classList += "menu-active";
     this._updateFunc(defaultSelected.dataset.group);

@@ -1,40 +1,129 @@
 {
-  "Sch\u00f6nherz": {
-    "Americano": {
-      "ai": "assets/database/Sch\u00f6nherz/Americano/americano.ai",
-      "png": "assets/database/Sch\u00f6nherz/Americano/americano.png",
-      "preview": "assets/database/Sch\u00f6nherz/Americano/americano_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Americano/americano.svg"
+  "KSZK": {
+    "DevTeam": {
+      "ai": "assets/database/KSZK/DevTeam/devteam_1080.ai",
+      "png": "assets/database/KSZK/DevTeam/devteam.png",
+      "preview": "assets/database/KSZK/DevTeam/devteam_preview.png",
+      "svg": "assets/database/KSZK/DevTeam/devteam.svg"
     },
+    "Hallgat\u00f3i Tud\u00e1sb\u00e1zis": {
+      "ai": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis_1080.ai",
+      "png": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.png",
+      "preview": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb_preview.png",
+      "svg": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.svg"
+    },
+    "KSZK Reszort": {
+      "ai": "assets/database/KSZK/KSZK Reszort/reszort_logo_1080.ai",
+      "png": "assets/database/KSZK/KSZK Reszort/kszk.png",
+      "preview": "assets/database/KSZK/KSZK Reszort/kszk_preview.png",
+      "svg": "assets/database/KSZK/KSZK Reszort/kszk.svg"
+    },
+    "NETeam": {
+      "ai": "assets/database/KSZK/NETeam/neteam_1080.ai",
+      "png": "assets/database/KSZK/NETeam/neteam.png",
+      "preview": "assets/database/KSZK/NETeam/neteam_preview.png",
+      "svg": "assets/database/KSZK/NETeam/neteam.svg"
+    },
+    "SecurITeam": {
+      "ai": "assets/database/KSZK/SecurITeam/securiteam_1080.ai",
+      "png": "assets/database/KSZK/SecurITeam/securiteam.png",
+      "preview": "assets/database/KSZK/SecurITeam/securiteam_preview.png",
+      "svg": "assets/database/KSZK/SecurITeam/securiteam.svg"
+    },
+    "Sysadmin": {
+      "ai": "assets/database/KSZK/Sysadmin/sysadmin_1080.ai",
+      "png": "assets/database/KSZK/Sysadmin/sysadmin.png",
+      "preview": "assets/database/KSZK/Sysadmin/sysadmin_preview.png",
+      "svg": "assets/database/KSZK/Sysadmin/sysadmin.svg"
+    }
+  },
+  "SZOR": {
+    "Americano": {
+      "ai": "assets/database/SZOR/Americano/americano.ai",
+      "png": "assets/database/SZOR/Americano/americano.png",
+      "preview": "assets/database/SZOR/Americano/americano_preview.png",
+      "svg": "assets/database/SZOR/Americano/americano.svg"
+    },
+    "Dzs\u00e1jrosz": {
+      "ai": "assets/database/SZOR/Dzs\u00e1jrosz/dszajrosz.ai",
+      "png": "assets/database/SZOR/Dzs\u00e1jrosz/dzsajrosz.png",
+      "preview": "assets/database/SZOR/Dzs\u00e1jrosz/dzsajrosz_preview.png",
+      "svg": "assets/database/SZOR/Dzs\u00e1jrosz/dzsajrosz.svg"
+    },
+    "FoodEx": {
+      "ai": "assets/database/SZOR/FoodEx/foodex.ai",
+      "png": "assets/database/SZOR/FoodEx/foodex.png",
+      "preview": "assets/database/SZOR/FoodEx/foodex_preview.png",
+      "svg": "assets/database/SZOR/FoodEx/foodex.svg"
+    },
+    "Kakas": {
+      "ai": "assets/database/SZOR/Kakas/kakas.ai",
+      "png": "assets/database/SZOR/Kakas/kakas.png",
+      "preview": "assets/database/SZOR/Kakas/kakas_preview.png",
+      "svg": "assets/database/SZOR/Kakas/kakas.svg"
+    },
+    "LaPlace": {
+      "ai": "assets/database/SZOR/LaPlace/laplace.ai",
+      "png": "assets/database/SZOR/LaPlace/laplace.png",
+      "preview": "assets/database/SZOR/LaPlace/laplace_preview.png",
+      "svg": "assets/database/SZOR/LaPlace/laplace.svg"
+    },
+    "L\u00e1ngosch": {
+      "ai": "assets/database/SZOR/L\u00e1ngosch/lalogo.ai",
+      "png": "assets/database/SZOR/L\u00e1ngosch/langosch.png",
+      "preview": "assets/database/SZOR/L\u00e1ngosch/langosch_preview.png",
+      "svg": "assets/database/SZOR/L\u00e1ngosch/langosch.svg"
+    },
+    "Palacsint\u00e1z\u00f3": {
+      "ai": "assets/database/SZOR/Palacsint\u00e1z\u00f3/pala.ai",
+      "png": "assets/database/SZOR/Palacsint\u00e1z\u00f3/pala.png",
+      "preview": "assets/database/SZOR/Palacsint\u00e1z\u00f3/pala_preview.png",
+      "svg": "assets/database/SZOR/Palacsint\u00e1z\u00f3/pala.svg"
+    },
+    "Pizz\u00e1sch": {
+      "ai": "assets/database/SZOR/Pizz\u00e1sch/pizzasch.ai",
+      "png": "assets/database/SZOR/Pizz\u00e1sch/pizzasch.png",
+      "preview": "assets/database/SZOR/Pizz\u00e1sch/pizzasch_preview.png",
+      "svg": "assets/database/SZOR/Pizz\u00e1sch/pizzasch.svg"
+    },
+    "ReggeliSCH": {
+      "ai": "assets/database/SZOR/ReggeliSCH/reggelisch.ai",
+      "png": "assets/database/SZOR/ReggeliSCH/reggelisch.png",
+      "preview": "assets/database/SZOR/ReggeliSCH/reggelisch_preview.png",
+      "svg": "assets/database/SZOR/ReggeliSCH/reggelisch.svg"
+    },
+    "Szauna": {
+      "ai": "assets/database/SZOR/Szauna/szauna.ai",
+      "png": "assets/database/SZOR/Szauna/szauna.png",
+      "preview": "assets/database/SZOR/Szauna/szauna_preview.png",
+      "svg": "assets/database/SZOR/Szauna/szauna.svg"
+    },
+    "V\u00f6d\u00f6r": {
+      "ai": "assets/database/SZOR/V\u00f6d\u00f6r/vodor.ai",
+      "png": "assets/database/SZOR/V\u00f6d\u00f6r/vodor.png",
+      "preview": "assets/database/SZOR/V\u00f6d\u00f6r/vodor_preview.png",
+      "svg": "assets/database/SZOR/V\u00f6d\u00f6r/vodor.svg"
+    },
+    "V\u00f6r\u00f6s Kakas Fogad\u00f3": {
+      "ai": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.ai",
+      "png": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.png",
+      "preview": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas_preview.png",
+      "psd": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.psd",
+      "svg": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.svg"
+    },
+    "WTF": {
+      "ai": "assets/database/SZOR/WTF/wtf.ai",
+      "png": "assets/database/SZOR/WTF/wtf.png",
+      "preview": "assets/database/SZOR/WTF/wtf_preview.png",
+      "svg": "assets/database/SZOR/WTF/wtf.svg"
+    }
+  },
+  "Sch\u00f6nherz": {
     "BBK": {
       "ai": "assets/database/Sch\u00f6nherz/BBK/bbk.ai",
       "png": "assets/database/Sch\u00f6nherz/BBK/bbk.png",
       "preview": "assets/database/Sch\u00f6nherz/BBK/bbk_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/BBK/bbk.svg"
-    },
-    "DevTeam": {
-      "ai": "assets/database/Sch\u00f6nherz/DevTeam/devteam_1080.ai",
-      "png": "assets/database/Sch\u00f6nherz/DevTeam/devteam.png",
-      "preview": "assets/database/Sch\u00f6nherz/DevTeam/devteam_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/DevTeam/devteam.svg"
-    },
-    "Dzs\u00e1jrosz": {
-      "ai": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dszajrosz.ai",
-      "png": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dzsajrosz.png",
-      "preview": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dzsajrosz_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Dzs\u00e1jrosz/dzsajrosz.svg"
-    },
-    "FoodEx": {
-      "ai": "assets/database/Sch\u00f6nherz/FoodEx/foodex.ai",
-      "png": "assets/database/Sch\u00f6nherz/FoodEx/foodex.png",
-      "preview": "assets/database/Sch\u00f6nherz/FoodEx/foodex_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/FoodEx/foodex.svg"
-    },
-    "Hallgat\u00f3i Tud\u00e1sb\u00e1zis": {
-      "ai": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis_1080.ai",
-      "png": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.png",
-      "preview": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.svg"
     },
     "Impulzus": {
       "ai": "assets/database/Sch\u00f6nherz/Impulzus/impulzus.ai",
@@ -60,24 +149,6 @@
       "preview": "assets/database/Sch\u00f6nherz/KFB/kfb_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/KFB/kfb.svg"
     },
-    "KSZK Reszort": {
-      "ai": "assets/database/Sch\u00f6nherz/KSZK Reszort/reszort_logo_1080.ai",
-      "png": "assets/database/Sch\u00f6nherz/KSZK Reszort/kszk.png",
-      "preview": "assets/database/Sch\u00f6nherz/KSZK Reszort/kszk_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/KSZK Reszort/kszk.svg"
-    },
-    "Kakas": {
-      "ai": "assets/database/Sch\u00f6nherz/Kakas/kakas.ai",
-      "png": "assets/database/Sch\u00f6nherz/Kakas/kakas.png",
-      "preview": "assets/database/Sch\u00f6nherz/Kakas/kakas_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Kakas/kakas.svg"
-    },
-    "LaPlace": {
-      "ai": "assets/database/Sch\u00f6nherz/LaPlace/laplace.ai",
-      "png": "assets/database/Sch\u00f6nherz/LaPlace/laplace.png",
-      "preview": "assets/database/Sch\u00f6nherz/LaPlace/laplace_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/LaPlace/laplace.svg"
-    },
     "Lanosch": {
       "ai": "assets/database/Sch\u00f6nherz/Lanosch/lanosch.ai",
       "png": "assets/database/Sch\u00f6nherz/Lanosch/lanosch.png",
@@ -96,41 +167,11 @@
       "preview": "assets/database/Sch\u00f6nherz/Local Heroes/localheroes_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Local Heroes/localheroes.svg"
     },
-    "L\u00e1ngosch": {
-      "ai": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/lalogo.ai",
-      "png": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/langosch.png",
-      "preview": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/langosch_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/L\u00e1ngosch/langosch.svg"
-    },
-    "NETeam": {
-      "ai": "assets/database/Sch\u00f6nherz/NETeam/neteam_1080.ai",
-      "png": "assets/database/Sch\u00f6nherz/NETeam/neteam.png",
-      "preview": "assets/database/Sch\u00f6nherz/NETeam/neteam_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/NETeam/neteam.svg"
-    },
-    "Palacsint\u00e1z\u00f3": {
-      "ai": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala.ai",
-      "png": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala.png",
-      "preview": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Palacsint\u00e1z\u00f3/pala.svg"
-    },
     "Parkett": {
       "ai": "assets/database/Sch\u00f6nherz/Parkett/parkett.ai",
       "png": "assets/database/Sch\u00f6nherz/Parkett/parkett.png",
       "preview": "assets/database/Sch\u00f6nherz/Parkett/parkett_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Parkett/parkett.svg"
-    },
-    "Pizz\u00e1sch": {
-      "ai": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch.ai",
-      "png": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch.png",
-      "preview": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Pizz\u00e1sch/pizzasch.svg"
-    },
-    "ReggeliSCH": {
-      "ai": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch.ai",
-      "png": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch.png",
-      "preview": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/ReggeliSCH/reggelisch.svg"
     },
     "SSSL": {
       "ai": "assets/database/Sch\u00f6nherz/SSSL/sssl_sarkany.ai",
@@ -174,48 +215,11 @@
       "preview": "assets/database/Sch\u00f6nherz/Sch\u00f6rpong/schorpong_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/Sch\u00f6rpong/schorpong.svg"
     },
-    "SecurITeam": {
-      "ai": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam_1080.ai",
-      "png": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam.png",
-      "preview": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/SecurITeam/securiteam.svg"
-    },
-    "Sysadmin": {
-      "ai": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin_1080.ai",
-      "png": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin.png",
-      "preview": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Sysadmin/sysadmin.svg"
-    },
-    "Szauna": {
-      "ai": "assets/database/Sch\u00f6nherz/Szauna/szauna.ai",
-      "png": "assets/database/Sch\u00f6nherz/Szauna/szauna.png",
-      "preview": "assets/database/Sch\u00f6nherz/Szauna/szauna_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/Szauna/szauna.svg"
-    },
     "VIK HK": {
       "ai": "assets/database/Sch\u00f6nherz/VIK HK/VIKHK.ai",
       "png": "assets/database/Sch\u00f6nherz/VIK HK/vikhk.png",
       "preview": "assets/database/Sch\u00f6nherz/VIK HK/vikhk_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/VIK HK/vikhk.svg"
-    },
-    "V\u00f6d\u00f6r": {
-      "ai": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor.ai",
-      "png": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor.png",
-      "preview": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/V\u00f6d\u00f6r/vodor.svg"
-    },
-    "V\u00f6r\u00f6s Kakas Fogad\u00f3": {
-      "ai": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.ai",
-      "png": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.png",
-      "preview": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas_preview.png",
-      "psd": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.psd",
-      "svg": "assets/database/Sch\u00f6nherz/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.svg"
-    },
-    "WTF": {
-      "ai": "assets/database/Sch\u00f6nherz/WTF/wtf.ai",
-      "png": "assets/database/Sch\u00f6nherz/WTF/wtf.png",
-      "preview": "assets/database/Sch\u00f6nherz/WTF/wtf_preview.png",
-      "svg": "assets/database/Sch\u00f6nherz/WTF/wtf.svg"
     }
   },
   "Simonyi": {
