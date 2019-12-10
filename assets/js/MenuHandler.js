@@ -63,7 +63,7 @@ class MenuHandler {
     if (this._isHiddenMenuActive) {
       style.visibility = "hidden";
       style.zIndex = "-1";
-      style.transform = "translateY(-120px)";
+      style.transform = "translateY(-220px)";
     } else {
       style.visibility = "visible";
       style.zIndex = "2";
