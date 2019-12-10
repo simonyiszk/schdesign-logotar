@@ -1,4 +1,71 @@
 {
+  "BME": {
+    "BME Bord\u00f3": {
+      "ai": "assets/database/BME/BME Bord\u00f3/bme.ai",
+      "png": "assets/database/BME/BME Bord\u00f3/BMEBordo.png",
+      "preview": "assets/database/BME/BME Bord\u00f3/BMEBordo_preview.png",
+      "svg": "assets/database/BME/BME Bord\u00f3/BMEBordo.svg"
+    },
+    "BME Kicsi": {
+      "ai": "assets/database/BME/BME Kicsi/bme.ai",
+      "png": "assets/database/BME/BME Kicsi/BMEKicsi.png",
+      "preview": "assets/database/BME/BME Kicsi/BMEKicsi_preview.png",
+      "svg": "assets/database/BME/BME Kicsi/BMEKicsi.svg"
+    },
+    "BME Nagy": {
+      "ai": "assets/database/BME/BME Nagy/bme.ai",
+      "png": "assets/database/BME/BME Nagy/BMENagy.png",
+      "preview": "assets/database/BME/BME Nagy/BMENagy_preview.png",
+      "svg": "assets/database/BME/BME Nagy/BMENagy.svg"
+    },
+    "EMK": {
+      "png": "assets/database/BME/EMK/EMK.png",
+      "preview": "assets/database/BME/EMK/EMK_preview.png",
+      "svg": "assets/database/BME/EMK/EMK.svg"
+    },
+    "EPK": {
+      "ai": "assets/database/BME/EPK/EPK.ai",
+      "png": "assets/database/BME/EPK/EPK.png",
+      "preview": "assets/database/BME/EPK/EPK_preview.png",
+      "svg": "assets/database/BME/EPK/EPK.svg"
+    },
+    "GPK": {
+      "ai": "assets/database/BME/GPK/GPK.ai",
+      "png": "assets/database/BME/GPK/GPK.png",
+      "preview": "assets/database/BME/GPK/GPK_preview.png",
+      "svg": "assets/database/BME/GPK/GPK.svg"
+    },
+    "GTK": {
+      "ai": "assets/database/BME/GTK/GTK.ai",
+      "png": "assets/database/BME/GTK/GTK.png",
+      "preview": "assets/database/BME/GTK/GTK_preview.png",
+      "svg": "assets/database/BME/GTK/GTK.svg"
+    },
+    "KJK": {
+      "ai": "assets/database/BME/KJK/KJK.ai",
+      "png": "assets/database/BME/KJK/KJK.png",
+      "preview": "assets/database/BME/KJK/KJK_preview.png",
+      "svg": "assets/database/BME/KJK/KJK.svg"
+    },
+    "TTK": {
+      "ai": "assets/database/BME/TTK/TTK.ai",
+      "png": "assets/database/BME/TTK/TTK.png",
+      "preview": "assets/database/BME/TTK/TTK_preview.png",
+      "svg": "assets/database/BME/TTK/TTK.svg"
+    },
+    "VBK": {
+      "ai": "assets/database/BME/VBK/VBK.ai",
+      "png": "assets/database/BME/VBK/VBK.png",
+      "preview": "assets/database/BME/VBK/VBK_preview.png",
+      "svg": "assets/database/BME/VBK/VBK.svg"
+    },
+    "VIK": {
+      "ai": "assets/database/BME/VIK/vik.ai",
+      "png": "assets/database/BME/VIK/VIK.png",
+      "preview": "assets/database/BME/VIK/VIK_preview.png",
+      "svg": "assets/database/BME/VIK/VIK.svg"
+    }
+  },
   "KSZK": {
     "DevTeam": {
       "ai": "assets/database/KSZK/DevTeam/devteam_1080.ai",
@@ -124,6 +191,12 @@
       "png": "assets/database/Sch\u00f6nherz/BBK/bbk.png",
       "preview": "assets/database/Sch\u00f6nherz/BBK/bbk_preview.png",
       "svg": "assets/database/Sch\u00f6nherz/BBK/bbk.svg"
+    },
+    "BMEME": {
+      "ai": "assets/database/Sch\u00f6nherz/BMEME/bmeme.ai",
+      "png": "assets/database/Sch\u00f6nherz/BMEME/BMEME.png",
+      "preview": "assets/database/Sch\u00f6nherz/BMEME/BMEME_preview.png",
+      "svg": "assets/database/Sch\u00f6nherz/BMEME/BMEME.svg"
     },
     "Impulzus": {
       "ai": "assets/database/Sch\u00f6nherz/Impulzus/impulzus.ai",
