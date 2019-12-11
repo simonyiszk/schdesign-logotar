@@ -124,6 +124,12 @@
       "preview": "assets/database/SZOR/FoodEx/foodex_preview.png",
       "svg": "assets/database/SZOR/FoodEx/foodex.svg"
     },
+    "Hom\u00e1r": {
+      "ai": "assets/database/SZOR/Hom\u00e1r/Homar.ai",
+      "png": "assets/database/SZOR/Hom\u00e1r/Homar.png",
+      "preview": "assets/database/SZOR/Hom\u00e1r/Homar_preview.png",
+      "svg": "assets/database/SZOR/Hom\u00e1r/Homar.svg"
+    },
     "Kakas": {
       "ai": "assets/database/SZOR/Kakas/kakas.ai",
       "png": "assets/database/SZOR/Kakas/kakas.png",
