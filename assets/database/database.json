@@ -130,12 +130,6 @@
       "preview": "assets/database/SZOR/Hom\u00e1r/Homar_preview.png",
       "svg": "assets/database/SZOR/Hom\u00e1r/Homar.svg"
     },
-    "Kakas": {
-      "ai": "assets/database/SZOR/Kakas/kakas.ai",
-      "png": "assets/database/SZOR/Kakas/kakas.png",
-      "preview": "assets/database/SZOR/Kakas/kakas_preview.png",
-      "svg": "assets/database/SZOR/Kakas/kakas.svg"
-    },
     "LaPlace": {
       "ai": "assets/database/SZOR/LaPlace/laplace.ai",
       "png": "assets/database/SZOR/LaPlace/laplace.png",
