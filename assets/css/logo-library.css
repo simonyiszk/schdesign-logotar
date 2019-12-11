@@ -9,9 +9,9 @@
   margin: 0 auto;
   min-width: 280px;
   position: relative;
-  top: 110px;
+  padding-top: 110px;
   width: 90%;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .logo-library>span {

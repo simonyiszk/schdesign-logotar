@@ -73,17 +73,18 @@ const init = async() => {
 init();
 
 function toggleDarkMode(bool) {
+  let navBar = document.getElementsByTagName('body')[0];
+  let logoLibrary = document.getElementsByClassName('logo-library')[0];
+  let footer = document.getElementsByClassName('footer')[0];
   if (bool) {
-    let navBar = document.getElementsByTagName('body')[0];
-    let logoLibrary = document.getElementsByClassName('logo-library')[0];
     navBar.classList.toggle("dark", true);
     logoLibrary.classList.toggle("dark", true);
+    footer.classList.toggle("dark", true);
     setCookie('isDarkMode', true, 90);
   } else {
-    let navBar = document.getElementsByTagName('body')[0];
-    let logoLibrary = document.getElementsByClassName('logo-library')[0];
     navBar.classList.toggle("dark", false);
     logoLibrary.classList.toggle("dark", false);
+    footer.classList.toggle("dark", false);
     setCookie('isDarkMode', false, 90);
   }
 }

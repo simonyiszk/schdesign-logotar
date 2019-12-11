@@ -93,6 +93,21 @@ a:visited {
   -moz-box-shadow: inset -8px 0px 1px 1px #d9d485, 1px 0px 1px 0px #d9d485;
 }
 
+.footer.dark {
+  background: #333;
+  box-shadow: 0px -3px 8px rgba(255, 255, 255, 0.14);
+}
+
+.footer.dark>div,
+.footer.dark>div>span {
+  color: #666;
+}
+
+.footer.dark>div>span>a,
+.footer.dark>div>span>span {
+  color: #777;
+}
+
 input:checked+.slider {
   background-color: rgb(35, 80, 110);
 }

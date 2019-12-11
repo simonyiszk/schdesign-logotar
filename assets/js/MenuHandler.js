@@ -36,10 +36,10 @@ class MenuHandler {
     let targetElement = event.target;
     if (targetElement.tagName == "A") {
       this.toggleHamburger();
-      for (let i = 0; i < 1; i++) {
-        let tempHiddenMenuActive = document.getElementsByClassName("menu-active")[1];
-        tempHiddenMenuActive.classList.toggle("menu-active");
-      }
+
+      let tempHiddenMenuActive = document.getElementsByClassName("menu-active")[0];
+      tempHiddenMenuActive.classList.toggle("menu-active");
+
       targetElement.classList.toggle("menu-active");
       this._updateFunc(targetElement.dataset.group);
     }
@@ -48,10 +48,10 @@ class MenuHandler {
   menuItemsClick(event) {
     let targetElement = event.target;
     if (targetElement.tagName == "A") {
-      for (let i = 0; i < 1; i++) {
-        let tempMenuActive = document.getElementsByClassName("menu-active")[0];
-        tempMenuActive.classList.toggle("menu-active");
-      }
+
+      let tempMenuActive = document.getElementsByClassName("menu-active")[1];
+      tempMenuActive.classList.toggle("menu-active");
+
       targetElement.classList.toggle("menu-active");
       this._updateFunc(event.target.dataset.group);
     }
