@@ -4,7 +4,7 @@ The logo library of Schönherz Design Stúdió.
 
 http://schdesign-logotar.netlify.com
 
-http://schdesign.hu/logotarbeta
+https://logotar.schdesign.hu/
 
 ## "Database"
 
