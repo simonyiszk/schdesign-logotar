@@ -69,16 +69,16 @@
   },
   "KSZK": {
     "DevTeam": {
-      "ai": "assets/database/KSZK/DevTeam/devteam_1080.ai",
+      "ai": "assets/database/KSZK/DevTeam/devteam.ai",
       "png": "assets/database/KSZK/DevTeam/devteam.png",
       "preview": "assets/database/KSZK/DevTeam/devteam_preview.png",
       "svg": "assets/database/KSZK/DevTeam/devteam.svg"
     },
     "Hallgat\u00f3i Tud\u00e1sb\u00e1zis": {
-      "ai": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis_1080.ai",
-      "png": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.png",
-      "preview": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb_preview.png",
-      "svg": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoitudasb.svg"
+      "ai": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis.ai",
+      "png": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis.png",
+      "preview": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis_preview.png",
+      "svg": "assets/database/KSZK/Hallgat\u00f3i Tud\u00e1sb\u00e1zis/hallgatoi_tudasbazis.svg"
     },
     "KSZK Reszort": {
       "ai": "assets/database/KSZK/KSZK Reszort/reszort_logo_1080.ai",
@@ -93,16 +93,22 @@
       "svg": "assets/database/KSZK/NETeam/neteam.svg"
     },
     "SecurITeam": {
-      "ai": "assets/database/KSZK/SecurITeam/securiteam_1080.ai",
+      "ai": "assets/database/KSZK/SecurITeam/securiteam.ai",
       "png": "assets/database/KSZK/SecurITeam/securiteam.png",
       "preview": "assets/database/KSZK/SecurITeam/securiteam_preview.png",
       "svg": "assets/database/KSZK/SecurITeam/securiteam.svg"
     },
     "Sysadmin": {
-      "ai": "assets/database/KSZK/Sysadmin/sysadmin_1080.ai",
+      "ai": "assets/database/KSZK/Sysadmin/sysadmin.ai",
       "png": "assets/database/KSZK/Sysadmin/sysadmin.png",
       "preview": "assets/database/KSZK/Sysadmin/sysadmin_preview.png",
       "svg": "assets/database/KSZK/Sysadmin/sysadmin.svg"
+    },
+    "VIKWiki": {
+      "ai": "assets/database/KSZK/VIKWiki/VIKWiki.ai",
+      "png": "assets/database/KSZK/VIKWiki/vikwiki.png",
+      "preview": "assets/database/KSZK/VIKWiki/vikwiki_preview.png",
+      "svg": "assets/database/KSZK/VIKWiki/vikwiki.svg"
     }
   },
   "SZOR": {
