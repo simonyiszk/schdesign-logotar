@@ -17,7 +17,7 @@ class GridBuilder {
     const previewType = "preview";
 
     for (const logoType in logos)
-      if (logoType == "preview") continue;
+      if (logoType == previewType) continue;
       else if (logos[logoType])
       content += `<a href="${logos[logoType]}" download>${logoType}</a>`;
 
@@ -25,7 +25,7 @@ class GridBuilder {
               <img src="${logos[previewType]}" />
               <span>
                 <p>${name}</p>
-                <span>${content}</span>
+                <span title="az AI-k ban általában több változat is van">${content}</span>
               </span>
             </span>`;
   }
