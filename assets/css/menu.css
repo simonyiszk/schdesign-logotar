@@ -116,7 +116,8 @@ nav {
   color: #8b8b8b;
 }
 
-.menu-active {
+.menu-active,
+.hidden-menu-active {
   color: #f8485e !important;
 }
 
