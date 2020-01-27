@@ -72,11 +72,11 @@ const init = async() => {
 
 init();
 
-function toggleDarkMode(bool) {
+function toggleDarkMode(isDarkMode) {
   let navBar = document.getElementsByTagName('body')[0];
   let logoLibrary = document.getElementsByClassName('logo-library')[0];
   let footer = document.getElementsByClassName('footer')[0];
-  if (bool) {
+  if (isDarkMode) {
     navBar.classList.toggle("dark", true);
     logoLibrary.classList.toggle("dark", true);
     footer.classList.toggle("dark", true);
