@@ -118,6 +118,12 @@
       "preview": "assets/database/Kult\u00far/BBK/bbk_preview.png",
       "svg": "assets/database/Kult\u00far/BBK/bbk.svg"
     },
+    "Hom\u00e1r": {
+      "ai": "assets/database/Kult\u00far/Hom\u00e1r/Homar.ai",
+      "png": "assets/database/Kult\u00far/Hom\u00e1r/Homar.png",
+      "preview": "assets/database/Kult\u00far/Hom\u00e1r/Homar_preview.png",
+      "svg": "assets/database/Kult\u00far/Hom\u00e1r/Homar.svg"
+    },
     "Impulzus": {
       "ai": "assets/database/Kult\u00far/Impulzus/impulzus.ai",
       "png": "assets/database/Kult\u00far/Impulzus/impulzus.png",
@@ -129,6 +135,12 @@
       "png": "assets/database/Kult\u00far/J\u00e1tsz\u00f3h\u00e1z/jhlogo.png",
       "preview": "assets/database/Kult\u00far/J\u00e1tsz\u00f3h\u00e1z/jhlogo_preview.png",
       "svg": "assets/database/Kult\u00far/J\u00e1tsz\u00f3h\u00e1z/jhlogo.svg"
+    },
+    "LaPlace": {
+      "ai": "assets/database/Kult\u00far/LaPlace/laplace.ai",
+      "png": "assets/database/Kult\u00far/LaPlace/laplace.png",
+      "preview": "assets/database/Kult\u00far/LaPlace/laplace_preview.png",
+      "svg": "assets/database/Kult\u00far/LaPlace/laplace.svg"
     },
     "Local Heroes": {
       "ai": "assets/database/Kult\u00far/Local Heroes/localheroes.ai",
@@ -161,18 +173,6 @@
       "png": "assets/database/SZOR/FoodEx/foodex.png",
       "preview": "assets/database/SZOR/FoodEx/foodex_preview.png",
       "svg": "assets/database/SZOR/FoodEx/foodex.svg"
-    },
-    "Hom\u00e1r": {
-      "ai": "assets/database/SZOR/Hom\u00e1r/Homar.ai",
-      "png": "assets/database/SZOR/Hom\u00e1r/Homar.png",
-      "preview": "assets/database/SZOR/Hom\u00e1r/Homar_preview.png",
-      "svg": "assets/database/SZOR/Hom\u00e1r/Homar.svg"
-    },
-    "LaPlace": {
-      "ai": "assets/database/SZOR/LaPlace/laplace.ai",
-      "png": "assets/database/SZOR/LaPlace/laplace.png",
-      "preview": "assets/database/SZOR/LaPlace/laplace_preview.png",
-      "svg": "assets/database/SZOR/LaPlace/laplace.svg"
     },
     "L\u00e1ngosch": {
       "ai": "assets/database/SZOR/L\u00e1ngosch/lalogo.ai",
