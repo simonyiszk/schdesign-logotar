@@ -5,18 +5,20 @@ class DatabaseService {
   }
 
   async update() {
-    this._database = await (await fetch(this._address, {
-      method: "GET",
-      mode: "cors",
-      headers: {
-        Accept: "application/json"
-      }
-    })).json();
+    this._database = await (
+      await fetch(this._address, {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+    ).json();
   }
 
   get database() {
     if (this._database == null)
-      throw new Error("DatabaseService should be updated before queries.");
+      throw new Error('DatabaseService should be updated before queries.');
 
     return this._database;
   }
@@ -27,5 +29,11 @@ class DatabaseService {
 
   getReszortByName(reszort) {
     return this.database[reszort];
+  }
+  getReszortIDByName(reszort) {
+    return Object.keys(this.database).indexOf(reszort);
+  }
+  getReszortNameByID(id) {
+    return Object.keys(this.database)[id];
   }
 }

@@ -5,7 +5,7 @@ class GridBuilder {
   }
 
   build(groups) {
-    let content = "";
+    let content = '';
     for (name in groups) content += this.buildCard(name, groups[name]);
     this._grid.innerHTML = content;
 
@@ -13,8 +13,8 @@ class GridBuilder {
   }
 
   buildCard(name, logos) {
-    let content = "";
-    const previewType = "preview";
+    let content = '';
+    const previewType = 'preview';
 
     for (const logoType in logos)
       if (logoType == previewType) continue;
@@ -36,7 +36,7 @@ class GridBuilder {
 
     for (let i = 0; i < counterState; i++) {
       await new Promise(resolve => setTimeout(resolve, 50));
-      document.getElementById(`card${i}`).style.transform = "none";
+      document.getElementById(`card${i}`).style.transform = 'none';
     }
   }
 }
