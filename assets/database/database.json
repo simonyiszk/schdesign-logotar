@@ -174,6 +174,12 @@
       "preview": "assets/database/SZOR/FoodEx/foodex_preview.png",
       "svg": "assets/database/SZOR/FoodEx/foodex.svg"
     },
+    "Kakas": {
+      "ai": "assets/database/SZOR/Kakas/Kakas.ai",
+      "png": "assets/database/SZOR/Kakas/kakas.png",
+      "preview": "assets/database/SZOR/Kakas/kakas_preview.png",
+      "svg": "assets/database/SZOR/Kakas/kakas.svg"
+    },
     "L\u00e1ngosch": {
       "ai": "assets/database/SZOR/L\u00e1ngosch/lalogo.ai",
       "png": "assets/database/SZOR/L\u00e1ngosch/langosch.png",
@@ -209,13 +215,6 @@
       "png": "assets/database/SZOR/V\u00f6d\u00f6r/vodor.png",
       "preview": "assets/database/SZOR/V\u00f6d\u00f6r/vodor_preview.png",
       "svg": "assets/database/SZOR/V\u00f6d\u00f6r/vodor.svg"
-    },
-    "V\u00f6r\u00f6s Kakas Fogad\u00f3": {
-      "ai": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.ai",
-      "png": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.png",
-      "preview": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas_preview.png",
-      "psd": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.psd",
-      "svg": "assets/database/SZOR/V\u00f6r\u00f6s Kakas Fogad\u00f3/kakas.svg"
     },
     "WTF": {
       "ai": "assets/database/SZOR/WTF/wtf.ai",
