@@ -57,7 +57,7 @@ class MenuHandler {
       }
       this._menuItems.childNodes[count].classList.toggle('menu-active');
 
-      setCookie('lastGroup', db.getReszortNameByID(count - 1), 90);
+      localStorage.setItem('lastGroup', db.getReszortNameByID(count - 1));
 
       this._updateFunc(targetElement.dataset.group);
     }
@@ -83,7 +83,7 @@ class MenuHandler {
       }
       this._hiddenMenu.childNodes[count].classList.toggle('hidden-menu-active');
 
-      setCookie('lastGroup', db.getReszortNameByID(count - 1), 90);
+      localStorage.setItem('lastGroup', db.getReszortNameByID(count - 1));
 
       this._updateFunc(event.target.dataset.group);
     }

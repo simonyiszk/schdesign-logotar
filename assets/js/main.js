@@ -19,6 +19,7 @@ const buildMenu = () => {
   menu.addEventListeners();
 };
 
+/*
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
@@ -41,6 +42,7 @@ function getCookie(cname) {
   }
   return '';
 }
+*/
 
 function toggleDarkMode(isDarkMode) {
   let navBar = document.getElementsByTagName('body')[0];
@@ -50,17 +52,17 @@ function toggleDarkMode(isDarkMode) {
     navBar.classList.toggle('dark', true);
     logoLibrary.classList.toggle('dark', true);
     footer.classList.toggle('dark', true);
-    setCookie('isDarkMode', true, 90);
+    localStorage.setItem('isDarkMode', true);
   } else {
     navBar.classList.toggle('dark', false);
     logoLibrary.classList.toggle('dark', false);
     footer.classList.toggle('dark', false);
-    setCookie('isDarkMode', false, 90);
+    localStorage.setItem('isDarkMode', false);
   }
 }
 
-const init = async() => {
-  var groupName = getCookie('lastGroup');
+const init = async () => {
+  var groupName = localStorage.getItem('lastGroup');
 
   await db.update();
 
@@ -81,7 +83,7 @@ init();
 
 document.addEventListener('DOMContentLoaded', function() {
   var checkbox = document.querySelector('input[type="checkbox"]');
-  var darkMode = getCookie('isDarkMode');
+  var darkMode = localStorage.getItem('isDarkMode');
   var isDarkMode = darkMode == 'true';
   if (isDarkMode) checkbox.checked = true;
   else checkbox.checked = false;
