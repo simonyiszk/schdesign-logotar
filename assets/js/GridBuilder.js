@@ -22,7 +22,7 @@ class GridBuilder {
       content += `<a href="${logos[logoType]}" download>${logoType}</a>`;
 
     return `<span class="card" id="card${this._counter++}">
-              <img src="${logos[previewType]}" />
+              <img src="${logos[previewType]}" alt="${name} logó" />
               <span>
                 <p>${name}</p>
                 <span title="az AI-k ban általában több változat is van">${content}</span>
