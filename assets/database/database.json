@@ -340,6 +340,10 @@
       "preview": "assets/database/Simonyi/LEGO/LEGO_preview.png",
       "svg": "assets/database/Simonyi/LEGO/LEGO.svg"
     },
+    "MGMT": {
+      "png": "assets/database/Simonyi/MGMT/MGMT.png",
+      "preview": "assets/database/Simonyi/MGMT/MGMT_preview.png"
+    },
     "SEM": {
       "ai": "assets/database/Simonyi/SEM/sem-logo-big.ai",
       "png": "assets/database/Simonyi/SEM/sem.png",
