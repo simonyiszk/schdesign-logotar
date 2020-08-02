@@ -10,7 +10,7 @@ class MenuHandler {
   }
 
   addMenuItems(menuItems, groupID) {
-    menuItems.forEach(item => {
+    menuItems.forEach((item) => {
       const html = `<a href="#" data-group="${item}">${item}</a>`;
       this._menuItems.innerHTML += html;
       this._hiddenMenu.innerHTML += html;
@@ -28,8 +28,8 @@ class MenuHandler {
 
   addEventListeners() {
     this._hamburger.onclick = () => this.toggleHamburger();
-    this._hiddenMenu.onclick = event => this.hiddenMenuClick(event);
-    this._menuItems.onclick = event => this.menuItemsClick(event);
+    this._hiddenMenu.onclick = (event) => this.hiddenMenuClick(event);
+    this._menuItems.onclick = (event) => this.menuItemsClick(event);
   }
 
   hiddenMenuClick(event) {

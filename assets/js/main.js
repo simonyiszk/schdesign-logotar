@@ -2,7 +2,7 @@ const db = new DatabaseService('assets/database/database.json');
 
 const builder = new GridBuilder({ gridClassName: 'logo-library' });
 
-const buildGrid = reszort => {
+const buildGrid = (reszort) => {
   const rows = db.getReszortByName(reszort);
   builder.build(rows);
 };
@@ -81,7 +81,7 @@ const init = async () => {
 
 init();
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var checkbox = document.querySelector('input[type="checkbox"]');
   var darkMode = localStorage.getItem('isDarkMode');
   var isDarkMode = darkMode == 'true';
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggleDarkMode(checkbox.checked);
 
-  checkbox.addEventListener('change', function() {
+  checkbox.addEventListener('change', function () {
     toggleDarkMode(checkbox.checked);
   });
 });

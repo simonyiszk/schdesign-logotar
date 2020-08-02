@@ -54,34 +54,19 @@ def object2json2file(obj, file_name):
 
 
 if __name__ == '__main__':
-
-    """
-    Mire rájöttem hogy ez wtf, holy moly
-    """
-
-    """
-    obj = {
-        reszort.name: {
-            kör.name: {
-                ext: get_file(kör, ext) for ext in config["extensions"]
-            } for kör in reszort.directories
-        } for reszort in root.directories
-    }
-    """
-
     obj = {}
 
     for reszort in root.directories:
 
         if reszort.name != "Temp" and reszort.name != "Ref":
-            asd1 = {}
+            körök = {}
             for kör in reszort.directories:
-                asd2 = {}
+                fájlok = {}
                 for ext in config["extensions"]:
                     fájl = get_file(kör, ext)
-                    asd2[ext] = fájl
-                asd1[kör.name] = asd2
-            obj[reszort.name] = asd1
+                    fájlok[ext] = fájl
+                körök[kör.name] = fájlok
+            obj[reszort.name] = körök
 
     for k1 in list(obj):
         # print(k1)

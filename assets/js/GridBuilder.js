@@ -19,7 +19,7 @@ class GridBuilder {
     for (const logoType in logos)
       if (logoType == previewType) continue;
       else if (logos[logoType])
-      content += `<a href="${logos[logoType]}" download>${logoType}</a>`;
+        content += `<a href="${logos[logoType]}" download>${logoType}</a>`;
 
     return `<span class="card" id="card${this._counter++}">
               <img src="${logos[previewType]}" alt="${name} logó" />
@@ -35,7 +35,7 @@ class GridBuilder {
     this._counter = 0;
 
     for (let i = 0; i < counterState; i++) {
-      await new Promise(resolve => setTimeout(resolve, 50));
+      await new Promise((resolve) => setTimeout(resolve, 50));
       document.getElementById(`card${i}`).style.transform = 'none';
     }
   }
