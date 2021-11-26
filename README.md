@@ -1,0 +1,3 @@
+# schdesign logótár
+
+TODO
