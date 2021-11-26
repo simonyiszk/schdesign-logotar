@@ -1,0 +1,28 @@
+.logo-library.dark>span {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo-library.dark>span,
+.logo-library.dark>span>span p {
+  background-color: #333;
+  color: #eee;
+}
+
+.logo-library.dark>span>span,
+.logo-library.dark>span>span span {
+  border-top: 1px solid #444;
+}
+
+.logo-library.dark>span>span span a {
+  color: #aaa;
+}
+
+.logo-library.dark>span>img {
+  /*filter: brightness(0.5) saturate(2);*/
+  background: #fff;
+}
+
+.logo-library.dark>span>span span a:hover {
+  background: rgba(255, 255, 255, 0.125);
+  color: #ddd;
+}

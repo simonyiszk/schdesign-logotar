@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'schdesign';
+  src: url('../font/schdesign.eot');
+  src: local('schdesign Condensed'), local('schdesign-Condensed'), local('schdesign'), local('schdesign-Cond'), local('schdesign Cond'), url('../font/schdesign.eot?#iefix') format('embedded-opentype'), url('../font/schdesign.woff2') format('woff2'), url('../font/schdesign.woff') format('woff'), url('../font/schdesign.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.dark {
+  color: #ccc;
+  background: #222;
+  /*-webkit-transition: .3s;
+  transition: .3s;*/
+}
+
+.dark>nav {
+  color: #ccc;
+  background: #222;
+  box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.1);
+  /*-webkit-transition: .3s;
+  transition: .3s;*/
+}
+
+.dark>nav>.brand-logo>.sch {
+  color: #eee;
+}
+
+.dark>.hidden-menu {
+  background: #333;
+  color: #eee;
+  box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark>.hidden-menu a {
+  background: #333;
+  color: #eee;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 30px;
+  left: 0px;
+  transition: all;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(129, 205, 255);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 18px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(255, 248, 146, 1);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 18px;
+  box-shadow: 0px 0px 4px 2px rgba(255, 248, 146, 1);
+}
+
+.dark>nav>.brand-logo>.switch>.slider:before {
+  background-color: #4440;
+  box-shadow: inset -8px 0px 1px 1px #d9d485, 1px 0px 1px 0px #d9d485;
+  -moz-box-shadow: inset -8px 0px 1px 1px #d9d485, 1px 0px 1px 0px #d9d485;
+}
+
+.footer.dark {
+  background: #333;
+  box-shadow: 0px -3px 8px rgba(255, 255, 255, 0.14);
+}
+
+.footer.dark>div,
+.footer.dark>div>span {
+  color: #666;
+}
+
+.footer.dark>div>span>a,
+.footer.dark>div>span>span {
+  color: #777;
+}
+
+input:checked+.slider {
+  background-color: rgb(35, 80, 110);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #444;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+@media screen and (max-width: 930px) {
+  .switch {
+    position: absolute;
+    left: 8px;
+  }
+}
