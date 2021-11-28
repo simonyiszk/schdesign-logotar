@@ -8,6 +8,8 @@ import {
     CssBaseline, ThemeProvider,
     useMediaQuery
 } from "@mui/material";
+import Header from "./Header";
+
 
 
 function App() {
@@ -38,6 +40,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <Header/>
         </ThemeProvider>
     );
 }
