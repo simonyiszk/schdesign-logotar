@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -8,12 +8,15 @@ import {
     CssBaseline, ThemeProvider,
     useMediaQuery
 } from "@mui/material";
-import Header from "./Header";
+import Header from "./components/Header";
+import {collections} from "./data";
 
 
 
 function App() {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+    const [page, setPage] = useState(0);
 
     const theme = React.useMemo(
         () =>
@@ -40,7 +43,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Header/>
+            <Header page={page} reszortok={collections} onClick={(value: number) => setPage(value)}/>
         </ThemeProvider>
     );
 }

@@ -1,15 +1,17 @@
-import {Tabs, Theme, ThemeProvider} from "@mui/material";
-import LinkTab from "./LinkTab";
+import {Tab, Tabs, Theme, ThemeProvider} from "@mui/material";
 import React from "react";
-import {reszortok} from "../data";
+import {ICollection} from "../data";
 
 interface NavTabsPros {
     theme: Theme
+    reszortok: Array<ICollection>
+    page: number
+    onClick: (value: number) => void
 }
 
 function NavTabs(props: NavTabsPros) {
-    const {theme} = props
-    const [value, setValue] = React.useState(0);
+    const {theme, reszortok, page, onClick} = props
+    const [value, setValue] = React.useState(page);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
@@ -18,8 +20,8 @@ function NavTabs(props: NavTabsPros) {
     return (
         <ThemeProvider theme={theme}>
             <Tabs value={value} onChange={handleChange} variant="scrollable">
-                {reszortok.map((reszort) =>
-                    <LinkTab label={reszort} href={"/"} />
+                {reszortok.map((reszort, index) =>
+                    <Tab label={reszort.name} key={index} onClick={() => onClick(index)} />
                 )}
             </Tabs>
         </ThemeProvider>
