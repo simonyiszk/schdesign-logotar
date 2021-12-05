@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {
-    AppBar, Box, createTheme, IconButton, List, ListItem, ListItemButton, ListItemText, MenuItem, Slide,
-    styled, SwipeableDrawer, Tab, Toolbar,
+    AppBar, Box, createTheme, IconButton, List, ListItemButton, ListItemText, Slide,
+    styled, SwipeableDrawer, Toolbar,
     Typography,
     useMediaQuery,
     useScrollTrigger, useTheme
