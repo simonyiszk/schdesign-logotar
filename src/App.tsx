@@ -58,7 +58,7 @@ function App() {
     const theme = React.useMemo(
         () =>
             createTheme(prefersDarkMode ? darkTheme : lightTheme),
-        [prefersDarkMode],
+        [darkTheme, lightTheme, prefersDarkMode],
     );
 
     return (
