@@ -8,8 +8,9 @@ import {
     CssBaseline, ThemeProvider,
     useMediaQuery
 } from "@mui/material";
-import Header from "./components/Header";
-import {collections} from "./data";
+import Header from "./components/Header/Header";
+import {collections} from "./data/data";
+import LogoLibrary from "./containers/LogoLibrary";
 
 
 
@@ -18,25 +19,45 @@ function App() {
 
     const [page, setPage] = useState(0);
 
+    const lightTheme = createTheme({
+        palette: {
+            mode: 'light',
+            primary: {
+                light: '#ff7e8b',
+                main: '#f8485e',
+                dark: '#bf0035',
+                contrastText: '#fff',
+            },
+            secondary: {
+                light: '#acb8ff',
+                main: '#7b88cc',
+                dark: '#4b5b9b',
+                contrastText: '#000',
+            },
+        },
+    })
+
+    const darkTheme = createTheme({
+        palette: {
+            mode: 'dark',
+            primary: {
+                light: '#acb8ff',
+                main: '#7b88cc',
+                dark: '#4b5b9b',
+                contrastText: '#000',
+            },
+            secondary: {
+                light: '#ff7e8b',
+                main: '#f8485e',
+                dark: '#bf0035',
+                contrastText: '#fff',
+            },
+        },
+    })
+
     const theme = React.useMemo(
         () =>
-            createTheme({
-                palette: {
-                    mode: prefersDarkMode ? 'dark' : 'light',
-                    primary: {
-                        light: '#ff7e8b',
-                        main: '#f8485e',
-                        dark: '#bf0035',
-                        contrastText: '#fff',
-                    },
-                    secondary: {
-                        light: '#acb8ff',
-                        main: '#7b88cc',
-                        dark: '#4b5b9b',
-                        contrastText: '#000',
-                    },
-                },
-            }),
+            createTheme(prefersDarkMode ? darkTheme : lightTheme),
         [prefersDarkMode],
     );
 
@@ -44,6 +65,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header page={page} reszortok={collections} onClick={(value: number) => setPage(value)}/>
+            <LogoLibrary key={page} logos={collections[page].logos} />
         </ThemeProvider>
     );
 }

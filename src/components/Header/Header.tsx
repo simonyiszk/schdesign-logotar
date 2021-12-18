@@ -7,9 +7,9 @@ import {
     useScrollTrigger, useTheme
 } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import NavTabs from "./NavTabs";
-import Logo from "./Logo";
-import {ICollection} from "../data";
+import NavTabs from "../NavTabs";
+import BrandLogo from "../BrandLogo";
+import {ICollection} from "../../data/data";
 
 interface Props {
     children: React.ReactElement;
@@ -48,11 +48,9 @@ function Header(props: HeaderProps) {
                     primary: {
                         main: '#ffffff',
                     },
-                    ...(theme.palette.mode === "dark" && {
-                        text: {
-                            secondary: 'rgba(255, 255, 255, 0.7)'
-                        }
-                    }),
+                    text: {
+                        secondary: 'rgba(255, 255, 255, 0.7)'
+                    },
                 },
             })
     const isMobile = useMediaQuery(navTabsTheme.breakpoints.down("sm"));
@@ -79,6 +77,10 @@ function Header(props: HeaderProps) {
             <HideOnScroll>
                 <AppBar position="fixed" sx={{backgroundColor: appBarBgColor}}>
                     <Toolbar sx={{display: 'flex', justifyContent: 'space-between' }}>
+                        <BrandLogo mr={isMobile ? 0 : 2}/>
+                        <Typography variant="h6" sx={{ flexGrow: isMobile ? 0 : 1 }}>
+                            Logótár
+                        </Typography>
                         {isMobile ? (
                             <IconButton
                                 size="large"
@@ -90,21 +92,13 @@ function Header(props: HeaderProps) {
                                 <MenuIcon />
                             </IconButton>
                         ) : (
-                            <Logo mr={2}/>
-                        )}
-                        <Typography variant="h6" sx={{ flexGrow: isMobile ? 0 : 1 }}>
-                            Logótár
-                        </Typography>
-                        {isMobile ? (
-                            <Logo mr={0}/>
-                        ) : (
                             <NavTabs theme={navTabsTheme} reszortok={reszortok} page={page} onClick={onClick}/>
                         )}
 
                         <SwipeableDrawer
                             disableBackdropTransition={!iOS}
                             disableDiscovery={iOS}
-                            anchor={"left"}
+                            anchor={"right"}
                             open={state}
                             onClose={toggleDrawer(false)}
                             onOpen={toggleDrawer(true)}

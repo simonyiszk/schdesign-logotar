@@ -1,6 +1,6 @@
 import {Tab, Tabs, Theme, ThemeProvider} from "@mui/material";
 import React from "react";
-import {ICollection} from "../data";
+import {ICollection} from "../data/data";
 
 interface NavTabsPros {
     theme: Theme
