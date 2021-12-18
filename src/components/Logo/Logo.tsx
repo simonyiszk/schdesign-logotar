@@ -33,7 +33,6 @@ function Logo(props: LogoProps) {
     const img = new Image()
     img.src = preview === "" ? "https://dummyimage.com/280x210/999/fff" : preview
     img.onload = () => {
-        console.log("loaded")
         setSrc(preview === "" ? "https://dummyimage.com/280x210/999/fff" : preview)
     }
 
