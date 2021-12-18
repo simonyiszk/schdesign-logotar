@@ -20,7 +20,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "BME Bordó",
-                preview: "",
+                preview: "/preview/BMEBordo_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -28,7 +28,7 @@ const collections: Array<ICollection> = [
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1L46FsuGVKBFx3-vGSZjQiGVz3qxwuLt7",
                     },
                     {
                         name: "svg",
@@ -38,7 +38,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "BME Kicsi",
-                preview: "",
+                preview: "/preview/BMEKicsi_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -56,7 +56,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "BME Nagy",
-                preview: "",
+                preview: "/preview/BMENagy_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -74,7 +74,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "EMK",
-                preview: "",
+                preview: "/preview/EMK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -92,7 +92,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "EPK",
-                preview: "",
+                preview: "/preview/EPK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -110,7 +110,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "GPK",
-                preview: "",
+                preview: "/preview/GPK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -128,7 +128,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "GTK",
-                preview: "",
+                preview: "/preview/GTK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -146,7 +146,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "KJK",
-                preview: "",
+                preview: "/preview/KJK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -164,7 +164,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "TTK",
-                preview: "",
+                preview: "/preview/TTK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -182,7 +182,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "VBK",
-                preview: "",
+                preview: "/preview/VBK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -200,7 +200,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "VIK",
-                preview: "",
+                preview: "/preview/VIK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -222,8 +222,8 @@ const collections: Array<ICollection> = [
         name: "bulis",
         logos: [
             {
-                name: "Bulis reszort",
-                preview: "",
+                name: "Bulis Reszort",
+                preview: "/preview/BulisReszort_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -241,7 +241,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Dezső Buli",
-                preview: "",
+                preview: "/preview/DezsőBuli_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -259,7 +259,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Just Dance",
-                preview: "",
+                preview: "/preview/JustDance_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -277,7 +277,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Lanosch",
-                preview: "",
+                preview: "/preview/Lanosch_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -295,7 +295,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "LevelUp",
-                preview: "",
+                preview: "/preview/LevelUp_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -313,7 +313,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Parkett",
-                preview: "",
+                preview: "/preview/Parkett_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -331,7 +331,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Schorpong",
-                preview: "",
+                preview: "/preview/Schorpong_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -349,7 +349,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Szakest",
-                preview: "",
+                preview: "/preview/Szakest_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -372,7 +372,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "KFB",
-                preview: "",
+                preview: "/preview/KFB_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -390,7 +390,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "KOFER",
-                preview: "",
+                preview: "/preview/KOFER_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -408,7 +408,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SternenSchau",
-                preview: "",
+                preview: "/preview/SternenSchau_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -426,7 +426,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Szita",
-                preview: "",
+                preview: "/preview/Szita_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -449,7 +449,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "DevTeam",
-                preview: "",
+                preview: "/preview/DevTeam_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -467,7 +467,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Hallgatói Tudásbázis",
-                preview: "",
+                preview: "/preview/HallgatóiTudásbázis_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -485,7 +485,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "KSZK Reszort",
-                preview: "",
+                preview: "/preview/KSZKReszort_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -503,7 +503,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "NETeam",
-                preview: "",
+                preview: "/preview/NETeam_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -521,7 +521,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SecurITeam",
-                preview: "",
+                preview: "/preview/SecurITeam_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -539,7 +539,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Sysadmin",
-                preview: "",
+                preview: "/preview/Sysadmin_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -557,7 +557,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "VIKWiki",
-                preview: "",
+                preview: "/preview/VIKWiki_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -580,7 +580,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "BBK",
-                preview: "",
+                preview: "/preview/BBK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -598,7 +598,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Bűvész Kör",
-                preview: "",
+                preview: "/preview/BűvészKör_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -616,7 +616,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Impulzus",
-                preview: "",
+                preview: "/preview/Impulzus_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -634,7 +634,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Játszóház",
-                preview: "",
+                preview: "/preview/Játszóház_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -652,7 +652,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Kultúr Reszort",
-                preview: "",
+                preview: "/preview/KultúrReszort_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -670,7 +670,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "LaPlace",
-                preview: "",
+                preview: "/preview/LaPlace_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -688,7 +688,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Local Heroes",
-                preview: "",
+                preview: "/preview/LocalHeroes_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -706,7 +706,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "MMMK",
-                preview: "",
+                preview: "/preview/MMMK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -729,7 +729,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "Americano",
-                preview: "",
+                preview: "/preview/Americano_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -747,7 +747,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Dzsájrosz",
-                preview: "",
+                preview: "/preview/Dzsájrosz_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -765,7 +765,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Edénykölcsönző",
-                preview: "",
+                preview: "/preview/Edénykölcsönző_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -783,7 +783,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "FoodEx",
-                preview: "",
+                preview: "/preview/FoodEx_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -801,7 +801,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Hajvágósch",
-                preview: "",
+                preview: "/preview/Hajvágósch_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -819,7 +819,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Kakas",
-                preview: "",
+                preview: "/preview/Kakas_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -837,7 +837,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Lángosch",
-                preview: "",
+                preview: "/preview/Lángosch_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -855,7 +855,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Palacsintázó",
-                preview: "",
+                preview: "/preview/Palacsintázó_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -873,7 +873,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Pizzásch",
-                preview: "",
+                preview: "/preview/Pizzásch_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -891,7 +891,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Pulcsi és Foltmékör",
-                preview: "",
+                preview: "/preview/PulcsiésFoltmékör_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -909,7 +909,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "ReggeliSCH",
-                preview: "",
+                preview: "/preview/ReggeliSCH_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -927,7 +927,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SZOR Reszort",
-                preview: "",
+                preview: "/preview/SZORReszort_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -945,7 +945,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Szauna",
-                preview: "",
+                preview: "/preview/Szauna_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -963,7 +963,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Vödör",
-                preview: "",
+                preview: "/preview/Vödör_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -981,7 +981,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "WTF",
-                preview: "",
+                preview: "/preview/WTF_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1004,7 +1004,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "BMEME",
-                preview: "",
+                preview: "/preview/BMEME_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1022,7 +1022,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Homar",
-                preview: "",
+                preview: "/preview/Homar_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1040,7 +1040,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "KB-PR",
-                preview: "",
+                preview: "/preview/KB-PR_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1058,7 +1058,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SSSL",
-                preview: "",
+                preview: "/preview/SSSL_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1076,7 +1076,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SVK",
-                preview: "",
+                preview: "/preview/SVK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1094,7 +1094,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Schönherz",
-                preview: "",
+                preview: "/preview/Schönherz_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1112,7 +1112,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Schönherz Body",
-                preview: "",
+                preview: "/preview/SchönherzBody_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1130,7 +1130,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Schönherz Bázis",
-                preview: "",
+                preview: "/preview/SchönherzBázis_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1148,7 +1148,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Schönherz Iskolaszövetkezet",
-                preview: "",
+                preview: "/preview/SchönherzIskolaszövetkezet_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1166,7 +1166,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "VIK HK",
-                preview: "",
+                preview: "/preview/VIKHK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1189,7 +1189,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "AC",
-                preview: "",
+                preview: "/preview/AC_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1207,7 +1207,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "BSS",
-                preview: "",
+                preview: "/preview/BSS_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1225,7 +1225,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "HA5KFU",
-                preview: "",
+                preview: "/preview/HA5KFU_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1243,7 +1243,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Kir-Dev",
-                preview: "",
+                preview: "/preview/Kir-Dev_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1261,7 +1261,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "LEGO",
-                preview: "",
+                preview: "/preview/LEGO_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1279,7 +1279,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "MGMT",
-                preview: "",
+                preview: "/preview/MGMT_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1297,7 +1297,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SEM",
-                preview: "",
+                preview: "/preview/SEM_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1315,7 +1315,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "SPOT",
-                preview: "",
+                preview: "/preview/SPOT_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1333,7 +1333,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Simonyi",
-                preview: "",
+                preview: "/preview/Simonyi_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1351,7 +1351,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "schdesign",
-                preview: "",
+                preview: "/preview/schdesign_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1374,7 +1374,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "DSK",
-                preview: "",
+                preview: "/preview/DSK_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1392,7 +1392,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Schönherz Airsoft Team",
-                preview: "",
+                preview: "/preview/SchönherzAirsoftTeam_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1410,7 +1410,7 @@ const collections: Array<ICollection> = [
             },
             {
                 name: "Általános szertár",
-                preview: "",
+                preview: "/preview/Általánosszertár_preview.png",
                 links: [
                     {
                         name: "ai",
