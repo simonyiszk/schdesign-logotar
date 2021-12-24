@@ -20,7 +20,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "BME Bordó",
-                preview: "/preview/BMEBordo_preview.png",
+                preview: "/preview/BMEBordó_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -615,8 +615,26 @@ const collections: Array<ICollection> = [
                 ],
             },
             {
-                name: "Impulzus",
-                preview: "/preview/Impulzus_preview.png",
+                name: "Impulzus új",
+                preview: "/preview/Impulzus-új_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "Impulzus régi",
+                preview: "/preview/Impulzus-régi_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -854,6 +872,24 @@ const collections: Array<ICollection> = [
                 ],
             },
             {
+                name: "Lángosch üres",
+                preview: "/preview/Lángosch-üres_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
                 name: "Palacsintázó",
                 preview: "/preview/Palacsintázó_preview.png",
                 links: [
@@ -1075,8 +1111,44 @@ const collections: Array<ICollection> = [
                 ],
             },
             {
-                name: "SVK",
-                preview: "/preview/SVK_preview.png",
+                name: "SVK háttér",
+                preview: "/preview/SVK-háttér_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "SVK kék",
+                preview: "/preview/SVK-kék_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "SVK sötétkék",
+                preview: "/preview/SVK-sötétkék_preview.png",
                 links: [
                     {
                         name: "ai",
@@ -1350,8 +1422,62 @@ const collections: Array<ICollection> = [
                 ],
             },
             {
-                name: "schdesign",
-                preview: "/preview/schdesign_preview.png",
+                name: "schdesign fehér rózsaszín",
+                preview: "/preview/schdesign-fehér-rózsaszín_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "schdesign fekete",
+                preview: "/preview/schdesign-fekete_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "schdesign szürke fehér",
+                preview: "/preview/schdesign-szürke-fehér_preview.png",
+                links: [
+                    {
+                        name: "ai",
+                        url: "",
+                    },
+                    {
+                        name: "png",
+                        url: "",
+                    },
+                    {
+                        name: "svg",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "schdesign szürke rózsaszín",
+                preview: "/preview/schdesign-szürke-rózsaszín_preview.png",
                 links: [
                     {
                         name: "ai",
