@@ -20,7 +20,7 @@ const collections: Array<ICollection> = [
         logos: [
             {
                 name: "BME",
-                preview: "/preview/BMEKicsi.png",
+                preview: "/preview/BMEKicsi_preview.png",
                 links: [
                     {
                         name: "ai",
