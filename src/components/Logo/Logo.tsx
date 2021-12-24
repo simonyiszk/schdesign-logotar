@@ -54,7 +54,7 @@ function Logo(props: LogoProps) {
 
 
             <CardContent>
-                <Typography gutterBottom variant="h6" component="div" align={"center"}>
+                <Typography component="div" align={"center"}>
                     {name}
                 </Typography>
             </CardContent>
