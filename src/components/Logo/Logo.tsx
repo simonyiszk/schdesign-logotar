@@ -41,7 +41,7 @@ function Logo(props: LogoProps) {
             { src === "" ? (
                 <Skeleton animation="wave" variant="rectangular" width={280} height={210} />
             ) : (
-                <CardMedia sx={{width: 280, height: 210, display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <CardMedia sx={{width: 280, height: 210, display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "white"}}>
                     <img
                         style={{objectFit: "contain"}}
                         width={280 - 20}
