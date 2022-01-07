@@ -24,15 +24,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=11tpui0gbuc6TpSK6EQRTTKEQyP9BWUjG",
                     },
                     {
                         name: "png",
-                        url: "https://drive.google.com/uc?export=download&id=1L46FsuGVKBFx3-vGSZjQiGVz3qxwuLt7",
+                        url: "https://drive.google.com/uc?export=download&id=1P4DOjblMInvbOlN6FXHRGvssAukcfdRu",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1bKuy2Ad2K5ZlnQvCg9lKEejy-nBZJhST",
                     },
                 ],
             },

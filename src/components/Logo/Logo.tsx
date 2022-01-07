@@ -7,7 +7,7 @@ import {
     Typography
 } from "@mui/material";
 import {ILink} from "../../data/data";
-import React from "react";
+import React, {useEffect} from "react";
 
 interface LogoProps {
     name: string
@@ -15,11 +15,12 @@ interface LogoProps {
     links: Array<ILink>
 }
 
-function downloadFile(url: string) {
-    console.log(url)
+function downloadFile(e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLButtonElement>, name: string, url: string, extension: string) {
+    e.preventDefault()
 
     const link = document.createElement("a")
     link.href = url
+    link.download = name + "." + extension
     link.click()
 }
 
@@ -29,12 +30,14 @@ function Logo(props: LogoProps) {
 
     const [src, setSrc] = React.useState("");
 
-
-    const img = new Image()
-    img.src = preview === "" ? "https://dummyimage.com/280x210/999/fff" : preview
-    img.onload = () => {
-        setSrc(preview === "" ? "https://dummyimage.com/280x210/999/fff" : preview)
-    }
+    useEffect(() => {
+        const dummyImgUrl = "https://dummyimage.com/280x210/999/fff"
+        const img = new Image()
+        img.src = preview === "" ? dummyImgUrl : preview
+        img.onload = () => {
+            setSrc(img.src)
+        }
+    })
 
     return (
         <Card sx={{ maxWidth: 280 }}>
@@ -60,7 +63,13 @@ function Logo(props: LogoProps) {
             </CardContent>
             <CardActions sx={{ display: 'flex', justifyContent: 'space-around' }}>
                 {links.map((link, index) =>
-                    <Button key={index} onClick={() => downloadFile(link.url)}>{link.name}</Button>
+                    <Button
+                        disabled={link.url === ""}
+                        href={link.url} key={index}
+                        onClick={(e) => downloadFile(e, name, link.url, link.name)}
+                    >
+                        {link.name}
+                    </Button>
                 )}
             </CardActions>
         </Card>
