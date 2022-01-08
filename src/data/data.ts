@@ -42,15 +42,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Dn16_XbQK2L33ls4OsLY0xvnVVedCXDA",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1kuo4RdZ27mdGcTOdBhQGxodzGs3JGyQK",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1pMV-1kxu6yp5VVPQaTIf79CNejULczwf",
                     },
                 ],
             },
@@ -60,15 +60,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=13riSzHY8uT4e5YKYMQ0YlJKBg3nmP9p5",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=17svck7dps4VJ__YfKlMZ0DZZG-su5Kb_",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1sXFpBBQmmXI7XoIN5tz3ffaIX6c5ZNu0",
                     },
                 ],
             },
@@ -78,15 +78,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1gFoRgK5359PPjmr8xu6iZ7s5HL6ZgSSP",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1tzxRWyDTk3gB3apUl1X3VBf-DrKlQa2J",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1ClkzSvrEdM4GFjER0e8WlxcNO396ie2T",
                     },
                 ],
             },
@@ -96,15 +96,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1d474nPShj16sk1OAZ7v9YppyxtCJP8ni",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1fXEtIjBCLt2k-cumNyUQF-Dokxzp6G6M",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1PtfyrwHTnU_Xi3qQs9vBoGzv1Zb4v2ye",
                     },
                 ],
             },
@@ -114,15 +114,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Mty0jmb8oYMA4NyJR3QQyKeN_gJfoDqX",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1U1_QMulmqroi5CpS8Ii5hgs6BFpn5cLh",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1cegrDZ6sLgPfwOhznyhhmWAebqu8y5lr",
                     },
                 ],
             },
@@ -132,15 +132,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1gvhjIKQXIRT0q1-jZFFy_QmFe8NFYsQ7",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1vAnnse43PKZ73gmjvMvzs9BjThKjg7sd",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1LwAv7OJo7Rt8Yf0BIuJFrSodinW0kdU4",
                     },
                 ],
             },
@@ -150,15 +150,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1uTRNMIjIP9XgSUDmKECYaxRNm5EY5gxj",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1i_CtgFATOA4He11IZG3APiyaKcgGndR3",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=13AWEdEI2R9Sg7-hcWeGwGgI2DcQEH5ya",
                     },
                 ],
             },
@@ -168,15 +168,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1iQ7535NWsqG_QMHW9knsfqGhEs_TTihs",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1pNBLs-cgk9lj094AF6QU0MEZz82yOcCt",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1qgMPbBeElgoEZaD_vp8sgLH7ne5b5zJE",
                     },
                 ],
             },
@@ -191,15 +191,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1xIUi1-vbOK-Yi6YF-k9P2kguQr7RdwNl",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1l9Dj06QhoH8ZZgsoo3Q_92Qk6ZAqfDWq",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Gfy9QoQE7OjUGn5ud3Uc172Qn9IMXr00",
                     },
                 ],
             },
@@ -209,15 +209,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1m1tMC_F1B3FZhDXVTR_RyOzqs2EHfFZA",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1NLjZ8EB5FjhZu-LAF1n8D5hzHJLDLJ2z",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1a-3zv9al4yW_FknpMLC95eww4wrErrBu",
                     },
                 ],
             },
@@ -227,15 +227,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1eA-U7K7NTnRL_cOg5qMht4qm0YBVgpWE",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1box15ivAD_H5I8zlPFXYpvT1Dhg0d_0y",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1wXlLxPkU8pbecyTIS8DJBRUF2soPaGAR",
                     },
                 ],
             },
@@ -245,15 +245,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Ci6t7_5Cl2PkL2BqEsEJs5VxfZuvcEVP",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1i2TYmueI14mQ1D0zKJrs-BTu81wH4ST8",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1CYwHPHjkq8FAOY41-YX3AdSlbAjcXTnv",
                     },
                 ],
             },
@@ -263,15 +263,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1QbvrtmFaR7hWOhtJkxGVzHsmXpIcAHRo",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=167CEtW7sG3gEhoUMmBaEvdUSEqClqI-E",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1PJJwR6UbCLeZxh6mO0O74jiezTVxt7Uh",
                     },
                 ],
             },
@@ -281,15 +281,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1wVvoDCKvhXiJMpfgmo1SLuVLyKbhNPwA",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Cwq0_-PZ0dxRQR5jzdBXCZR9CG-E08gU",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1DTfUFXFdKspYLFBQ349suRIxC6IFaZ_F",
                     },
                 ],
             },
@@ -299,15 +299,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=10lM06n-EMazQssvrQoqFS0gfLb5qNLuc",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1vc5WJASZDgYBceqn3iwlEkkh6pU0M_J1",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1t0_rqZwM7mcunH1mO-UA4Isx9Fv5vBke",
                     },
                 ],
             },
@@ -317,15 +317,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1ukqg90ZX4rWz9i7lKWyo5NsT2a0833vE",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1bLEELlH_tJC2OX_uTCuVWte-57Lyj5MQ",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1poOq4ngcS4GNbaic-YPocXpyDnoHG0Nq",
                     },
                 ],
             },
@@ -340,15 +340,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1by23iPhcZfzBIRmZTc1yYpBkEfq2jFd4",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1cO-GaDThZHF0wk6aKPWpYmUIOt1n_fjo",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1SCgkI-BPDxwIwpUdRGM5UuuKA35Nz7xw", 
                     },
                 ],
             },
@@ -358,15 +358,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1JCbctI1x0KoLcYDbhbAlhUZlQd8zdo8N",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1pRJOGca-Rlvl4xGLKHFbMJC_HnUuSvFW",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1AstGevtng0hgbmQFeXMTm19ZKaBzggs1",
                     },
                 ],
             },
@@ -376,15 +376,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1bmCN-3S4HcgbtE7E5SvKuM4cf9Af20eU",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1BZFaDwgoh8aW89eF0ElXL3gFDWf99qce",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1phaXo-Vg8U1UzbyWvziX3QXcWr5s_K0n",
                     },
                 ],
             },
@@ -394,15 +394,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Trt4X8ZyYQSlyMu7F5DGH3pA-ZLKQQ-n",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1uX3XqLg_jIDdc8Smoj3RwESAAMpnqckn",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1-0y-lTDM2yKM0sbQ3x1UjDmDYNELEADJ",
                     },
                 ],
             },
@@ -417,15 +417,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1EA14GMs_g77SFmmesxS-L7kadfgs5IPY",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1QQL2O0_g0Vj7SwV_-LvmiGsSdLXxTNNc",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1tglFCT27o9EVcmcsV_4wY9wiDfKRPZPN",
                     },
                 ],
             },
@@ -435,15 +435,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1pmDrvhsm1b4jh0YNg6FENNbAhGMtbdGb",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1kUe1ItGAeZU80ZBWkyVOhvHpUxJuf1DF",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1IVfJVwCXW-AoSYsy7ByFQaVaiEw4jQL6",
                     },
                 ],
             },
@@ -453,15 +453,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1D2NTpKNm_2YJjUsuyW2RQ2Eiwizc4xpw",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1yUnKyrrXLinYkWU4K1Wy7VvauynYhAQH",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1aotmgwDvIS9V1liDCiQ9ciz-GzSQ3V8-",
                     },
                 ],
             },
@@ -471,15 +471,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Uy9FoufO8v1IWS9splZT1mERQ-BRxYPb",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1A4paeQftuagDlsgpaIFbvaP-aTfdrP16",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1eUuqRKaJxuErCY9wwrggbPPLX-w1Md5s",
                     },
                 ],
             },
@@ -489,15 +489,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=18uEdUNZqwn-JrVVlFhSJ5JjoDqOA8ya0",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1V8cD7_ED-PtUB73HQPaIlymnFxOuMJn_",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Ua8tA8WdkwWwi_RSOvSRr9FkAP9QijdO",
                     },
                 ],
             },
@@ -507,15 +507,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1J0akkx0QuTImelcdb9ttqGQf_QynX31O",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Dyjfl3yqaJCvteWikN5WN1u343xfcwxw",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Ehxo3-EQL5cC5UqmInfpip_e5Bp688Hz",
                     },
                 ],
             },
@@ -525,15 +525,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1IfqYFLhRRD_3mjsB_9OGNPXky5iIl8r6",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1xpS4-2D3H2nHvqpRPaMdyY7A64a56-sx",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Nj9Az9GiGFCF6S6BC29eG9sFfUOB928b",
                     },
                 ],
             },
@@ -548,15 +548,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1W2bmfR4Fjs4xW_G0ud7fyrhosxwjeQzW",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1XkPCV_xyNege7EocNGWyAexuAnMB2vQq",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1dwmEGR49jzmmIFwUqDJ8HKDIlJiYOhc8",
                     },
                 ],
             },
@@ -566,15 +566,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1UQhOemXM4te6o5zo2YVKrd5AAQM6vp6j",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1MVHyL-CrP5QTJOoLoaEdSI-kebKrvCwl",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1y-sQps0iwI0jGi9UocVXDFmTRrjMHlKc",
                     },
                 ],
             },
@@ -584,15 +584,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1-JzRWCqwzHYlk9H2jfk1fEsfBdcKqUzg",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1qzvv--kxFRw0fN3MImieA7dtUvnOfIqG",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=13ZnoFPyojc0nVG40MIdwJtuHE6X8r_Vp",
                     },
                 ],
             },
@@ -602,15 +602,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1-0GDKPqih9K1H1thxwxT5EajsBgFQly9",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1rGSi8nuUvbniPg7l2h3JNymprP39t3Ab",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1oB3JkI95jdCsn3aIemWXTB4hxqn8EhpH",
                     },
                 ],
             },
@@ -620,15 +620,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1WfK2mnYs14JwcJfzomSlCK5qcH8hb-Y9",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1SSFRIPnZVe711IcElwl5ZPxpJJOfEJEt",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1qCp8yI36byrDjdDyhgMc1Zsx2InJKNx-",
                     },
                 ],
             },
@@ -638,15 +638,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1pQwKkcY6XKsG1KOoOJVh8lPjWGtqs-cC",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1tgvm7sIHoKtdqaNQBPDhHT6ANhaqkPrY",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1ZobFXkDBUG8r_JEh8XKe0dbSbwbzWWpG",
                     },
                 ],
             },
@@ -656,15 +656,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1fDxFg367OkmAe16Be4OIzc0R70Nejjrw",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1aY1NGcyTPubL9U_VplrkvQcoqC5n07HW",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1eXx_kQwPbVzudAqcKObAvYfKVHBiE1w4",
                     },
                 ],
             },
@@ -674,15 +674,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1POkiqPr11TZaw6MZ2L5drPPyUB2SB8ha",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=119PDjVui7u3Y0jPV8tymNEuJalKrkW0-",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1yo0PLWK0xME8mQSvIJX3HAvOKZwg6GVl",
                     },
                 ],
             },
@@ -697,15 +697,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1gmw4iiWcUwuPk2Jg6LVde2D4uakn2nDR",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=12ZkqTZU99qFXf5zqo6LyIxyt1BtWQ21U",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=12A3N7AcKNQxxbzcStUWqOqG88S_ApweZ",
                     },
                 ],
             },
@@ -715,15 +715,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1tkyAsDcH77qM1ixry9B8bVFkhIbii7cW",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=19dnT4UWfmEuL35hctO1B8NivMZXFnqUR",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1d_Vimj5aYgd0s3mZs6i6m5v8T38IzVnn",
                     },
                 ],
             },
@@ -733,15 +733,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1PkVnN0uA3MNIrFTDjyA55gDLb6F9_Tco",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=16NCxJHGoWA3QCYPzzNvElI6qMpGWEiGc",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1IMITxg6FGeh-beXgSsVln_yTe5GEG70z",
                     },
                 ],
             },
@@ -751,15 +751,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1o0uSuFTb5M5_IUDlNtSQGT-vUZvENaZf",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1RRsKj3bycG_kyq44zf81Uua6YfU1J2Km",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Zcl1J6Ual6l6pfGu1Y7PCzkvZwsYpwfD",
                     },
                 ],
             },
@@ -769,15 +769,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1kJ1B9vgRlThsq_ywlHuliLfkZ6_Mme62",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=14AdRz1O6F7r6TusfHa2PUHy0eofPaZH4",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1ny6ZSu8W_AJDXqzGeWFdrP_zviQvTxEU",
                     },
                 ],
             },
@@ -787,15 +787,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1NdoKNG9yRtLUvWkFDkHROc2g-yARLIac",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1-PGekrSwqlos-mgZmhGkPHhCWwgLu3Ck",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1iUaKjffn9q-OnBgUuQm25G5e6WwEdfJ_",
                     },
                 ],
             },
@@ -805,15 +805,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1BiwJezx6n97nYoYU-dQLT4WE_yfi6kf5",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1IO5YGvn8fzuPlK8x4HaCMt378JwuZzmo",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1We1XlWDXBlJFGmXlJl_SDDiYmGJgPXLH",
                     },
                 ],
             },
@@ -823,15 +823,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1lkb2y1DVNAVhlo8fTecONGCtwNfCT2Rq",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1TB57f225RruUwRg2CmK4U1MzZnOP5ZeW",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=18vx0x2nEc95Y63Z1PP50yb3rjMRPCHgG",
                     },
                 ],
             },
@@ -841,15 +841,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1z_qG9TGZrJwyzEjekPx9mF_k_uNPJGI3",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1KgpxA3w_9E7zQVzZvYJpveFg0HO5dh2q",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1PjZuAksOXM5V8SVm3GOQSTEvgrX2T7Ql",
                     },
                 ],
             },
@@ -859,15 +859,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1heFmsgHYmuX1Nz9tiGUxsZhk9LKDrCHq",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1X4R-KQT9l7W2eiY5Mkvg-9KZdNccEiTx",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1fHhuKLQkcGMFxGf0y0xB9TQ8Y--Klt23",
                     },
                 ],
             },
@@ -877,15 +877,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1LpInx41S5jIGTUClRuw91eQeEj1J5Vrn",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1-xOsN68aRqKZSWST6Ml8_htZKjtziStL",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1bK9WrHsrDJz6uoDfw-2Cbx-6DcwSagCc",
                     },
                 ],
             },
@@ -895,15 +895,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=16F95v1c1-XFGf1NB1AZMRiIsCy0Kxv0y",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=15VdjCfVUPRFriFXuQ-8Iz36l5bPh0ZZq",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=18M8ouBx4UJIDl-LCgKvaIc78WZO5dG4m",
                     },
                 ],
             },
@@ -913,15 +913,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1ALcOHLI8UIa2UeysQS0NtTBDk_Ap6euh",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1leqQKR8HqHBI3m0Mtga6k33_VhFca5vq",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1CExrHv4Y331ToSMA0SGK2QzP0CsQWE18",
                     },
                 ],
             },
@@ -931,15 +931,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1NY0lHZlCU5nvtUJKbanJxyIQKjycevu8",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Rm1f594QSus_YXmemIvipCRPtY-msFwV",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1-lvr1KGQC3SKM07ek4F9U9O_jWjz3-uS",
                     },
                 ],
             },
@@ -949,15 +949,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1jSCZTDVumxEeq1e2Yxo6cjWQWVhvCO9s",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1p6r9m5NOurtiXvEU6cAlDn7Cd3FSdvCu",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=15MBbqKViayCSYW1DvBJeWHyvIkuxTs0B",
                     },
                 ],
             },
@@ -972,15 +972,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1WmFyWXWAZLvgfj-UByqLmd6Bq7FVEw9a",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1THdAE7d7D71z2P1cUSeFuzFpmxLJOwP2",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1uBf7vVjKAvkxQYBj-xaAed8qPxicFY1X",
                     },
                 ],
             },
@@ -990,15 +990,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1lDxo4rmk6O2ipfu0ubote6L204iXH8TL",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1g62g7D4QHL3tIPQAVGy--9qkOEenh5iu",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1sbR_tPfrFXzxLEQ8T93w-3TH43yxJ3SS",
                     },
                 ],
             },
@@ -1008,15 +1008,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1_I4nvOlSfYfChIh68IrYGAjaHSs_uV4Z",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1LcrWwSE7LoKwKpMTEelJy-B1VitwTomY",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1nj2BFIferVi2AdfSirLMMgtdZ4fOls_3",
                     },
                 ],
             },
@@ -1026,15 +1026,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1lK0kClSNsxUI1vF40iPHNnhmihzsVk-V",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1biV05A8q_bYDzVp3gdsCwqNxytFIF0nD",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1_8bLScmeUWvuNTEyqAm60SOWD0QcQfvM",
                     },
                 ],
             },
@@ -1044,15 +1044,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1XaoCVFtJbhh4CmqQ5hlzYhgbAuzmxID0",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1RuewSmpii2k0nZbuEPFKRJ1DM7VFMwmz",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1qnXl77r9uhJuRyJvoFx5qeMKqOYm9zEh",
                     },
                 ],
             },
@@ -1062,15 +1062,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1R96EqK6rbh-r-UizpG4gOMFhGnHQUxnF",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1WplIGOvraMUq3iy2LcaogMzIJYdV2Nl8",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1HnXJ6pUcilHke1uuIYQ2imWMer5DwAbj",
                     },
                 ],
             },
@@ -1080,15 +1080,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1yD0Lxf2nzRsUm_D0UUYbQNpoK2YwGK75",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1WlhZT3W_PPe5xS8-ScGY2hoeKlpcgzgI",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1sl28oA8QnbLcyxf839k9jxHKyJM6hJRc",
                     },
                 ],
             },
@@ -1098,15 +1098,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1X0PPsvyGz4YzuNBPUx2C2xJlL7VVKJgX",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1cM4_E7kTPRyl3gU0m7Tsqldv6H_36F9Y",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=18vCriheLgk4fb4T0yJEbxGGGmlhXqd8q",
                     },
                 ],
             },
@@ -1116,15 +1116,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1JzPuSlu15kQE8G09p94e5q3zALzUhA88",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1bqhzRHOsRyyNsdHk-vHrUGpYyQ9e_OIH",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=13esyhazDSBscCel7hfb-mkLOj2tbcazr",
                     },
                 ],
             },
@@ -1134,15 +1134,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1InPmhnNhIvr4ROtQGsMhnvAhkv-b7U6J",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1zIPTFiEXT36W7ujrDwNwD6J_2c9Vk6rD",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1QU9ZfV3qaBiLv4vlY4mniv7WM5QI5e2w",
                     },
                 ],
             },
@@ -1157,15 +1157,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1vXjj2d7uRBZecevUvZQ6Ys-tjHHs0TaG",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=12xay6amfSP1vrWQrHwFodO2GXq0T7606",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1OlRojBXJGTDS3aIV_qhHQs2Sx44s6kQW",
                     },
                 ],
             },
@@ -1175,15 +1175,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=18MA7u_KXMIvZbM1myNpBcYeJjQR0Zl5j",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1HyL9-H6tEnB7msr28yB9PlY9Dm66bEdq",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1c1QqMXjeqjagI2_wwwDJrxac7tnVkL0E",
                     },
                 ],
             },
@@ -1193,15 +1193,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1CbC68SD5KXuWiZQXE-kwS63ZEPgdOI-f",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=19SU2zIpnqg4i6ETyw2P9waUE5a4LM9xk",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=182FC3wNeqvAOWCaaSLRaroIgBhkwlPf1",
                     },
                 ],
             },
@@ -1211,15 +1211,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1bbN-H7Ov9C1dg7KNuibgxlgmsHw3cBjt",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=15AhiDE02qm4in7sP5j3mYIpfHHro04Po",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1LoiLlMdPOM06Hw4eKFKu_0j4zjj7WVoA",
                     },
                 ],
             },
@@ -1229,15 +1229,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1_vyMYgTTRPE3PY6EWI74EcXOH4i3MtIe",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=11id_GvyQOJG2GoQcugzG0TpvVbcxHCHL",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1n5gxflkTBVgXM921t8ZVIZUDjz0vzHZx",
                     },
                 ],
             },
@@ -1247,15 +1247,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1LqhWQBrpyPIf1xCywFS38UGyLr8UuYUB",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=16iqcL7TSkGRsBP5joKihqj3QrwPygX5X",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1PRfmgLPafH5Kavuy8pW8Vjfsa-JnUHym",
                     },
                 ],
             },
@@ -1265,15 +1265,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=15hPHaQmc7Z_zYogmSR8paUwhG3H9jl2A",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=11IznujKSogESlcXICvki5SPOTe05GUYx",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1PAuhkNk8-f8I0BJBbblYL5okmZcJy97A",
                     },
                 ],
             },
@@ -1283,15 +1283,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1tvbTjgBkGrnTLpIbcAFjUpXpj1M1jy2n",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=10xqbYcNyvWbQUwZBQQfoz-bR-fk53r88",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1GqVW6-GK-rDJplg8nJA8kEJyvcmBoBla",
                     },
                 ],
             },
@@ -1301,15 +1301,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1_LmYPRJMrzwFpwfYOX15kilklF1Ko98Y",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1U3Ld-ZqERDDu90VDGiqSAtoIFG6Eysal",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Za83Q_NK_pjFRfHG_R2k3lbnBfBhwrAj",
                     },
                 ],
             },
@@ -1319,15 +1319,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1frh_OPkTAbkbsrle1EHyLg6NZK6nYbbW",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1zEbWcv4nx7zt_1EHkGqiGjM0yvoardBJ",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1VlG6-uNGOM3NwRxQjlnwmNY7rLi64ksD",
                     },
                 ],
             },
@@ -1342,15 +1342,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=11zFoksSC7BbVk-7cHX8BsYkV_9kipIS_",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1nKZQkKw9I2v1oi2PhAO9WS6jWtVOdGRw",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1jFLBy2TMYelw6IQf9ZcN1Si1Gsej7Gk-",
                     },
                 ],
             },
@@ -1360,15 +1360,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Zn8DC5KTXPdwVFUA2uVbjjGgAUc9gZtL",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1a3A2AMtNKBXVZEqdcaM6G2ngjdLYS-nU",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1Qbm0IVk2H724Re2mEZhf2wZWZq2MUVXn",
                     },
                 ],
             },
@@ -1378,15 +1378,15 @@ const collections: Array<ICollection> = [
                 links: [
                     {
                         name: "ai",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1IA-7Vhu-ZUfZCgzUziaCd54guut8swr4",
                     },
                     {
                         name: "png",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1iDqsG8LyHo-kW3QQ9SM317IpHEdzPOKH",
                     },
                     {
                         name: "svg",
-                        url: "",
+                        url: "https://drive.google.com/uc?export=download&id=1QXiibe5lSS7RWBH3Qir3ICd4NVXnoi0V",
                     },
                 ],
             },
