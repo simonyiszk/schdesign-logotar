@@ -4,7 +4,7 @@ import {
     CardActions,
     CardContent,
     CardMedia, Skeleton,
-    Typography
+    Typography, useTheme
 } from "@mui/material";
 import {ILink} from "../../data/data";
 import React, {useEffect} from "react";
@@ -39,12 +39,14 @@ function Logo(props: LogoProps) {
         }
     })
 
+    const bg = useTheme().palette.mode === 'dark' ? "rgb(61, 61, 61)" : "rgb(229, 229, 229)"
+
     return (
         <Card sx={{ maxWidth: 280 }}>
             { src === "" ? (
                 <Skeleton animation="wave" variant="rectangular" width={280} height={210} />
             ) : (
-                <CardMedia sx={{width: 280, height: 210, display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "white"}}>
+                <CardMedia sx={{width: 280, height: 210, display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: bg}}>
                     <img
                         style={{objectFit: "contain"}}
                         width={280 - 20}
