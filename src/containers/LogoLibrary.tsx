@@ -1,6 +1,6 @@
 import {ILogo} from "../data/data";
-import {Box, Grid, Zoom} from "@mui/material";
-import Logo from "../components/Logo/Logo";
+import {Box, Container, Grid, Zoom} from "@mui/material";
+import Logo from "../components/Logo";
 
 interface LogoLibraryProps {
     logos: Array<ILogo>
@@ -11,11 +11,12 @@ function LogoLibrary(props: LogoLibraryProps) {
 
     return (
         <Box sx={{ padding: 4}}>
+            <Container maxWidth={"xl"}>
                 <Grid container spacing={4} justifyContent="center" alignItems="center">
                     {logos.map((logo, index) =>
                         <Zoom key={index} in={true}
-                               timeout={500}
-                               style={{ transitionDelay: `${index * 50}ms` }}
+                              timeout={500}
+                              style={{ transitionDelay: `${index * 50}ms` }}
                         >
                             <Grid item>
                                 <Logo name={logo.name} preview={logo.preview} links={logo.links} />
@@ -23,6 +24,7 @@ function LogoLibrary(props: LogoLibraryProps) {
                         </Zoom>
                     )}
                 </Grid>
+            </Container>
         </Box>
     )
 }

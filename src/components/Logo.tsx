@@ -6,7 +6,7 @@ import {
     CardMedia, Skeleton,
     Typography, useTheme
 } from "@mui/material";
-import {ILink} from "../../data/data";
+import {ILink} from "../data/data";
 import React, {useEffect} from "react";
 
 interface LogoProps {

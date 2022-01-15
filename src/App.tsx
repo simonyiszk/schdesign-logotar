@@ -5,14 +5,13 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {
     createTheme,
-    CssBaseline, ThemeProvider,
+    CssBaseline, Divider, ThemeProvider,
     useMediaQuery
 } from "@mui/material";
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 import {collections} from "./data/data";
 import LogoLibrary from "./containers/LogoLibrary";
-
-
+import Footer from "./components/Footer";
 
 function App() {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -66,6 +65,8 @@ function App() {
             <CssBaseline />
             <Header page={page} reszortok={collections} onClick={(value: number) => setPage(value)}/>
             <LogoLibrary key={page} logos={collections[page].logos} />
+            <Divider />
+            <Footer />
         </ThemeProvider>
     );
 }
