@@ -12,7 +12,7 @@ function LogoLibrary(props: LogoLibraryProps) {
   return (
     <Box sx={{ padding: 4 }}>
       <Container maxWidth={"xl"}>
-        <Grid container spacing={4} justifyContent="center" alignItems="center">
+        <Grid container spacing={4} justifyContent="center" alignItems="center" columns={5}>
           {logos.map((logo, index) => (
             <Zoom
               key={index}

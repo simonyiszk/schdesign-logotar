@@ -50,19 +50,23 @@ function Logo(props: LogoProps) {
       ? "rgb(61, 61, 61)"
       : "rgb(229, 229, 229)"
 
+  const width = 290
+  const padding = 20
+
   return (
-    <Card sx={{ maxWidth: 280 }}>
+    <Card>
       {src === "" ? (
         <Skeleton
           animation="wave"
           variant="rectangular"
-          width={280}
-          height={210}
+          sx={{
+            width: width - padding,
+            height: 210 - padding,
+          }}
         />
       ) : (
         <CardMedia
           sx={{
-            width: 280,
             height: 210,
             display: "flex",
             justifyContent: "center",
@@ -71,9 +75,12 @@ function Logo(props: LogoProps) {
           }}
         >
           <img
-            style={{ objectFit: "contain" }}
-            width={280 - 20}
-            height={210 - 20}
+            style={{
+              objectFit: "contain",
+              padding: 10
+            }}
+            width={width - padding}
+            height={210 - padding}
             src={src}
             alt={name}
           />
