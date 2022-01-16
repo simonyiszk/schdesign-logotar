@@ -19,7 +19,7 @@ function loadPageFromStorage() {
   let jsonPage = localStorage.getItem("page")
   if (jsonPage) {
     let page = parseInt(JSON.parse(jsonPage))
-    if(page >= 0 && page < collections.length) {
+    if (page >= 0 && page < collections.length) {
       return page
     }
   }
@@ -29,7 +29,7 @@ function loadPageFromStorage() {
 }
 
 function savePageToStorage(value: number) {
-  localStorage.setItem("page", JSON.stringify(value));
+  localStorage.setItem("page", JSON.stringify(value))
 }
 
 function App() {
@@ -91,7 +91,12 @@ function App() {
         reszortok={collections}
         onClick={(value: number) => pageChangeHandler(value)}
       />
-      <Box display={"flex"} flexDirection={"column"} justifyContent={"space-between"} sx={{minHeight: "calc(100vh - 64px)"}}>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"space-between"}
+        sx={{ minHeight: "calc(100vh - 64px)" }}
+      >
         <LogoLibrary key={page} logos={collections[page].logos} />
         <Footer />
       </Box>

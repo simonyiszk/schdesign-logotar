@@ -77,7 +77,7 @@ function Logo(props: LogoProps) {
           <img
             style={{
               objectFit: "contain",
-              padding: 10
+              padding: 10,
             }}
             width={width - padding}
             height={210 - padding}
