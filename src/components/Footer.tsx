@@ -106,9 +106,7 @@ function Footer() {
             </Box>
             <Box>
               <CustomIconButton
-                href={
-                  "https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/"
-                }
+                href={"https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/"}
                 icon={<YouTubeIcon />}
               />
               <CustomIconButton
