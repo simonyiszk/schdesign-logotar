@@ -4,6 +4,7 @@ import "@fontsource/roboto/400.css"
 import "@fontsource/roboto/500.css"
 import "@fontsource/roboto/700.css"
 import {
+  Box,
   createTheme,
   CssBaseline,
   ThemeProvider,
@@ -68,8 +69,10 @@ function App() {
         reszortok={collections}
         onClick={(value: number) => setPage(value)}
       />
-      <LogoLibrary key={page} logos={collections[page].logos} />
-      <Footer />
+      <Box display={"flex"} flexDirection={"column"} justifyContent={"space-between"} sx={{minHeight: "calc(100vh - 64px)"}}>
+        <LogoLibrary key={page} logos={collections[page].logos} />
+        <Footer />
+      </Box>
     </ThemeProvider>
   )
 }
