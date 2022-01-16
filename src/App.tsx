@@ -6,7 +6,6 @@ import "@fontsource/roboto/700.css"
 import {
   createTheme,
   CssBaseline,
-  Divider,
   ThemeProvider,
   useMediaQuery,
 } from "@mui/material"
@@ -70,7 +69,6 @@ function App() {
         onClick={(value: number) => setPage(value)}
       />
       <LogoLibrary key={page} logos={collections[page].logos} />
-      <Divider />
       <Footer />
     </ThemeProvider>
   )
