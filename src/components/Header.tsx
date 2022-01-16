@@ -48,10 +48,11 @@ interface HeaderProps {
 function Header(props: HeaderProps) {
   const { page, reszortok, onClick } = props
 
-  const theme = useTheme()
   const iOS =
     typeof navigator !== "undefined" &&
     /iPad|iPhone|iPod/.test(navigator.userAgent)
+
+  const theme = useTheme()
   const appBarBgColor =
     theme.palette.mode === "dark" ? "#2a2a2a" : theme.palette.primary.main
 
@@ -79,7 +80,6 @@ function Header(props: HeaderProps) {
       ) {
         return
       }
-
       setState(open)
     }
 

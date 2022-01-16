@@ -18,7 +18,7 @@ interface LogoProps {
 }
 
 function downloadFile(
-  e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLButtonElement>,
+  e: React.SyntheticEvent,
   name: string,
   url: string,
   extension: string
@@ -51,6 +51,7 @@ function Logo(props: LogoProps) {
       : "rgb(229, 229, 229)"
 
   const width = 290
+  const height = 210
   const padding = 20
 
   return (
@@ -61,13 +62,13 @@ function Logo(props: LogoProps) {
           variant="rectangular"
           sx={{
             width: width - padding,
-            height: 210 - padding,
+            height: height - padding,
           }}
         />
       ) : (
         <CardMedia
           sx={{
-            height: 210,
+            height: height,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -80,7 +81,7 @@ function Logo(props: LogoProps) {
               padding: 10,
             }}
             width={width - padding}
-            height={210 - padding}
+            height={height - padding}
             src={src}
             alt={name}
           />
