@@ -15,10 +15,27 @@ import { collections } from "./data/data"
 import LogoLibrary from "./containers/LogoLibrary"
 import Footer from "./components/Footer"
 
+function loadPageFromStorage() {
+  let jsonPage = localStorage.getItem("page")
+  if (jsonPage) {
+    let page = parseInt(JSON.parse(jsonPage))
+    if(page >= 0 && page < collections.length) {
+      return page
+    }
+  }
+
+  savePageToStorage(0)
+  return 0
+}
+
+function savePageToStorage(value: number) {
+  localStorage.setItem("page", JSON.stringify(value));
+}
+
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
 
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(loadPageFromStorage)
 
   const lightTheme = createTheme({
     palette: {
@@ -61,13 +78,18 @@ function App() {
     [darkTheme, lightTheme, prefersDarkMode]
   )
 
+  const pageChangeHandler = (value: number) => {
+    savePageToStorage(value)
+    setPage(value)
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header
         page={page}
         reszortok={collections}
-        onClick={(value: number) => setPage(value)}
+        onClick={(value: number) => pageChangeHandler(value)}
       />
       <Box display={"flex"} flexDirection={"column"} justifyContent={"space-between"} sx={{minHeight: "calc(100vh - 64px)"}}>
         <LogoLibrary key={page} logos={collections[page].logos} />
