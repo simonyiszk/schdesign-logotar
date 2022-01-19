@@ -1,0 +1,17 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  build:
+    if: github.repository_owner == 'simonyiszk'
+    name: Build project
+    uses: simonyiszk/schdesign-logotar/.github/workflows/build.yml@main
+  deploy:
+    if: github.repository_owner == 'simonyiszk'
+    needs: build
+    name: Deploy project
+    uses: simonyiszk/schdesign-logotar/.github/workflows/deploy.yml@main
