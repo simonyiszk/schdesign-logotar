@@ -17,6 +17,7 @@ import Footer from "./components/Footer"
 
 function loadPageFromStorage() {
   let jsonPage = localStorage.getItem("page")
+  
   if (jsonPage) {
     let page = parseInt(JSON.parse(jsonPage))
     if (page >= 0 && page < collections.length) {
@@ -25,6 +26,7 @@ function loadPageFromStorage() {
   }
 
   savePageToStorage(0)
+
   return 0
 }
 
