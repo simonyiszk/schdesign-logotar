@@ -1040,7 +1040,7 @@ const collections: Array<ICollection> = [
       },
       {
         name: "SVK",
-        preview: "/preview/SVK-háttér_preview.png",
+        preview: "/preview/SVK_preview.png",
         links: [
           {
             name: "ai",
@@ -1048,11 +1048,11 @@ const collections: Array<ICollection> = [
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1RuewSmpii2k0nZbuEPFKRJ1DM7VFMwmz",
+            url: "https://drive.google.com/uc?export=download&id=18onVi7YJaWeR0GmSzaQJkNVpOpoeaBij",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1qnXl77r9uhJuRyJvoFx5qeMKqOYm9zEh",
+            url: "https://drive.google.com/uc?export=download&id=1nEDA6zBAQdEo5kCeQ9OF19_pTb7s6I9w",
           },
         ],
       },
