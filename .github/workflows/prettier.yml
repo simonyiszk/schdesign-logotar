@@ -1,5 +1,6 @@
 name: Prettier - Lint
 on:
+  pull_request:
   workflow_call:
   workflow_dispatch:
 jobs:
@@ -27,7 +28,7 @@ jobs:
         with:
           prettier: true
           prettier_args: "--check --ignore-path .gitignore ."
-          prettier_dir: /
+          prettier_dir: /src/
 
           auto_fix: true
           commit_message: "[lint] Fix code ${linter}"
