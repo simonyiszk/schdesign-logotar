@@ -49,11 +49,7 @@ function Footer() {
         >
           <Grid item>
             <Box>
-              <Typography
-                variant="h6"
-                align="center"
-                color={txtColor}
-              >
+              <Typography variant="h6" align="center" color={txtColor}>
                 Kapcsolat
               </Typography>
             </Box>
@@ -69,11 +65,7 @@ function Footer() {
           </Grid>
           <Grid item>
             <Box>
-              <Typography
-                variant="h6"
-                align="center"
-                color={txtColor}
-              >
+              <Typography variant="h6" align="center" color={txtColor}>
                 Weboldalaink
               </Typography>
             </Box>
@@ -96,17 +88,15 @@ function Footer() {
           </Grid>
           <Grid item>
             <Box>
-              <Typography
-                variant="h6"
-                align="center"
-                color={txtColor}
-              >
+              <Typography variant="h6" align="center" color={txtColor}>
                 Közösségi oldalaink
               </Typography>
             </Box>
             <Box>
               <CustomIconButton
-                href={"https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/"}
+                href={
+                  "https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/"
+                }
                 icon={<YouTubeIcon />}
               />
               <CustomIconButton

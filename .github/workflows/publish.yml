@@ -4,9 +4,12 @@ on:
     branches:
       - main
 jobs:
-  check:
-    name: Check syntax
-    uses: ./.github/workflows/check.yml
+  eslint:
+    name: ESLint
+    uses: ./.github/workflows/eslint.yml
+  prettier:
+    name: Prettier
+    uses: ./.github/workflows/prettier.yml
   build:
     if: github.repository_owner == 'simonyiszk'
     name: Build project
