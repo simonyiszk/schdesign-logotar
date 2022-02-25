@@ -18,7 +18,7 @@ import Footer from "./components/Footer"
 enum PreferredTheme {
   Light = "LIGHT",
   Dark = "DARK",
-  Os = "OS"
+  Os = "OS",
 }
 
 function loadPageFromStorage() {
@@ -36,21 +36,27 @@ function loadPageFromStorage() {
   return 0
 }
 
-function loadPreferredThemeFromStorage(prefersDarkMode: boolean): PreferredTheme {
+function loadPreferredThemeFromStorage(
+  prefersDarkMode: boolean
+): PreferredTheme {
   let savedTheme = localStorage.getItem("preferredTheme")
   let theme: PreferredTheme
 
   if (savedTheme !== null) {
     savedTheme = JSON.parse(savedTheme)
-    theme = savedTheme === "LIGHT" ? PreferredTheme.Light : (savedTheme === "DARK" ? PreferredTheme.Dark : PreferredTheme.Os)
+    theme =
+      savedTheme === "LIGHT"
+        ? PreferredTheme.Light
+        : savedTheme === "DARK"
+        ? PreferredTheme.Dark
+        : PreferredTheme.Os
   } else {
     theme = PreferredTheme.Os
     localStorage.setItem("preferredTheme", JSON.stringify("OS"))
   }
-  
-  if(theme === PreferredTheme.Os) {
-    if(prefersDarkMode)
-      return PreferredTheme.Dark
+
+  if (theme === PreferredTheme.Os) {
+    if (prefersDarkMode) return PreferredTheme.Dark
     return PreferredTheme.Light
   }
 
@@ -108,7 +114,8 @@ function App() {
   })
 
   const theme = React.useMemo(
-    () => createTheme(prefTheme === PreferredTheme.Light ? lightTheme : darkTheme),
+    () =>
+      createTheme(prefTheme === PreferredTheme.Light ? lightTheme : darkTheme),
     [darkTheme, lightTheme, prefTheme]
   )
 
@@ -118,10 +125,9 @@ function App() {
   }
 
   const themeChangeHandler = () => {
-    if(prefTheme === PreferredTheme.Light) {
+    if (prefTheme === PreferredTheme.Light) {
       setPrefTheme(PreferredTheme.Dark)
-    }
-    else {
+    } else {
       setPrefTheme(PreferredTheme.Light)
     }
   }

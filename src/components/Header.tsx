@@ -90,7 +90,10 @@ function Header(props: HeaderProps) {
         <AppBar position="fixed" sx={{ backgroundColor: appBarBgColor }}>
           <Container maxWidth={"xl"}>
             <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-              <BrandLogo mr={isMobile ? 0 : 2} themeChangeHandler={themeChangeHandler} />
+              <BrandLogo
+                mr={isMobile ? 0 : 2}
+                themeChangeHandler={themeChangeHandler}
+              />
               <Typography variant="h6" sx={{ flexGrow: isMobile ? 0 : 1 }}>
                 Logótár
               </Typography>
