@@ -42,11 +42,12 @@ function HideOnScroll(props: Props) {
 interface HeaderProps {
   page: number
   reszortok: Array<ICollection>
-  onClick: (value: number) => void
+  pageChangeHandler: (value: number) => void
+  themeChangeHandler: () => void
 }
 
 function Header(props: HeaderProps) {
-  const { page, reszortok, onClick } = props
+  const { page, reszortok, pageChangeHandler, themeChangeHandler } = props
 
   const iOS =
     typeof navigator !== "undefined" &&
@@ -89,14 +90,13 @@ function Header(props: HeaderProps) {
         <AppBar position="fixed" sx={{ backgroundColor: appBarBgColor }}>
           <Container maxWidth={"xl"}>
             <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-              <BrandLogo mr={isMobile ? 0 : 2} />
+              <BrandLogo mr={isMobile ? 0 : 2} themeChangeHandler={themeChangeHandler} />
               <Typography variant="h6" sx={{ flexGrow: isMobile ? 0 : 1 }}>
                 Logótár
               </Typography>
               {isMobile ? (
                 <IconButton
                   size="large"
-                  edge="start"
                   color="inherit"
                   aria-label="menu"
                   onClick={toggleDrawer(true)}
@@ -108,7 +108,7 @@ function Header(props: HeaderProps) {
                   theme={navTabsTheme}
                   reszortok={reszortok}
                   page={page}
-                  onClick={onClick}
+                  onClick={pageChangeHandler}
                 />
               )}
 
@@ -131,7 +131,7 @@ function Header(props: HeaderProps) {
                       <ListItemButton
                         key={index}
                         selected={index === page}
-                        onClick={() => onClick(index)}
+                        onClick={() => pageChangeHandler(index)}
                       >
                         <ListItemText
                           primary={reszort.name}
