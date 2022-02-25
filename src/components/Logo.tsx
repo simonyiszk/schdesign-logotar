@@ -47,7 +47,7 @@ function Logo(props: LogoProps) {
 
   const bg =
     useTheme().palette.mode === "dark"
-      ? "rgb(61, 61, 61)"
+      ? "rgb(81, 81, 81)"
       : "rgb(229, 229, 229)"
 
   const width = 290

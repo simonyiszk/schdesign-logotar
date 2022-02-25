@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "@fontsource/roboto/300.css"
 import "@fontsource/roboto/400.css"
 import "@fontsource/roboto/500.css"
@@ -15,11 +15,17 @@ import { collections } from "./data/data"
 import LogoLibrary from "./containers/LogoLibrary"
 import Footer from "./components/Footer"
 
-function loadPageFromStorage() {
-  let jsonPage = localStorage.getItem("page")
+enum PreferredTheme {
+  Light = "LIGHT",
+  Dark = "DARK",
+  Os = "OS"
+}
 
-  if (jsonPage) {
-    let page = parseInt(JSON.parse(jsonPage))
+function loadPageFromStorage() {
+  let savedPage = localStorage.getItem("page")
+
+  if (savedPage) {
+    let page = parseInt(JSON.parse(savedPage))
     if (page >= 0 && page < collections.length) {
       return page
     }
@@ -30,6 +36,27 @@ function loadPageFromStorage() {
   return 0
 }
 
+function loadPreferredThemeFromStorage(prefersDarkMode: boolean): PreferredTheme {
+  let savedTheme = localStorage.getItem("preferredTheme")
+  let theme: PreferredTheme
+
+  if (savedTheme !== null) {
+    savedTheme = JSON.parse(savedTheme)
+    theme = savedTheme === "LIGHT" ? PreferredTheme.Light : (savedTheme === "DARK" ? PreferredTheme.Dark : PreferredTheme.Os)
+  } else {
+    theme = PreferredTheme.Os
+    localStorage.setItem("preferredTheme", JSON.stringify("OS"))
+  }
+  
+  if(theme === PreferredTheme.Os) {
+    if(prefersDarkMode)
+      return PreferredTheme.Dark
+    return PreferredTheme.Light
+  }
+
+  return theme
+}
+
 function savePageToStorage(value: number) {
   localStorage.setItem("page", JSON.stringify(value))
 }
@@ -38,6 +65,11 @@ function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
 
   const [page, setPage] = useState(loadPageFromStorage)
+  const [prefTheme, setPrefTheme] = useState(PreferredTheme.Light)
+
+  useEffect(() => {
+    setPrefTheme(loadPreferredThemeFromStorage(prefersDarkMode))
+  }, [prefersDarkMode])
 
   const lightTheme = createTheme({
     palette: {
@@ -76,13 +108,22 @@ function App() {
   })
 
   const theme = React.useMemo(
-    () => createTheme(prefersDarkMode ? darkTheme : lightTheme),
-    [darkTheme, lightTheme, prefersDarkMode]
+    () => createTheme(prefTheme === PreferredTheme.Light ? lightTheme : darkTheme),
+    [darkTheme, lightTheme, prefTheme]
   )
 
   const pageChangeHandler = (value: number) => {
     savePageToStorage(value)
     setPage(value)
+  }
+
+  const themeChangeHandler = () => {
+    if(prefTheme === PreferredTheme.Light) {
+      setPrefTheme(PreferredTheme.Dark)
+    }
+    else {
+      setPrefTheme(PreferredTheme.Light)
+    }
   }
 
   return (
@@ -91,7 +132,8 @@ function App() {
       <Header
         page={page}
         reszortok={collections}
-        onClick={(value: number) => pageChangeHandler(value)}
+        pageChangeHandler={(value: number) => pageChangeHandler(value)}
+        themeChangeHandler={() => themeChangeHandler()}
       />
       <Box
         display={"flex"}
