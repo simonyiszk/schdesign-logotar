@@ -111,7 +111,7 @@ function Footer() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     width: 400,
-                    backgroundColor: "black"
+                    backgroundColor: "black",
                   }}
                 >
                   <Typography variant="body1" color="white">
