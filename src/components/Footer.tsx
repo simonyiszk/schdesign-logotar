@@ -9,10 +9,11 @@ import {
   Container,
   Grid,
   IconButton,
+  Modal,
   Typography,
   useTheme,
 } from "@mui/material"
-import { ReactElement } from "react"
+import { ReactElement, useState } from "react"
 
 interface CustomIconButtonProps {
   href: string
@@ -36,6 +37,8 @@ function Footer() {
   const theme = useTheme()
   const bgColor = theme.palette.mode === "dark" ? "#2a2a2a" : "#f0f0f0"
   const txtColor = theme.palette.mode === "dark" ? "white" : "black"
+
+  const [open, setOpen] = useState(false)
 
   return (
     <Box padding={4} sx={{ backgroundColor: bgColor }}>
@@ -93,6 +96,29 @@ function Footer() {
               </Typography>
             </Box>
             <Box>
+              <IconButton
+                onClick={() => setOpen(true)}
+                color={"primary"}
+                size={"large"}
+              >
+                ?
+              </IconButton>
+              <Modal open={open} onClose={() => setOpen(false)}>
+                <Box
+                  style={{
+                    position: "absolute" as "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    width: 400,
+                    backgroundColor: "black"
+                  }}
+                >
+                  <Typography variant="body1" color="white">
+                    UWU a macska, aki később világuralomra tőr. Beware of uwu!
+                  </Typography>
+                </Box>
+              </Modal>
               <CustomIconButton
                 href={
                   "https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/"
