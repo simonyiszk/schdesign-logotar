@@ -115,7 +115,7 @@ function Footer() {
                   }}
                 >
                   <Typography variant="body1" color="white">
-                    UWU a macska, aki később világuralomra tőr. Beware of uwu!
+                    UWU a macska, aki később világuralomra tör. Beware of uwu!
                   </Typography>
                 </Box>
               </Modal>
