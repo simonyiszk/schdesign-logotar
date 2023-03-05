@@ -1,3 +1,3 @@
-import { LogoLibrary } from './LogoLibrary';
+import { LogoLibrary } from "./LogoLibrary"
 
-export { LogoLibrary };
+export { LogoLibrary }

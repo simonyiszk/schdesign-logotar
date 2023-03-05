@@ -1,5 +1,5 @@
-import type { ICollection, ILink, ILogo } from './data';
-import { collections } from './data';
+import type { ICollection, ILink, ILogo } from "./data"
+import { collections } from "./data"
 
-export type { ICollection, ILink, ILogo };
-export { collections };
+export type { ICollection, ILink, ILogo }
+export { collections }

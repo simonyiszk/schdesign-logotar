@@ -18,7 +18,7 @@ import {
   useTheme,
 } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
-import {NavTabs, BrandLogo} from "./"
+import { NavTabs, BrandLogo } from "./"
 import type { ICollection } from "../data"
 
 interface Props {
