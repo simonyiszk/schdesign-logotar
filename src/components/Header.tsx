@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import {
   AppBar,
   Box,
@@ -18,9 +18,8 @@ import {
   useTheme,
 } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
-import NavTabs from "./NavTabs"
-import BrandLogo from "./BrandLogo"
-import { ICollection } from "../data/data"
+import { NavTabs, BrandLogo } from "./"
+import type { ICollection } from "../data"
 
 interface Props {
   children: React.ReactElement
@@ -46,7 +45,7 @@ interface HeaderProps {
   themeChangeHandler: () => void
 }
 
-function Header(props: HeaderProps) {
+export function Header(props: HeaderProps) {
   const { page, reszortok, pageChangeHandler, themeChangeHandler } = props
 
   const iOS =
@@ -153,5 +152,3 @@ function Header(props: HeaderProps) {
     </>
   )
 }
-
-export default Header

@@ -10,10 +10,9 @@ import {
   ThemeProvider,
   useMediaQuery,
 } from "@mui/material"
-import Header from "./components/Header"
-import { collections } from "./data/data"
-import LogoLibrary from "./containers/LogoLibrary"
-import Footer from "./components/Footer"
+import { Header, Footer } from "./components"
+import { collections } from "./data"
+import { LogoLibrary } from "./containers"
 
 enum PreferredTheme {
   Light = "LIGHT",
@@ -22,10 +21,10 @@ enum PreferredTheme {
 }
 
 function loadPageFromStorage() {
-  let savedPage = localStorage.getItem("page")
+  const savedPage = localStorage.getItem("page")
 
   if (savedPage) {
-    let page = parseInt(JSON.parse(savedPage))
+    const page = parseInt(JSON.parse(savedPage))
     if (page >= 0 && page < collections.length) {
       return page
     }

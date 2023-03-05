@@ -14,7 +14,7 @@ export interface ICollection {
   logos: Array<ILogo>
 }
 
-const collections: Array<ICollection> = [
+export const collections: Array<ICollection> = [
   {
     name: "bme",
     logos: [
@@ -1393,5 +1393,3 @@ const collections: Array<ICollection> = [
     ],
   },
 ]
-
-export { collections }

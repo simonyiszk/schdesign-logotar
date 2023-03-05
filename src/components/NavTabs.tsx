@@ -1,6 +1,6 @@
 import { Tab, Tabs, Theme, ThemeProvider } from "@mui/material"
-import React from "react"
-import { ICollection } from "../data/data"
+import { useState } from "react"
+import type { ICollection } from "../data"
 
 interface NavTabsPros {
   theme: Theme
@@ -9,9 +9,9 @@ interface NavTabsPros {
   onClick: (value: number) => void
 }
 
-function NavTabs(props: NavTabsPros) {
+export function NavTabs(props: NavTabsPros) {
   const { theme, reszortok, page, onClick } = props
-  const [value, setValue] = React.useState(page)
+  const [value, setValue] = useState(page)
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue)
@@ -31,5 +31,3 @@ function NavTabs(props: NavTabsPros) {
     </ThemeProvider>
   )
 }
-
-export default NavTabs

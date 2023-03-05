@@ -1,12 +1,12 @@
 import { ILogo } from "../data/data"
 import { Box, Container, Grid, Zoom } from "@mui/material"
-import Logo from "../components/Logo"
+import { Logo } from "../components"
 
 interface LogoLibraryProps {
   logos: Array<ILogo>
 }
 
-function LogoLibrary(props: LogoLibraryProps) {
+export function LogoLibrary(props: LogoLibraryProps) {
   const { logos } = props
 
   return (
@@ -40,5 +40,3 @@ function LogoLibrary(props: LogoLibraryProps) {
     </Box>
   )
 }
-
-export default LogoLibrary

@@ -8,8 +8,8 @@ import {
   Typography,
   useTheme,
 } from "@mui/material"
-import { ILink } from "../data/data"
-import React, { useEffect } from "react"
+import type { ILink } from "../data"
+import { useEffect, useState } from "react"
 
 interface LogoProps {
   name: string
@@ -31,10 +31,10 @@ function downloadFile(
   link.click()
 }
 
-function Logo(props: LogoProps) {
+export function Logo(props: LogoProps) {
   const { name, preview, links } = props
 
-  const [src, setSrc] = React.useState("")
+  const [src, setSrc] = useState("")
 
   useEffect(() => {
     const dummyImgUrl = "https://dummyimage.com/280x210/999/fff"
@@ -108,5 +108,3 @@ function Logo(props: LogoProps) {
     </Card>
   )
 }
-
-export default Logo
