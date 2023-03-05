@@ -13,7 +13,7 @@ function SchdesignIcon(props: SvgIconProps) {
   )
 }
 
-function BrandLogo(props: BrandLogoProps) {
+export function BrandLogo(props: BrandLogoProps) {
   const theme = useTheme()
 
   const { mr, themeChangeHandler } = props
@@ -35,5 +35,3 @@ function BrandLogo(props: BrandLogoProps) {
     </IconButton>
   )
 }
-
-export default BrandLogo

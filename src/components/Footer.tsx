@@ -17,6 +17,7 @@ import { ReactElement, useState } from "react"
 
 interface CustomIconButtonProps {
   href: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon: ReactElement<any, any>
 }
 
@@ -33,7 +34,7 @@ function CustomIconButton(props: CustomIconButtonProps) {
   )
 }
 
-function Footer() {
+export function Footer() {
   const theme = useTheme()
   const bgColor = theme.palette.mode === "dark" ? "#2a2a2a" : "#f0f0f0"
   const txtColor = theme.palette.mode === "dark" ? "white" : "black"
@@ -106,7 +107,7 @@ function Footer() {
               <Modal open={open} onClose={() => setOpen(false)}>
                 <Box
                   style={{
-                    position: "absolute" as "absolute",
+                    position: "absolute",
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
@@ -144,5 +145,3 @@ function Footer() {
     </Box>
   )
 }
-
-export default Footer
