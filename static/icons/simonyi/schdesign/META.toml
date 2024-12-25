@@ -1,3 +1,8 @@
 type = "team"
 name = "schdesign"
 slug = "schdesign"
+
+[color]
+
+[color.primary]
+value = "#fff"
