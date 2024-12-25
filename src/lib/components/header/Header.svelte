@@ -1,19 +1,8 @@
 <script>
   import ModeMenu from "./ModeMenu.svelte"
-  import { page } from "$app/state"
   import LogoMini from "../schdesign/LogoMini.svelte"
-  import { Cat } from "lucide-svelte"
-
-  const links = [
-    {
-      label: "Ikonok",
-      href: "/icons",
-    },
-    {
-      label: "Segédlet",
-      href: "/guide",
-    },
-  ]
+  import { Cat, CircleHelp, Image, Plus } from "lucide-svelte"
+  import { Button } from "$lib/components/ui/button"
 </script>
 
 <header>
@@ -23,13 +12,26 @@
         <LogoMini />
       </div>
       <h1 class="mt-2 font-schdesign text-2xl">logotar</h1>
-      <Cat />
+      <Cat class="stroke-schdesign-primary" />
     </div>
-    <div class="flex flex-row items-center gap-2">
-      <nav class="flex flex-row gap-2">
-        {#each links as { href, label }}
-          <a class:activeLink={page.url.pathname === href} {href}>{label}</a>
-        {/each}
+    <div class="flex flex-row items-center gap-1">
+      <nav class="flex flex-row gap-1">
+        <a href="/icons">
+          <Button variant="outline" size="icon">
+            <Image />
+          </Button>
+        </a>
+        <a href="/generator">
+          <Button variant="outline" size="icon">
+            <Plus />
+          </Button>
+        </a>
+
+        <a href="/guide">
+          <Button variant="outline" size="icon">
+            <CircleHelp />
+          </Button>
+        </a>
       </nav>
       <ModeMenu />
     </div>
