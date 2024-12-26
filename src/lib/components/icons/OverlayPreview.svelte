@@ -31,7 +31,7 @@
     </Button>
   </div>
   <!-- svelte-ignore a11y_missing_attribute -->
-  <img src={path} />
+  <img class="object-contain" src={path} />
 </figure>
 
 <style lang="postcss">
