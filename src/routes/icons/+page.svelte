@@ -1,17 +1,15 @@
 <script lang="ts">
   import Icon from "$lib/components/icons/Icon.svelte"
   import { Input } from "$lib/components/ui/input"
-  import exportedFile from "../../data/export.json"
+
+  import { logoCollection } from "$lib/data/proxy"
 
   let searchField = $state("")
 
-  const collection = $derived(exportedFile)
-
-  $inspect(searchField)
-  $inspect(collection)
+  const collection = $derived(logoCollection)
 </script>
 
-<div class="container mx-auto grid gap-4">
+<div class="container mx-auto grid gap-4 py-8">
   <section>
     <Input
       bind:value={searchField}
@@ -22,7 +20,7 @@
   </section>
 
   <div class="">
-    <section class="grid gap-16">
+    <section class="grid gap-16 py-4">
       {#each collection.sort( (a, b) => a.name.localeCompare(b.name) ) as category}
         <div>
           <h2 class="mb-2 text-2xl font-bold">{category.name}</h2>
