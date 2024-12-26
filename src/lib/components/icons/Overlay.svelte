@@ -61,6 +61,12 @@
           </div>
           <div>
             <h2>{entry?.team.name}</h2>
+            <h3>{Math.round(entry?.logo.size / 1000)} kB</h3>
+            <h3>
+              Utoljára módosítva: {new Date(
+                entry?.logo.lastModified
+              ).toLocaleDateString("hu")}
+            </h3>
           </div>
         </div>
         <div>

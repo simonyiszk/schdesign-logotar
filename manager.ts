@@ -6,6 +6,8 @@ import * as toml from "toml"
 interface Logo {
   filename: string
   path: string
+  size?: number
+  lastModified?: number
 }
 
 interface Team {
@@ -55,7 +57,13 @@ function main(args: { svgPath: string }) {
 
       for (const f of svgFiles) {
         const relativePath = path.relative(args.svgPath, path.join(t, f))
-        tempLogos.push({ filename: f, path: `icons/${relativePath}` })
+        const file = Bun.file(path.join(args.svgPath, relativePath))
+        tempLogos.push({
+          filename: f,
+          path: `icons/${relativePath}`,
+          size: file.size,
+          lastModified: file.lastModified,
+        })
       }
 
       tempTeams.push({
