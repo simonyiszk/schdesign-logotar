@@ -1,0 +1,19 @@
+name: style
+on:
+  push:
+    paths:
+      - src/lib/**
+      - .eslintrc.json
+      - .gitignore
+      - .prettierignore
+      - .prettierrc
+      - package.json
+jobs:
+  check-project-coding-style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install
+      - run: bun run lint
