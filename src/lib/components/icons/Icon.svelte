@@ -16,7 +16,7 @@
     <Tooltip.Trigger>
       <button onclick={() => logoOverlayStore.open(name)} class="size-full">
         <div
-          class="aspect-square size-full rounded-xl bg-muted p-4 transition hover:bg-muted-foreground/20"
+          class="aspect-square size-full rounded-xl bg-muted p-2 transition hover:bg-muted-foreground/20 sm:p-4"
         >
           <!-- svelte-ignore a11y_missing_attribute -->
           <img class="size-full object-contain" src={path} loading="lazy" />
