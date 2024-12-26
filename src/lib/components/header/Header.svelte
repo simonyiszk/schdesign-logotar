@@ -7,12 +7,14 @@
 
 <header>
   <div class="container mx-auto flex flex-row items-center justify-between p-4">
-    <div class="relative flex flex-row items-center gap-2">
-      <div class="size-6 fill-schdesign-primary">
-        <LogoMini />
-      </div>
-      <h1 class="mt-2 font-schdesign text-2xl">logotar</h1>
-      <Cat class="stroke-schdesign-primary" />
+    <div>
+      <a class="relative flex flex-row items-center gap-2" href="/">
+        <div class="size-6 fill-schdesign-primary">
+          <LogoMini />
+        </div>
+        <h1 class="mt-2 font-schdesign text-2xl">logotar</h1>
+        <Cat class="stroke-schdesign-primary" />
+      </a>
     </div>
     <div class="flex flex-row items-center gap-1">
       <nav class="flex flex-row gap-1">
