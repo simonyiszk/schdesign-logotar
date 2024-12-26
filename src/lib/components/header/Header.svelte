@@ -41,7 +41,7 @@
 </header>
 
 <style lang="postcss">
-  .activeLink {
-    @apply text-primary;
+  header {
+    @apply sticky left-0 top-0 bg-background shadow-sm;
   }
 </style>
