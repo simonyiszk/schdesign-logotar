@@ -14,7 +14,11 @@
 <Tooltip.Provider>
   <Tooltip.Root>
     <Tooltip.Trigger>
-      <button onclick={() => logoOverlayStore.open(name)} class="size-full">
+      <button
+        aria-label="Logó megnyitása"
+        onclick={() => logoOverlayStore.open(name)}
+        class="size-full"
+      >
         <div
           class="aspect-square size-full rounded-xl bg-muted p-2 transition hover:bg-muted-foreground/20 sm:p-4"
         >

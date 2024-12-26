@@ -58,6 +58,6 @@
 }
 
 @font-face {
-  font-family: 'Schdesign Condensed';
-  src: url("/fonts/subset-schdesign-Condensed.woff2") format('woff2');
+  font-family: "Schdesign Condensed";
+  src: url("/fonts/subset-schdesign-Condensed.woff2") format("woff2");
 }

@@ -21,7 +21,7 @@ interface Category {
   teams: Team[]
 }
 
-function readTomlFile(filePath: string): any {
+function readTomlFile(filePath: string): object {
   if (!fs.existsSync(filePath)) {
     throw new Error(`Config file missing for ${filePath}`)
   }
