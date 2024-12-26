@@ -65,8 +65,7 @@ function main(args: { svgPath: string }) {
       }
 
       tempTeams.push({
-        name: teamConfig["name"],
-        slug: teamConfig["slug"],
+        ...teamConfig,
         logos: tempLogos,
       })
     }
