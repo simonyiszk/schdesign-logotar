@@ -5,6 +5,7 @@
   import { X } from "lucide-svelte"
   import { logoCollection } from "$lib/data/proxy"
   import OverlayPreview from "./OverlayPreview.svelte"
+  import { GIT_BRANCH } from "$lib/config"
 
   function handleClose() {
     logoOverlayStore.close()
@@ -20,6 +21,7 @@
         for (let l of t.logos) {
           if (l.path.includes($logoOverlayStore)) {
             return {
+              category: c,
               logo: l,
               team: t,
             }
@@ -71,7 +73,18 @@
         </div>
         <div>
           <div>
-            <Button>SVG</Button>
+            <a
+              href={`icons/${entry.category.slug}/${entry.team.slug}/${entry.logo.filename}`}
+              target="_blank"
+            >
+              <Button>SVG letöltése</Button>
+            </a>
+            <a
+              href={`https://github.com/simonyiszk/schdesign-logotar/tree/${GIT_BRANCH}/static/icons/${entry.category.slug}/${entry.team.slug}/`}
+              target="_blank"
+            >
+              <Button>Github</Button>
+            </a>
           </div>
         </div>
       </div>
@@ -89,7 +102,7 @@
   }
 
   .left {
-    @apply aspect-square size-full max-w-64;
+    @apply aspect-square size-full sm:max-w-64;
   }
 
   .right {
