@@ -17,7 +17,7 @@
         class="aspect-square size-full rounded-xl bg-muted p-4 transition hover:bg-muted-foreground/20"
       >
         <!-- svelte-ignore a11y_missing_attribute -->
-        <img class="size-full object-contain" src={path} />
+        <img class="size-full object-contain" src={path} loading="lazy" />
       </div>
     </Tooltip.Trigger>
     <Tooltip.Content side="bottom">
