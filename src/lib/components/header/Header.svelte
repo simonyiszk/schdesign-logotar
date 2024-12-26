@@ -23,11 +23,6 @@
             <Image />
           </Button>
         </a>
-        <a href="/generator">
-          <Button variant="outline" size="icon">
-            <Plus />
-          </Button>
-        </a>
 
         <a href="/guide">
           <Button variant="outline" size="icon">
