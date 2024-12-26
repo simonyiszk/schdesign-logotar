@@ -7,7 +7,6 @@ interface Logo {
   filename: string
   path: string
   size?: number
-  lastModified?: number
 }
 
 interface Team {
@@ -62,7 +61,6 @@ function main(args: { svgPath: string }) {
           filename: f,
           path: `icons/${relativePath}`,
           size: file.size,
-          lastModified: file.lastModified,
         })
       }
 
