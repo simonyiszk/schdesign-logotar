@@ -276,25 +276,7 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
-        name: "Parkett",
-        preview: "/preview/Parkett_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1wVvoDCKvhXiJMpfgmo1SLuVLyKbhNPwA",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1Cwq0_-PZ0dxRQR5jzdBXCZR9CG-E08gU",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1DTfUFXFdKspYLFBQ349suRIxC6IFaZ_F",
-          },
-        ],
-      },
-      {
-        name: "Schorpong",
+        name: "Schörpong",
         preview: "/preview/Schorpong_preview.png",
         links: [
           {
@@ -312,7 +294,7 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
-        name: "Szakest",
+        name: "VIK Szakestély",
         preview: "/preview/Szakest_preview.png",
         links: [
           {
@@ -332,77 +314,149 @@ export const collections: Array<ICollection> = [
     ],
   },
   {
-    name: "kofer",
+    name: "falatozó",
     logos: [
       {
-        name: "KFB",
-        preview: "/preview/KFB_preview.png",
+        name: "Americano",
+        preview: "/preview/Americano_preview.png",
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1by23iPhcZfzBIRmZTc1yYpBkEfq2jFd4",
+            url: "https://drive.google.com/uc?export=download&id=1gmw4iiWcUwuPk2Jg6LVde2D4uakn2nDR",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1cO-GaDThZHF0wk6aKPWpYmUIOt1n_fjo",
+            url: "https://drive.google.com/uc?export=download&id=12ZkqTZU99qFXf5zqo6LyIxyt1BtWQ21U",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1SCgkI-BPDxwIwpUdRGM5UuuKA35Nz7xw",
+            url: "https://drive.google.com/uc?export=download&id=12A3N7AcKNQxxbzcStUWqOqG88S_ApweZ",
           },
         ],
       },
       {
-        name: "KOFER",
-        preview: "/preview/KOFER_preview.png",
+        name: "FoodEx",
+        preview: "/preview/FoodEx_preview.png",
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1JCbctI1x0KoLcYDbhbAlhUZlQd8zdo8N",
+            url: "https://drive.google.com/uc?export=download&id=1o0uSuFTb5M5_IUDlNtSQGT-vUZvENaZf",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1pRJOGca-Rlvl4xGLKHFbMJC_HnUuSvFW",
+            url: "https://drive.google.com/uc?export=download&id=1RRsKj3bycG_kyq44zf81Uua6YfU1J2Km",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1AstGevtng0hgbmQFeXMTm19ZKaBzggs1",
+            url: "https://drive.google.com/uc?export=download&id=1Zcl1J6Ual6l6pfGu1Y7PCzkvZwsYpwfD",
           },
         ],
       },
       {
-        name: "SternenSchau",
-        preview: "/preview/SternenSchau_preview.png",
+        name: "Vörös Kakas Fogadó",
+        preview: "/preview/Kakas_preview.png",
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1bmCN-3S4HcgbtE7E5SvKuM4cf9Af20eU",
+            url: "https://drive.google.com/uc?export=download&id=1NdoKNG9yRtLUvWkFDkHROc2g-yARLIac",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1BZFaDwgoh8aW89eF0ElXL3gFDWf99qce",
+            url: "https://drive.google.com/uc?export=download&id=1-PGekrSwqlos-mgZmhGkPHhCWwgLu3Ck",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1phaXo-Vg8U1UzbyWvziX3QXcWr5s_K0n",
+            url: "https://drive.google.com/uc?export=download&id=1iUaKjffn9q-OnBgUuQm25G5e6WwEdfJ_",
           },
         ],
       },
       {
-        name: "Szita",
-        preview: "/preview/Szita_preview.png",
+        name: "LángoSCH",
+        preview: "/preview/Lángosch_preview.png",
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1Trt4X8ZyYQSlyMu7F5DGH3pA-ZLKQQ-n",
+            url: "https://drive.google.com/uc?export=download&id=1BiwJezx6n97nYoYU-dQLT4WE_yfi6kf5",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1uX3XqLg_jIDdc8Smoj3RwESAAMpnqckn",
+            url: "https://drive.google.com/uc?export=download&id=1IO5YGvn8fzuPlK8x4HaCMt378JwuZzmo",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1-0y-lTDM2yKM0sbQ3x1UjDmDYNELEADJ",
+            url: "https://drive.google.com/uc?export=download&id=1We1XlWDXBlJFGmXlJl_SDDiYmGJgPXLH",
+          },
+        ],
+      },
+      {
+        name: "Palacsintázó",
+        preview: "/preview/Palacsintázó_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1lkb2y1DVNAVhlo8fTecONGCtwNfCT2Rq",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1TB57f225RruUwRg2CmK4U1MzZnOP5ZeW",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=18vx0x2nEc95Y63Z1PP50yb3rjMRPCHgG",
+          },
+        ],
+      },
+      {
+        name: "Pizzásch",
+        preview: "/preview/Pizzásch_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1z_qG9TGZrJwyzEjekPx9mF_k_uNPJGI3",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1KgpxA3w_9E7zQVzZvYJpveFg0HO5dh2q",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1PjZuAksOXM5V8SVm3GOQSTEvgrX2T7Ql",
+          },
+        ],
+      },
+      {
+        name: "ReggeliSCH",
+        preview: "/preview/ReggeliSCH_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1LpInx41S5jIGTUClRuw91eQeEj1J5Vrn",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1-xOsN68aRqKZSWST6Ml8_htZKjtziStL",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1bK9WrHsrDJz6uoDfw-2Cbx-6DcwSagCc",
+          },
+        ],
+      },
+      {
+        name: "Vödörkör",
+        preview: "/preview/Vödör_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1NY0lHZlCU5nvtUJKbanJxyIQKjycevu8",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1Rm1f594QSus_YXmemIvipCRPtY-msFwV",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1-lvr1KGQC3SKM07ek4F9U9O_jWjz3-uS",
           },
         ],
       },
@@ -561,24 +615,6 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
-        name: "Bűvész Kör",
-        preview: "/preview/BűvészKör_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1UQhOemXM4te6o5zo2YVKrd5AAQM6vp6j",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1MVHyL-CrP5QTJOoLoaEdSI-kebKrvCwl",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1y-sQps0iwI0jGi9UocVXDFmTRrjMHlKc",
-          },
-        ],
-      },
-      {
         name: "Impulzus",
         preview: "/preview/Impulzus-új_preview.png",
         links: [
@@ -633,7 +669,7 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
-        name: "LaPlace",
+        name: "La'Place Café",
         preview: "/preview/LaPlace_preview.png",
         links: [
           {
@@ -688,302 +724,10 @@ export const collections: Array<ICollection> = [
       },
     ],
   },
-  {
-    name: "szor",
-    logos: [
-      {
-        name: "Americano",
-        preview: "/preview/Americano_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1gmw4iiWcUwuPk2Jg6LVde2D4uakn2nDR",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=12ZkqTZU99qFXf5zqo6LyIxyt1BtWQ21U",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=12A3N7AcKNQxxbzcStUWqOqG88S_ApweZ",
-          },
-        ],
-      },
-      {
-        name: "Dzsájrosz",
-        preview: "/preview/Dzsájrosz_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1tkyAsDcH77qM1ixry9B8bVFkhIbii7cW",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=19dnT4UWfmEuL35hctO1B8NivMZXFnqUR",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1d_Vimj5aYgd0s3mZs6i6m5v8T38IzVnn",
-          },
-        ],
-      },
-      {
-        name: "Edénykölcsönző",
-        preview: "/preview/Edénykölcsönző_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1PkVnN0uA3MNIrFTDjyA55gDLb6F9_Tco",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=16NCxJHGoWA3QCYPzzNvElI6qMpGWEiGc",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1IMITxg6FGeh-beXgSsVln_yTe5GEG70z",
-          },
-        ],
-      },
-      {
-        name: "FoodEx",
-        preview: "/preview/FoodEx_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1o0uSuFTb5M5_IUDlNtSQGT-vUZvENaZf",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1RRsKj3bycG_kyq44zf81Uua6YfU1J2Km",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1Zcl1J6Ual6l6pfGu1Y7PCzkvZwsYpwfD",
-          },
-        ],
-      },
-      {
-        name: "Hajvágósch",
-        preview: "/preview/Hajvágósch_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1kJ1B9vgRlThsq_ywlHuliLfkZ6_Mme62",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=14AdRz1O6F7r6TusfHa2PUHy0eofPaZH4",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1ny6ZSu8W_AJDXqzGeWFdrP_zviQvTxEU",
-          },
-        ],
-      },
-      {
-        name: "Kakas",
-        preview: "/preview/Kakas_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1NdoKNG9yRtLUvWkFDkHROc2g-yARLIac",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1-PGekrSwqlos-mgZmhGkPHhCWwgLu3Ck",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1iUaKjffn9q-OnBgUuQm25G5e6WwEdfJ_",
-          },
-        ],
-      },
-      {
-        name: "Lángosch",
-        preview: "/preview/Lángosch_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1BiwJezx6n97nYoYU-dQLT4WE_yfi6kf5",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1IO5YGvn8fzuPlK8x4HaCMt378JwuZzmo",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1We1XlWDXBlJFGmXlJl_SDDiYmGJgPXLH",
-          },
-        ],
-      },
-      {
-        name: "Palacsintázó",
-        preview: "/preview/Palacsintázó_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1lkb2y1DVNAVhlo8fTecONGCtwNfCT2Rq",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1TB57f225RruUwRg2CmK4U1MzZnOP5ZeW",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=18vx0x2nEc95Y63Z1PP50yb3rjMRPCHgG",
-          },
-        ],
-      },
-      {
-        name: "Pizzásch",
-        preview: "/preview/Pizzásch_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1z_qG9TGZrJwyzEjekPx9mF_k_uNPJGI3",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1KgpxA3w_9E7zQVzZvYJpveFg0HO5dh2q",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1PjZuAksOXM5V8SVm3GOQSTEvgrX2T7Ql",
-          },
-        ],
-      },
-      {
-        name: "Pulcsi és Foltmékör",
-        preview: "/preview/PulcsiésFoltmékör_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1heFmsgHYmuX1Nz9tiGUxsZhk9LKDrCHq",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1X4R-KQT9l7W2eiY5Mkvg-9KZdNccEiTx",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1fHhuKLQkcGMFxGf0y0xB9TQ8Y--Klt23",
-          },
-        ],
-      },
-      {
-        name: "ReggeliSCH",
-        preview: "/preview/ReggeliSCH_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1LpInx41S5jIGTUClRuw91eQeEj1J5Vrn",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1-xOsN68aRqKZSWST6Ml8_htZKjtziStL",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1bK9WrHsrDJz6uoDfw-2Cbx-6DcwSagCc",
-          },
-        ],
-      },
-      {
-        name: "SZOR Reszort",
-        preview: "/preview/SZORReszort_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=16F95v1c1-XFGf1NB1AZMRiIsCy0Kxv0y",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=15VdjCfVUPRFriFXuQ-8Iz36l5bPh0ZZq",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=18M8ouBx4UJIDl-LCgKvaIc78WZO5dG4m",
-          },
-        ],
-      },
-      {
-        name: "Szauna",
-        preview: "/preview/Szauna_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1ALcOHLI8UIa2UeysQS0NtTBDk_Ap6euh",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1leqQKR8HqHBI3m0Mtga6k33_VhFca5vq",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1CExrHv4Y331ToSMA0SGK2QzP0CsQWE18",
-          },
-        ],
-      },
-      {
-        name: "Vödör",
-        preview: "/preview/Vödör_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1NY0lHZlCU5nvtUJKbanJxyIQKjycevu8",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1Rm1f594QSus_YXmemIvipCRPtY-msFwV",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1-lvr1KGQC3SKM07ek4F9U9O_jWjz3-uS",
-          },
-        ],
-      },
-      {
-        name: "WTF",
-        preview: "/preview/WTF_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1jSCZTDVumxEeq1e2Yxo6cjWQWVhvCO9s",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1p6r9m5NOurtiXvEU6cAlDn7Cd3FSdvCu",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=15MBbqKViayCSYW1DvBJeWHyvIkuxTs0B",
-          },
-        ],
-      },
-    ],
-  },
+  
   {
     name: "schönherz",
     logos: [
-      {
-        name: "BMEME",
-        preview: "/preview/BMEME_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1WmFyWXWAZLvgfj-UByqLmd6Bq7FVEw9a",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1THdAE7d7D71z2P1cUSeFuzFpmxLJOwP2",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1uBf7vVjKAvkxQYBj-xaAed8qPxicFY1X",
-          },
-        ],
-      },
       {
         name: "Homar",
         preview: "/preview/Homar_preview.png",
@@ -999,24 +743,6 @@ export const collections: Array<ICollection> = [
           {
             name: "svg",
             url: "https://drive.google.com/uc?export=download&id=1sbR_tPfrFXzxLEQ8T93w-3TH43yxJ3SS",
-          },
-        ],
-      },
-      {
-        name: "KB-PR",
-        preview: "/preview/KB-PR_preview.png",
-        links: [
-          {
-            name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1_I4nvOlSfYfChIh68IrYGAjaHSs_uV4Z",
-          },
-          {
-            name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1LcrWwSE7LoKwKpMTEelJy-B1VitwTomY",
-          },
-          {
-            name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1nj2BFIferVi2AdfSirLMMgtdZ4fOls_3",
           },
         ],
       },
@@ -1044,15 +770,15 @@ export const collections: Array<ICollection> = [
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1XaoCVFtJbhh4CmqQ5hlzYhgbAuzmxID0",
+            url: "https://drive.google.com/uc?export=download&id=1X6ZbZpAKjFc9SmXITpdWBGsjST5PUniw",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=18onVi7YJaWeR0GmSzaQJkNVpOpoeaBij",
+            url: "https://drive.google.com/uc?export=download&id=1WKZ5Cy_dzj24K8fRS3R7Si1lLIndymsz",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1nEDA6zBAQdEo5kCeQ9OF19_pTb7s6I9w",
+            url: "https://drive.google.com/uc?export=download&id=1K1RfSTYd9m0jigjUQPr5JSwMgPAYcjIg",
           },
         ],
       },
@@ -1075,20 +801,20 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
-        name: "Schönherz Body",
-        preview: "/preview/SchönherzBody_preview.png",
+        name: "Schönherz alsó szöveges",
+        preview: "/preview/Schönherz_also_szoveg_preview.png",
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1yD0Lxf2nzRsUm_D0UUYbQNpoK2YwGK75",
+            url: "https://drive.google.com/uc?export=download&id=1BAzzEjrE8F3lIV69Ol6cvQkNIJdukn24",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1WlhZT3W_PPe5xS8-ScGY2hoeKlpcgzgI",
+            url: "https://drive.google.com/uc?export=download&id=1kOE0kj0aW0RcB6skVekjN2M8iPj55jb0",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1sl28oA8QnbLcyxf839k9jxHKyJM6hJRc",
+            url: "https://drive.google.com/uc?export=download&id=17pLKjoWYCGJ_cgrqE_Yi1x82LqBFogGt",
           },
         ],
       },
@@ -1224,7 +950,7 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
-        name: "LEGO",
+        name: "LEGO Kör",
         preview: "/preview/LEGO_preview.png",
         links: [
           {
@@ -1373,6 +1099,24 @@ export const collections: Array<ICollection> = [
         ],
       },
       {
+        name: "Schönherz Body",
+        preview: "/preview/SchönherzBody_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1yD0Lxf2nzRsUm_D0UUYbQNpoK2YwGK75",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1WlhZT3W_PPe5xS8-ScGY2hoeKlpcgzgI",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1sl28oA8QnbLcyxf839k9jxHKyJM6hJRc",
+          },
+        ],
+      },
+      {
         name: "Általános szertár",
         preview: "/preview/Általánosszertár_preview.png",
         links: [
@@ -1387,6 +1131,322 @@ export const collections: Array<ICollection> = [
           {
             name: "svg",
             url: "https://drive.google.com/uc?export=download&id=1QXiibe5lSS7RWBH3Qir3ICd4NVXnoi0V",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "széf",
+    logos: [
+      {
+        name: "Edénykölcsönző",
+        preview: "/preview/Edénykölcsönző_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1PkVnN0uA3MNIrFTDjyA55gDLb6F9_Tco",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=16NCxJHGoWA3QCYPzzNvElI6qMpGWEiGc",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1IMITxg6FGeh-beXgSsVln_yTe5GEG70z",
+          },
+        ],
+      },
+      {
+        name: "Hajvágósch",
+        preview: "/preview/Hajvágósch_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1vODnJmlZKyL16czgoTxl_s9O9obXhaHT",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1jnJopUoDA0JaI68cHXF1cWGOLRDw",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1DAKVLWhJd7TTka9bBh8E3WZ3FUWujHRM",
+          },
+        ],
+      },
+      {
+        name: "KB PR",
+        preview: "/preview/KB_PR_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1E2lbRcfiusHyDOYk5_XGw6Q8noInH5Sq",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1ovlYRhueFwCHZ65HU0_CnDvAiLY5sDzu",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1TJq7LKX82BBYfihY79ew_vCZhvsJaFBQ",
+          },
+        ],
+      },
+      {
+        name: "KFB",
+        preview: "/preview/KFB_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1by23iPhcZfzBIRmZTc1yYpBkEfq2jFd4",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1cO-GaDThZHF0wk6aKPWpYmUIOt1n_fjo",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1SCgkI-BPDxwIwpUdRGM5UuuKA35Nz7xw",
+          },
+        ],
+      },
+      {
+        name: "Pulcsi és FoltMékör",
+        preview: "/preview/PulcsiésFoltmékör_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1heFmsgHYmuX1Nz9tiGUxsZhk9LKDrCHq",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1X4R-KQT9l7W2eiY5Mkvg-9KZdNccEiTx",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1fHhuKLQkcGMFxGf0y0xB9TQ8Y--Klt23",
+          },
+        ],
+      },
+      {
+        name: "Sternenschau",
+        preview: "/preview/SternenSchau_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1bmCN-3S4HcgbtE7E5SvKuM4cf9Af20eU",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1BZFaDwgoh8aW89eF0ElXL3gFDWf99qce",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1phaXo-Vg8U1UzbyWvziX3QXcWr5s_K0n",
+          },
+        ],
+      },
+      {
+        name: "Szauna kör",
+        preview: "/preview/Szauna_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1ALcOHLI8UIa2UeysQS0NtTBDk_Ap6euh",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1leqQKR8HqHBI3m0Mtga6k33_VhFca5vq",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1CExrHv4Y331ToSMA0SGK2QzP0CsQWE18",
+          },
+        ],
+      },
+      {
+        name: "Széf Reszort",
+        preview: "/preview/Szef_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1bCS9IJQnhnPz3TvXoDW8cz4qM2ZRfPN3",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1Pc6lCI3qpQrvwkXLyarE_LvQp7ecJtPo",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=188JBTEA6aIUh_Hy9FsNo033L_99L1T2k",
+          },
+        ],
+      },
+      {
+        name: "SziTa",
+        preview: "/preview/Szita_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1Trt4X8ZyYQSlyMu7F5DGH3pA-ZLKQQ-n",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1uX3XqLg_jIDdc8Smoj3RwESAAMpnqckn",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1-0y-lTDM2yKM0sbQ3x1UjDmDYNELEADJ",
+          },
+        ],
+      },
+      {
+        name: "WTF",
+        preview: "/preview/WTF_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1jSCZTDVumxEeq1e2Yxo6cjWQWVhvCO9s",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1p6r9m5NOurtiXvEU6cAlDn7Cd3FSdvCu",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=15MBbqKViayCSYW1DvBJeWHyvIkuxTs0B",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "régi logók",
+    logos: [
+      {
+        name: "BMEME",
+        preview: "/preview/BMEME_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1WmFyWXWAZLvgfj-UByqLmd6Bq7FVEw9a",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1THdAE7d7D71z2P1cUSeFuzFpmxLJOwP2",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1uBf7vVjKAvkxQYBj-xaAed8qPxicFY1X",
+          },
+        ],
+      },
+      {
+        name: "Bűvész Kör",
+        preview: "/preview/BűvészKör_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1UQhOemXM4te6o5zo2YVKrd5AAQM6vp6j",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1MVHyL-CrP5QTJOoLoaEdSI-kebKrvCwl",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1y-sQps0iwI0jGi9UocVXDFmTRrjMHlKc",
+          },
+        ],
+      },
+      {
+        name: "Dzsájrosz",
+        preview: "/preview/Dzsájrosz_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1tkyAsDcH77qM1ixry9B8bVFkhIbii7cW",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=19dnT4UWfmEuL35hctO1B8NivMZXFnqUR",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1d_Vimj5aYgd0s3mZs6i6m5v8T38IzVnn",
+          },
+        ],
+      },
+      {
+        name: "Hajvágósch régi",
+        preview: "/preview/Hajvágósch_regi_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1kJ1B9vgRlThsq_ywlHuliLfkZ6_Mme62",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=14AdRz1O6F7r6TusfHa2PUHy0eofPaZH4",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1ny6ZSu8W_AJDXqzGeWFdrP_zviQvTxEU",
+          },
+        ],
+      },
+      {
+        name: "KOFER",
+        preview: "/preview/KOFER_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1JCbctI1x0KoLcYDbhbAlhUZlQd8zdo8N",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1pRJOGca-Rlvl4xGLKHFbMJC_HnUuSvFW",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1AstGevtng0hgbmQFeXMTm19ZKaBzggs1",
+          },
+        ],
+      },
+      {
+        name: "Parkett",
+        preview: "/preview/Parkett_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=1wVvoDCKvhXiJMpfgmo1SLuVLyKbhNPwA",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=1Cwq0_-PZ0dxRQR5jzdBXCZR9CG-E08gU",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=1DTfUFXFdKspYLFBQ349suRIxC6IFaZ_F",
+          },
+        ],
+      },
+      {
+        name: "SZOR Reszort",
+        preview: "/preview/SZORReszort_preview.png",
+        links: [
+          {
+            name: "ai",
+            url: "https://drive.google.com/uc?export=download&id=16F95v1c1-XFGf1NB1AZMRiIsCy0Kxv0y",
+          },
+          {
+            name: "png",
+            url: "https://drive.google.com/uc?export=download&id=15VdjCfVUPRFriFXuQ-8Iz36l5bPh0ZZq",
+          },
+          {
+            name: "svg",
+            url: "https://drive.google.com/uc?export=download&id=18M8ouBx4UJIDl-LCgKvaIc78WZO5dG4m",
           },
         ],
       },
