@@ -3,7 +3,7 @@
     "target": "ES6",
     "useDefineForClassFields": true,
     "lib": ["ES6", "DOM", "DOM.Iterable", "ESNext"],
-    
+
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
