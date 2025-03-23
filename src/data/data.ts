@@ -788,7 +788,7 @@ export const collections: Array<ICollection> = [
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1R96EqK6rbh-r-UizpG4gOMFhGnHQUxnF",
+            url: "https://drive.google.com/uc?export=download&id=1aAb64Go_Yr-FpPXwmcLF4NRUH52dtK64",
           },
           {
             name: "png",
@@ -1167,7 +1167,7 @@ export const collections: Array<ICollection> = [
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1jnJopUoDA0JaI68cHXF1cWGOLRDw",
+            url: "https://drive.google.com/uc?export=download&id=1jnJopUoDA0JaI68cHXF1cWGOLRDw-3oI",
           },
           {
             name: "svg",
