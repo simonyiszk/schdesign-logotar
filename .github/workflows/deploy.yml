@@ -12,6 +12,9 @@ jobs:
         with:
           name: production-files
           path: ./dist
+      
+      - name: Debug Deployment Files
+        run: ls -al ./dist || echo "No files in dist!"
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
