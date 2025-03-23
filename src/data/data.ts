@@ -724,7 +724,7 @@ export const collections: Array<ICollection> = [
       },
     ],
   },
-  
+
   {
     name: "schönherz",
     logos: [
