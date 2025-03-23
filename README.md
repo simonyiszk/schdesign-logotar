@@ -1,3 +1,3 @@
 # schdesign-logotar
 
-TODO
+todo
