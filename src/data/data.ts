@@ -756,7 +756,7 @@ export const collections: Array<ICollection> = [
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1biV05A8q_bYDzVp3gdsCwqNxytFIF0nD",
+            url: "https://drive.google.com/uc?export=download&id=18onVi7YJaWeR0GmSzaQJkNVpOpoeaBij",
           },
           {
             name: "svg",
@@ -770,7 +770,7 @@ export const collections: Array<ICollection> = [
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1X6ZbZpAKjFc9SmXITpdWBGsjST5PUniw",
+            url: "https://drive.google.com/uc?export=download&id=1XaoCVFtJbhh4CmqQ5hlzYhgbAuzmxID0",
           },
           {
             name: "png",
@@ -778,7 +778,7 @@ export const collections: Array<ICollection> = [
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1K1RfSTYd9m0jigjUQPr5JSwMgPAYcjIg",
+            url: "https://drive.google.com/uc?export=download&id=1nEDA6zBAQdEo5kCeQ9OF19_pTb7s6I9w",
           },
         ],
       },
@@ -788,7 +788,7 @@ export const collections: Array<ICollection> = [
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1aAb64Go_Yr-FpPXwmcLF4NRUH52dtK64",
+            url: "https://drive.google.com/uc?export=download&id=1R96EqK6rbh-r-UizpG4gOMFhGnHQUxnF",
           },
           {
             name: "png",
@@ -1181,15 +1181,15 @@ export const collections: Array<ICollection> = [
         links: [
           {
             name: "ai",
-            url: "https://drive.google.com/uc?export=download&id=1E2lbRcfiusHyDOYk5_XGw6Q8noInH5Sq",
+            url: "https://drive.google.com/uc?export=download&id=1_I4nvOlSfYfChIh68IrYGAjaHSs_uV4Z",
           },
           {
             name: "png",
-            url: "https://drive.google.com/uc?export=download&id=1ovlYRhueFwCHZ65HU0_CnDvAiLY5sDzu",
+            url: "https://drive.google.com/uc?export=download&id=1LcrWwSE7LoKwKpMTEelJy-B1VitwTomY",
           },
           {
             name: "svg",
-            url: "https://drive.google.com/uc?export=download&id=1TJq7LKX82BBYfihY79ew_vCZhvsJaFBQ",
+            url: "https://drive.google.com/uc?export=download&id=1nj2BFIferVi2AdfSirLMMgtdZ4fOls_3",
           },
         ],
       },
