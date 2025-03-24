@@ -4,6 +4,9 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "@mui/material-pigment-css/styles.css";
 import { Navbar } from "~/components/navbar";
 import { CssBaseline } from "@mui/material";
+import { Footer } from "~/components/footer";
+import { getPayload } from "payload";
+import config from "@payload-config";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -20,10 +23,6 @@ export const metadata = {
 export const viewport = {
   themeColor: "#f8485e",
 } satisfies Viewport;
-
-import { getPayload } from "payload";
-import config from "@payload-config";
-import { Footer } from "~/components/footer";
 
 async function getData() {
   const client = await getPayload({ config });
