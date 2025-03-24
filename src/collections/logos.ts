@@ -1,10 +1,10 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig } from "payload";
 
 export const Logos = {
-  slug: 'logos',
+  slug: "logos",
   admin: {
     description: "A logo for an institution, reszort, kör, etc.",
-    useAsTitle: 'Name',
+    useAsTitle: "Name",
   },
   fields: [
     {
@@ -19,8 +19,8 @@ export const Logos = {
       required: true,
       hasMany: false,
       admin: {
-        description: "The preview image of the logo, preferrably a small PNG file."
-      }
+        description: "The preview image of the logo, preferrably a small PNG file.",
+      },
     },
     {
       name: "Master file",
@@ -30,7 +30,7 @@ export const Logos = {
       hasMany: false,
       admin: {
         description: "The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
-      }
+      },
     },
     {
       name: "Files",
@@ -38,13 +38,13 @@ export const Logos = {
       relationTo: "media",
       hasMany: true,
       admin: {
-        description: "Downloadable files for the logo, such as PNG, SVG, etc."
-      }
+        description: "Downloadable files for the logo, such as PNG, SVG, etc.",
+      },
     },
     {
       name: "Show in variations",
       type: "checkbox",
       defaultValue: true,
-    }
+    },
   ],
-} satisfies CollectionConfig
+} satisfies CollectionConfig;

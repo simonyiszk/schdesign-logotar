@@ -1,10 +1,10 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig } from "payload";
 
 export const LogoCollections = {
-  slug: 'logo-collections',
+  slug: "logo-collections",
   admin: {
-    description: 'Collections of logos using an arbitrary rule, such as: Institution, Reszort, Kör, etc.',
-    useAsTitle: 'Name',
+    description: "Collections of logos using an arbitrary rule, such as: Institution, Reszort, Kör, etc.",
+    useAsTitle: "Name",
   },
   fields: [
     {
@@ -23,6 +23,6 @@ export const LogoCollections = {
       name: "Show in navbar",
       type: "checkbox",
       defaultValue: true,
-    }
-  ]
-} satisfies CollectionConfig
+    },
+  ],
+} satisfies CollectionConfig;
