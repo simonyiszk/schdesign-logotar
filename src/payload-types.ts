@@ -144,6 +144,8 @@ export interface LogoCollection {
    * Whether to show this collection in the navbar
    */
   showInNavbar?: boolean | null;
+  createdBy?: (number | null) | User;
+  updatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
 }
@@ -171,6 +173,8 @@ export interface LogoVariant {
    * Whether to show this variant in the collections.
    */
   showInCollections?: boolean | null;
+  createdBy?: (number | null) | User;
+  updatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
 }
@@ -206,6 +210,8 @@ export interface Logo {
    * Whether to show this logo in the variations.
    */
   showInVariations?: boolean | null;
+  createdBy?: (number | null) | User;
+  updatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
 }
@@ -221,6 +227,8 @@ export interface Media {
    * The alt text for the image.
    */
   alt?: string | null;
+  createdBy?: (number | null) | User;
+  updatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -235,6 +243,26 @@ export interface Media {
   sizes?: {};
 }
 /**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: number;
+  role: 'admin' | 'editor' | 'user';
+  createdBy?: (number | null) | User;
+  updatedBy?: (number | null) | User;
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  password?: string | null;
+}
+/**
  * Master files are the original files used to create logos, such as Photoshop/Illustrator/Affinity files.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -246,6 +274,8 @@ export interface MasterFile {
    * The alt text for the image.
    */
   alt?: string | null;
+  createdBy?: (number | null) | User;
+  updatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -257,23 +287,6 @@ export interface MasterFile {
   height?: number | null;
   focalX?: number | null;
   focalY?: number | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users".
- */
-export interface User {
-  id: number;
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  password?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -357,6 +370,8 @@ export interface LogoCollectionsSelect<T extends boolean = true> {
   slug?: T;
   variants?: T;
   showInNavbar?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -371,6 +386,8 @@ export interface LogosSelect<T extends boolean = true> {
   masterFile?: T;
   files?: T;
   showInVariations?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -383,6 +400,8 @@ export interface LogoVariantsSelect<T extends boolean = true> {
   slug?: T;
   logos?: T;
   showInCollections?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -392,6 +411,8 @@ export interface LogoVariantsSelect<T extends boolean = true> {
  */
 export interface MasterFilesSelect<T extends boolean = true> {
   alt?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -410,6 +431,8 @@ export interface MasterFilesSelect<T extends boolean = true> {
  */
 export interface MediaSelect<T extends boolean = true> {
   alt?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -428,6 +451,9 @@ export interface MediaSelect<T extends boolean = true> {
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
+  role?: T;
+  createdBy?: T;
+  updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
   email?: T;

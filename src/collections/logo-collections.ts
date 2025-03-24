@@ -1,4 +1,6 @@
 import type { CollectionConfig } from "payload";
+import { createdByHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/utils/payload/fields";
 
 export const LogoCollections = {
   slug: "logo-collections",
@@ -45,5 +47,13 @@ export const LogoCollections = {
         description: "Whether to show this collection in the navbar",
       },
     },
+    createdByField,
+    updatedByField,
   ],
+  hooks: {
+    beforeChange: [
+      createdByHook,
+      updatedByHook,
+    ],
+  },
 } satisfies CollectionConfig;

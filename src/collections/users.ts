@@ -1,4 +1,6 @@
 import type { CollectionConfig } from "payload";
+import { createdByHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/utils/payload/fields";
 
 export const Users = {
   slug: "users",
@@ -7,7 +9,24 @@ export const Users = {
   },
   auth: true,
   fields: [
-    // Email added by default
-    // Add more fields as needed
+    {
+      name: "role",
+      type: "select",
+      options: [
+        { label: "Admin", value: "admin" },
+        { label: "Editor", value: "editor" },
+        { label: "User", value: "user" },
+      ],
+      required: true,
+      defaultValue: "user",
+    },
+    createdByField,
+    updatedByField,
   ],
+  hooks: {
+    beforeChange: [
+      createdByHook,
+      updatedByHook,
+    ],
+  },
 } satisfies CollectionConfig;

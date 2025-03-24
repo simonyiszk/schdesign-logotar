@@ -1,4 +1,6 @@
 import type { CollectionConfig } from "payload";
+import { createdByHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/utils/payload/fields";
 
 export const LogoVariants = {
   slug: "logo-variants",
@@ -46,5 +48,13 @@ export const LogoVariants = {
         description: "Whether to show this variant in the collections.",
       },
     },
+    createdByField,
+    updatedByField,
   ],
+  hooks: {
+    beforeChange: [
+      createdByHook,
+      updatedByHook,
+    ],
+  },
 } satisfies CollectionConfig;

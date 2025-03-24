@@ -1,4 +1,6 @@
 import type { CollectionConfig } from "payload";
+import { createdByHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/utils/payload/fields";
 
 export const MasterFiles = {
   slug: "master-files",
@@ -18,5 +20,13 @@ export const MasterFiles = {
         description: "The alt text for the image.",
       },
     },
+    createdByField,
+    updatedByField,
   ],
+  hooks: {
+    beforeChange: [
+      createdByHook,
+      updatedByHook,
+    ],
+  },
 } satisfies CollectionConfig;
