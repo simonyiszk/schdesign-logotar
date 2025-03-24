@@ -248,7 +248,14 @@ export interface Media {
  */
 export interface User {
   id: number;
+  /**
+   * The role of the user.
+   */
   role: 'admin' | 'editor' | 'user';
+  /**
+   * A note about the user.
+   */
+  note?: string | null;
   createdBy?: (number | null) | User;
   updatedBy?: (number | null) | User;
   updatedAt: string;
@@ -452,6 +459,7 @@ export interface MediaSelect<T extends boolean = true> {
  */
 export interface UsersSelect<T extends boolean = true> {
   role?: T;
+  note?: T;
   createdBy?: T;
   updatedBy?: T;
   updatedAt?: T;
