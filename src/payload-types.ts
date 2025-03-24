@@ -199,6 +199,14 @@ export interface Logo {
    */
   previewImage: number | Media;
   /**
+   * The background color for light mode of the preview image. Must be a HEX, RGB, RGBA, HSL, or HSLA color.
+   */
+  previewLightBackgroundColor?: string | null;
+  /**
+   * The background color for Dark mode of the preview image. Must be a HEX, RGB, RGBA, HSL, or HSLA color.
+   */
+  previewDarkBackgroundColor?: string | null;
+  /**
    * The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.
    */
   masterFile: number | MasterFile;
@@ -390,6 +398,8 @@ export interface LogosSelect<T extends boolean = true> {
   name?: T;
   slug?: T;
   previewImage?: T;
+  previewLightBackgroundColor?: T;
+  previewDarkBackgroundColor?: T;
   masterFile?: T;
   files?: T;
   showInVariations?: T;

@@ -1,5 +1,7 @@
 import { getPayload } from "payload";
 import config from "@payload-config";
+import { LogoCard } from "~/components/logo-card";
+import { Container, Grid2 } from "@mui/material";
 
 async function getData({
   slug,
@@ -39,9 +41,31 @@ export default async function CollectionPage({
 
   const { collection } = await getData({ slug });
 
+  const variants = collection.variants?.filter((variant) => typeof variant !== "number");
+
   return (
-    <div>
+    <Container maxWidth="xl">
+      <Grid2
+        container
+        spacing={4}
+        justifyContent="center"
+        alignItems="center"
+        columns={5}
+        paddingY={4}
+      >
+        {variants?.map((variant) => {
+          const logos = variant.logos.filter((logo) => typeof logo !== "number");
+
+          return (
+            <LogoCard
+              key={variant.id}
+              variant={variant}
+              logos={logos}
+            />
+          );
+        })}
+      </Grid2>
       <pre>{JSON.stringify(collection, null, 2)}</pre>
-    </div>
+    </Container>
   );
 }

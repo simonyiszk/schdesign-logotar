@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import "@mui/material-pigment-css/styles.css";
 import { Navbar } from "~/components/navbar";
 import { CssBaseline } from "@mui/material";
 import { Footer } from "~/components/footer";
 import { getPayload } from "payload";
 import config from "@payload-config";
+
+import "@mui/material-pigment-css/styles.css";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],

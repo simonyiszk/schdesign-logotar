@@ -1,5 +1,5 @@
 import type { CollectionConfig } from "payload";
-import { createdByHook, hideSensitiveFields, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
 import { createdByField, updatedByField } from "~/utils/payload/fields";
 
 export const Media = {
@@ -31,7 +31,7 @@ export const Media = {
       updatedByHook,
     ],
     afterRead: [
-      hideSensitiveFields(["createdBy", "updatedBy"]),
+      hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
     ],
   },
 } satisfies CollectionConfig;

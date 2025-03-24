@@ -18,7 +18,7 @@ export const updatedByHook: CollectionBeforeChangeHook = ({ req, operation, data
   }
 };
 
-export function hideSensitiveFields(fields: string[]): CollectionAfterReadHook {
+export function hideSensitiveFieldsHook(fields: string[]): CollectionAfterReadHook {
   const hideFields: CollectionAfterReadHook = ({ req, doc }) => {
     if (!req.user) {
       fields.forEach((field) => {

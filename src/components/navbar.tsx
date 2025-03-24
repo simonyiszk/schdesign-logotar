@@ -33,6 +33,11 @@ export function Navbar({
     router.push(`/collections/${newValue}`);
   };
 
+  const onLogoClick = () => {
+    setValue(false);
+    router.push("/");
+  };
+
   const trigger = useScrollTrigger();
 
   return (
@@ -47,6 +52,7 @@ export function Navbar({
                 sx={{
                   mr: 2,
                 }}
+                onClick={onLogoClick}
               >
                 <SchdesignIcon />
               </IconButton>

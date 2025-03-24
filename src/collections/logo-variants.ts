@@ -1,6 +1,6 @@
 import type { CollectionConfig } from "payload";
-import { createdByHook, hideSensitiveFields, updatedByHook } from "~/utils/payload/collection-hooks";
-import { createdByField, updatedByField } from "~/utils/payload/fields";
+import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByField, updatedByField, validateSlug } from "~/utils/payload/fields";
 
 export const LogoVariants = {
   slug: "logo-variants",
@@ -21,6 +21,7 @@ export const LogoVariants = {
     {
       name: "slug",
       type: "text",
+      validate: validateSlug,
       required: true,
       unique: true,
       label: "Slug",
@@ -57,7 +58,7 @@ export const LogoVariants = {
       updatedByHook,
     ],
     afterRead: [
-      hideSensitiveFields(["createdBy", "updatedBy"]),
+      hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
     ],
   },
 } satisfies CollectionConfig;

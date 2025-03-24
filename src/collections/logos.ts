@@ -1,6 +1,6 @@
 import type { CollectionConfig } from "payload";
-import { createdByHook, hideSensitiveFields, updatedByHook } from "~/utils/payload/collection-hooks";
-import { createdByField, updatedByField } from "~/utils/payload/fields";
+import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByField, updatedByField, validateColor, validateSlug } from "~/utils/payload/fields";
 
 export const Logos = {
   slug: "logos",
@@ -21,6 +21,7 @@ export const Logos = {
     {
       name: "slug",
       type: "text",
+      validate: validateSlug,
       required: true,
       unique: true,
       label: "Slug",
@@ -37,6 +38,24 @@ export const Logos = {
       label: "Preview image",
       admin: {
         description: "The preview image of the logo, preferrably a small PNG file.",
+      },
+    },
+    {
+      name: "previewLightBackgroundColor",
+      type: "text",
+      validate: validateColor,
+      label: "Preview background color for light mode",
+      admin: {
+        description: "The background color for light mode of the preview image. Must be a HEX, RGB, RGBA, HSL, or HSLA color.",
+      },
+    },
+    {
+      name: "previewDarkBackgroundColor",
+      type: "text",
+      validate: validateColor,
+      label: "Preview background color for Dark mode",
+      admin: {
+        description: "The background color for Dark mode of the preview image. Must be a HEX, RGB, RGBA, HSL, or HSLA color.",
       },
     },
     {
@@ -78,7 +97,7 @@ export const Logos = {
       updatedByHook,
     ],
     afterRead: [
-      hideSensitiveFields(["createdBy", "updatedBy"]),
+      hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
     ],
   },
 } satisfies CollectionConfig;
