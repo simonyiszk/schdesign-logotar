@@ -1,4 +1,34 @@
+import { getPayload } from "payload";
+import config from "@payload-config";
 import { Button, Typography } from "@mui/material";
+
+async function getData({
+  slug,
+}: {
+  slug: string;
+}) {
+  const client = await getPayload({ config });
+
+  const collections = await client.find({
+    collection: "logo-collections",
+    sort: "name",
+    where: {
+      slug: {
+        equals: slug,
+      },
+    },
+  });
+
+  const collection = collections.docs[0];
+
+  if (!collection) {
+    throw new Error("Collection not found");
+  }
+
+  return {
+    collection,
+  };
+}
 
 export default async function CollectionPage({
   params,
@@ -7,8 +37,7 @@ export default async function CollectionPage({
 }) {
   const { slug } = await params;
 
-  // wait 2 seconds
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  const { collection } = await getData({ slug });
 
   return (
     <div
@@ -16,9 +45,7 @@ export default async function CollectionPage({
 
       }}
     >
-      <Button color="primary" variant="contained">
-        <Typography variant="h1">{slug}</Typography>
-      </Button>
+      <pre>{JSON.stringify(collection, null, 2)}</pre>
     </div>
   );
 }

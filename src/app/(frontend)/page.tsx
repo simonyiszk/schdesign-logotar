@@ -1,6 +1,6 @@
 
 export default function HomePage() {
   return (
-    <div>faszom</div>
+    <div>Random üdvözlő szöveg</div>
   );
 }
