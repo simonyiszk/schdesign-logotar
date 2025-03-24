@@ -17,6 +17,16 @@ export const Logos = {
       },
     },
     {
+      name: "slug",
+      type: "text",
+      required: true,
+      unique: true,
+      label: "Slug",
+      admin: {
+        description: "The slug of the logo, must be unique and URL friendly. For example: schdesign-light, schdesign-dark, etc.",
+      },
+    },
+    {
       name: "previewImage",
       type: "relationship",
       relationTo: "media",

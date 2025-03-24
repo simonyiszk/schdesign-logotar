@@ -50,6 +50,8 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
+    ".next",
+    ".vercel",
     "node_modules",
     "src/app/(payload)",
     "src/payload-types.ts"

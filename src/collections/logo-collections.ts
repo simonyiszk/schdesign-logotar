@@ -17,13 +17,23 @@ export const LogoCollections = {
       },
     },
     {
+      name: "slug",
+      type: "text",
+      required: true,
+      unique: true,
+      label: "Slug",
+      admin: {
+        description: "The slug of the collection, must be unique and URL friendly. For example: bme, schonherz, simonyi, etc.",
+      },
+    },
+    {
       name: "variants",
       type: "relationship",
       relationTo: "logo-variants",
       hasMany: true,
-      label: "Variants",
+      label: "Logo variants",
       admin: {
-        description: "The collections consists of logo variants.",
+        description: "The collection consists of logo variants.",
       },
     },
     {

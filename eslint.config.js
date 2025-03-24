@@ -8,7 +8,13 @@ const compat = new FlatCompat({
 
 const tsEslintConfig = tseslint.config(
   {
-    ignores: [".next", "node_modules", "src/app/(payload)", "src/payload-types.ts"],
+    ignores: [
+      ".next",
+      ".vercel",
+      "node_modules",
+      "src/app/(payload)",
+      "src/payload-types.ts",
+    ],
   },
   ...compat.extends("next/core-web-vitals"),
   {

@@ -17,6 +17,16 @@ export const LogoVariants = {
       },
     },
     {
+      name: "slug",
+      type: "text",
+      required: true,
+      unique: true,
+      label: "Slug",
+      admin: {
+        description: "The slug of the logo card, must be unique and URL friendly. For example: kir-dev, schdesign, kszk, etc.",
+      },
+    },
+    {
       name: "logos",
       type: "relationship",
       relationTo: "logos",

@@ -133,7 +133,11 @@ export interface LogoCollection {
    */
   name: string;
   /**
-   * The collections consists of logo variants.
+   * The slug of the collection, must be unique and URL friendly. For example: bme, schonherz, simonyi, etc.
+   */
+  slug: string;
+  /**
+   * The collection consists of logo variants.
    */
   variants?: (number | LogoVariant)[] | null;
   /**
@@ -155,6 +159,10 @@ export interface LogoVariant {
    * The name of the logo card on the website for example: Kir-Dev, schdesign, KSZK, etc.
    */
   name: string;
+  /**
+   * The slug of the logo card, must be unique and URL friendly. For example: kir-dev, schdesign, kszk, etc.
+   */
+  slug: string;
   /**
    * The logos that are part of this variant.
    */
@@ -178,6 +186,10 @@ export interface Logo {
    * The specific name of a logo for example: "schdesign light", "schdesign dark", etc.
    */
   name: string;
+  /**
+   * The slug of the logo, must be unique and URL friendly. For example: schdesign-light, schdesign-dark, etc.
+   */
+  slug: string;
   /**
    * The preview image of the logo, preferrably a small PNG file.
    */
@@ -342,6 +354,7 @@ export interface PayloadMigration {
  */
 export interface LogoCollectionsSelect<T extends boolean = true> {
   name?: T;
+  slug?: T;
   variants?: T;
   showInNavbar?: T;
   updatedAt?: T;
@@ -353,6 +366,7 @@ export interface LogoCollectionsSelect<T extends boolean = true> {
  */
 export interface LogosSelect<T extends boolean = true> {
   name?: T;
+  slug?: T;
   previewImage?: T;
   masterFile?: T;
   files?: T;
@@ -366,6 +380,7 @@ export interface LogosSelect<T extends boolean = true> {
  */
 export interface LogoVariantsSelect<T extends boolean = true> {
   name?: T;
+  slug?: T;
   logos?: T;
   showInCollections?: T;
   updatedAt?: T;
