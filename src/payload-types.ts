@@ -121,30 +121,48 @@ export interface UserAuthOperations {
   };
 }
 /**
- * Collections of logos using an arbitrary rule, such as: Institution, Reszort, Kör, etc.
+ * Collections of logos grouped together using an arbitrary rule, such as: institution, reszort, kör, etc.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "logo-collections".
  */
 export interface LogoCollection {
   id: number;
-  Name: string;
-  'Logo variants': (number | LogoVariant)[];
-  'Show in navbar'?: boolean | null;
+  /**
+   * The name of the collection for example: BME, Schönherz, Simonyi, etc.
+   */
+  name: string;
+  /**
+   * The collections consists of logo variants.
+   */
+  variants?: (number | LogoVariant)[] | null;
+  /**
+   * Whether to show this collection in the navbar
+   */
+  showInNavbar?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
- * Variants of a logo, such as: color, size, etc. Helpfull for keeping track of changes in a logo over time or using different versions in different contexts.
+ * A logo variant is a specific grouping of logos to keep track of different versions of the same logo.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "logo-variants".
  */
 export interface LogoVariant {
   id: number;
-  Name: string;
-  Logos: (number | Logo)[];
-  'Show in collections'?: boolean | null;
+  /**
+   * The name of the logo card on the website for example: Kir-Dev, schdesign, KSZK, etc.
+   */
+  name: string;
+  /**
+   * The logos that are part of this variant.
+   */
+  logos: (number | Logo)[];
+  /**
+   * Whether to show this variant in the collections.
+   */
+  showInCollections?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -156,20 +174,26 @@ export interface LogoVariant {
  */
 export interface Logo {
   id: number;
-  Name: string;
+  /**
+   * The specific name of a logo for example: "schdesign light", "schdesign dark", etc.
+   */
+  name: string;
   /**
    * The preview image of the logo, preferrably a small PNG file.
    */
-  'Preview image': number | Media;
+  previewImage: number | Media;
   /**
    * The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.
    */
-  'Master file': number | MasterFile;
+  masterFile: number | MasterFile;
   /**
    * Downloadable files for the logo, such as PNG, SVG, etc.
    */
-  Files?: (number | Media)[] | null;
-  'Show in variations'?: boolean | null;
+  files?: (number | Media)[] | null;
+  /**
+   * Whether to show this logo in the variations.
+   */
+  showInVariations?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -181,6 +205,9 @@ export interface Logo {
  */
 export interface Media {
   id: number;
+  /**
+   * The alt text for the image.
+   */
   alt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -203,6 +230,9 @@ export interface Media {
  */
 export interface MasterFile {
   id: number;
+  /**
+   * The alt text for the image.
+   */
   alt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -311,9 +341,9 @@ export interface PayloadMigration {
  * via the `definition` "logo-collections_select".
  */
 export interface LogoCollectionsSelect<T extends boolean = true> {
-  Name?: T;
-  'Logo variants'?: T;
-  'Show in navbar'?: T;
+  name?: T;
+  variants?: T;
+  showInNavbar?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -322,11 +352,11 @@ export interface LogoCollectionsSelect<T extends boolean = true> {
  * via the `definition` "logos_select".
  */
 export interface LogosSelect<T extends boolean = true> {
-  Name?: T;
-  'Preview image'?: T;
-  'Master file'?: T;
-  Files?: T;
-  'Show in variations'?: T;
+  name?: T;
+  previewImage?: T;
+  masterFile?: T;
+  files?: T;
+  showInVariations?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -335,9 +365,9 @@ export interface LogosSelect<T extends boolean = true> {
  * via the `definition` "logo-variants_select".
  */
 export interface LogoVariantsSelect<T extends boolean = true> {
-  Name?: T;
-  Logos?: T;
-  'Show in collections'?: T;
+  name?: T;
+  logos?: T;
+  showInCollections?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -431,9 +461,4 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface Auth {
   [k: string]: unknown;
-}
-
-
-declare module 'payload' {
-  export interface GeneratedTypes extends Config {}
 }

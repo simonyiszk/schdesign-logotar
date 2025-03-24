@@ -13,6 +13,10 @@ export const MasterFiles = {
     {
       name: "alt",
       type: "text",
+      label: "Alt text",
+      admin: {
+        description: "The alt text for the image.",
+      },
     },
   ],
 } satisfies CollectionConfig;

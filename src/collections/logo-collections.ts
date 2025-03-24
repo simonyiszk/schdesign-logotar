@@ -3,26 +3,37 @@ import type { CollectionConfig } from "payload";
 export const LogoCollections = {
   slug: "logo-collections",
   admin: {
-    description: "Collections of logos using an arbitrary rule, such as: Institution, Reszort, Kör, etc.",
-    useAsTitle: "Name",
+    description: "Collections of logos grouped together using an arbitrary rule, such as: institution, reszort, kör, etc.",
+    useAsTitle: "name",
   },
   fields: [
     {
-      name: "Name",
+      name: "name",
       type: "text",
       required: true,
+      label: "Name",
+      admin: {
+        description: "The name of the collection for example: BME, Schönherz, Simonyi, etc.",
+      },
     },
     {
-      name: "Logo variants",
+      name: "variants",
       type: "relationship",
       relationTo: "logo-variants",
-      required: true,
       hasMany: true,
+      label: "Variants",
+      admin: {
+        description: "The collections consists of logo variants.",
+      },
     },
     {
-      name: "Show in navbar",
+      name: "showInNavbar",
       type: "checkbox",
       defaultValue: true,
+      label: "Show in navbar",
+      admin: {
+        description: "Whether to show this collection in the navbar",
+      },
     },
   ],
 } satisfies CollectionConfig;
