@@ -40,11 +40,7 @@ export default async function CollectionPage({
   const { collection } = await getData({ slug });
 
   return (
-    <div
-      sx={{
-
-      }}
-    >
+    <div>
       <pre>{JSON.stringify(collection, null, 2)}</pre>
     </div>
   );

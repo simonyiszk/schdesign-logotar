@@ -1,5 +1,5 @@
 import type { CollectionConfig } from "payload";
-import { createdByHook, updatedByHook } from "~/utils/payload/collection-hooks";
+import { createdByHook, hideSensitiveFields, updatedByHook } from "~/utils/payload/collection-hooks";
 import { createdByField, updatedByField } from "~/utils/payload/fields";
 
 export const LogoVariants = {
@@ -55,6 +55,9 @@ export const LogoVariants = {
     beforeChange: [
       createdByHook,
       updatedByHook,
+    ],
+    afterRead: [
+      hideSensitiveFields(["createdBy", "updatedBy"]),
     ],
   },
 } satisfies CollectionConfig;
