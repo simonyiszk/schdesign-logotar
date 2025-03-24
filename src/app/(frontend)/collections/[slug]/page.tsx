@@ -1,6 +1,5 @@
 import { getPayload } from "payload";
 import config from "@payload-config";
-import { Button, Typography } from "@mui/material";
 
 async function getData({
   slug,
@@ -12,6 +11,7 @@ async function getData({
   const collections = await client.find({
     collection: "logo-collections",
     sort: "name",
+    depth: 3,
     where: {
       slug: {
         equals: slug,
