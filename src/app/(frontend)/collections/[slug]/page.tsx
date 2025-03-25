@@ -57,9 +57,6 @@ export default async function CollectionPage({
         paddingY={4}
         paddingX={2}
       >
-        {(variants === undefined || variants.length === 0) && (
-          <div>:(</div>
-        )}
         {variants?.map((variant) => {
           const logos = variant.logos.filter((logo) => typeof logo !== "number");
 

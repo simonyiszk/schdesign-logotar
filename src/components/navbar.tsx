@@ -23,10 +23,13 @@ export function Navbar({
 
   useEffect(() => {
     const collectionSlug = pathname.split("/")[2];
-    if (collectionSlug) {
+
+    const isSlugValid = shownCollections.some((collection) => collection.slug === collectionSlug);
+
+    if (isSlugValid && collectionSlug) {
       setValue(collectionSlug);
     }
-  }, [pathname]);
+  }, [shownCollections, pathname]);
 
   const onTabChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
