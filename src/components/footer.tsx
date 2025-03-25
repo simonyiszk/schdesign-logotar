@@ -107,7 +107,7 @@ export function Footer() {
             }}
           >
             <div>
-              <Typography variant="h6" align="center" color="textPrimary">
+              <Typography variant="h6" align="center" color="textPrimary" sx={{ color: "#ffffff" }}>
                 Kapcsolat
               </Typography>
             </div>
@@ -131,7 +131,7 @@ export function Footer() {
             }}
           >
             <div>
-              <Typography variant="h6" align="center" color="textPrimary">
+              <Typography variant="h6" align="center" color="textPrimary" sx={{ color: "#ffffff" }}>
                 Weboldalaink
               </Typography>
             </div>
@@ -169,7 +169,7 @@ export function Footer() {
             }}
           >
             <div>
-              <Typography variant="h6" align="center" color="textPrimary">
+              <Typography variant="h6" align="center" sx={{ color: "#ffffff" }}>
                 Közösségi oldalaink
               </Typography>
             </div>
