@@ -1,6 +1,7 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import Image from "next/image";
 import type { Logo, LogoVariant } from "~/payload-types";
+import { LogoCardDownloadButton } from "./logo-card-download-button";
 
 export function LogoCard({
   logos,
@@ -15,7 +16,18 @@ export function LogoCard({
     return null;
   }
 
-  const previewImage = typeof firstLogo.previewImage === "number" ? null : firstLogo.previewImage;
+  const previewImage = typeof firstLogo.previewImage === "number" ? undefined : firstLogo.previewImage;
+  const masterFile = typeof firstLogo.masterFile === "number" ? undefined : firstLogo.masterFile;
+  const files = firstLogo.files?.filter((file) => typeof file !== "number");
+
+  const downloadableFiles =
+    masterFile
+      ? files
+        ? [masterFile, ...files]
+        : [masterFile]
+      : files;
+
+
 
   const width = 290;
   const height = 210;
@@ -46,6 +58,20 @@ export function LogoCard({
       <CardContent>
         <Typography variant="h5" align={"center"}>{variant.name}</Typography>
       </CardContent>
+      <CardActions>
+        {downloadableFiles?.map((file) => {
+          const extension = file.url?.split(".").pop();
+
+          return (
+            <LogoCardDownloadButton
+              key={file.id}
+              label={extension ?? ""}
+              url={file.url ?? ""}
+              fileName={file.filename ?? ""}
+            />
+          );
+        })}
+      </CardActions>
     </Card>
   );
 }
