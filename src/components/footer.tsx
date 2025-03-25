@@ -206,11 +206,11 @@ export function Footer() {
               </Button>
               <Button
                 size="large"
-                href="https://github.com/simonyiszk/schdesign-logotar/"
+                href="https://github.com/simonyiszk/"
                 startIcon={<GitHubIcon />}
                 sx={{ textTransform: "none" }}
               >
-                /schdesign-logotar
+                /simonyiszk
               </Button>
             </div>
           </div>
