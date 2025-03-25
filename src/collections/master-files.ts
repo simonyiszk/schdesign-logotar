@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { publicAccessCollection, editorAccessCollection } from "~/utils/payload/access-control";
 import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
 import { createdByField, updatedByField } from "~/utils/payload/fields";
 
@@ -31,5 +32,11 @@ export const MasterFiles = {
     afterRead: [
       hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
     ],
+  },
+  access: {
+    read: publicAccessCollection,
+    create: editorAccessCollection,
+    update: editorAccessCollection,
+    delete: editorAccessCollection,
   },
 } satisfies CollectionConfig;

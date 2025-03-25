@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { editorAccessCollection, publicAccessCollection } from "~/utils/payload/access-control";
 import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
 import { createdByField, updatedByField } from "~/utils/payload/fields";
 
@@ -33,5 +34,11 @@ export const Media = {
     afterRead: [
       hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
     ],
+  },
+  access: {
+    read: publicAccessCollection,
+    create: editorAccessCollection,
+    update: editorAccessCollection,
+    delete: editorAccessCollection,
   },
 } satisfies CollectionConfig;

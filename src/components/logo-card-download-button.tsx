@@ -14,7 +14,10 @@ export function LogoCardDownloadButton({
 }) {
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const onButtonClick = async () => {
+  const onButtonClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
     setIsDownloading(true);
 
     try {
@@ -33,7 +36,16 @@ export function LogoCardDownloadButton({
   };
 
   return (
-    <Button loading={isDownloading} onClick={onButtonClick} variant="contained" color="primary">
+    <Button
+      loading={isDownloading}
+      onClick={onButtonClick}
+      variant="contained"
+      color="primary"
+      component="a"
+      href={url}
+      target="_self"
+      download
+    >
       <Typography variant="body1">
         {label}
       </Typography>
