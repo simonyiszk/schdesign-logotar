@@ -1,7 +1,7 @@
 import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
-import Image from "next/image";
 import type { Logo, LogoVariant } from "~/payload-types";
 import { LogoCardDownloadButton } from "./logo-card-download-button";
+import { ImageWithLoading } from "./image-with-loading";
 
 export function LogoCard({
   logos,
@@ -27,8 +27,6 @@ export function LogoCard({
         : [masterFile]
       : files;
 
-
-
   const width = 290;
   const height = 210;
   const padding = 20;
@@ -44,33 +42,38 @@ export function LogoCard({
           backgroundColor: "rgb(229, 229, 229)",
         }}
       >
-        <Image
-          style={{
-            objectFit: "contain",
-            padding: 10,
-          }}
-          src={previewImage?.url ?? ""}
+        <ImageWithLoading
+          url={previewImage?.url ?? ""}
           alt={previewImage?.alt ?? ""}
-          width={width - padding}
-          height={height - padding}
+          width={width}
+          height={height}
+          padding={padding}
         />
       </CardMedia>
       <CardContent>
         <Typography variant="h5" align={"center"}>{variant.name}</Typography>
       </CardContent>
       <CardActions>
-        {downloadableFiles?.map((file) => {
-          const extension = file.url?.split(".").pop();
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          gap: 8,
+          width: width - padding,
+        }}>
+          {downloadableFiles?.map((file) => {
+            const extension = file.url?.split(".").pop();
 
-          return (
-            <LogoCardDownloadButton
-              key={file.id}
-              label={extension ?? ""}
-              url={file.url ?? ""}
-              fileName={file.filename ?? ""}
-            />
-          );
-        })}
+            return (
+              <LogoCardDownloadButton
+                key={file.id}
+                label={extension ?? ""}
+                url={file.url ?? ""}
+                fileName={file.filename ?? ""}
+              />
+            );
+          })}
+        </div>
       </CardActions>
     </Card>
   );

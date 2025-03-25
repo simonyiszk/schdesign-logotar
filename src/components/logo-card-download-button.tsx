@@ -45,6 +45,9 @@ export function LogoCardDownloadButton({
       href={url}
       target="_self"
       download
+      sx={{
+        flexGrow: 1,
+      }}
     >
       <Typography variant="body1">
         {label}
