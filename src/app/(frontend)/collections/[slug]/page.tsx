@@ -44,7 +44,10 @@ export default async function CollectionPage({
   const variants = collection.variants?.filter((variant) => typeof variant !== "number");
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl"
+      style={{
+        flexGrow: 1,
+      }}>
       <Grid2
         container
         spacing={4}
@@ -54,6 +57,9 @@ export default async function CollectionPage({
         paddingY={4}
         paddingX={2}
       >
+        {(variants === undefined || variants.length === 0) && (
+          <div>:(</div>
+        )}
         {variants?.map((variant) => {
           const logos = variant.logos.filter((logo) => typeof logo !== "number");
 
@@ -66,7 +72,6 @@ export default async function CollectionPage({
           );
         })}
       </Grid2>
-      <pre>{JSON.stringify(collection, null, 2)}</pre>
     </Container>
   );
 }

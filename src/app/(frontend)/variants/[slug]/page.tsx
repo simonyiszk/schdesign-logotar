@@ -8,11 +8,7 @@ export default async function CollectionPage({
   const { slug } = await params;
 
   return (
-    <div
-      sx={{
-
-      }}
-    >
+    <div>
       <Button color="primary" variant="contained">
         <Typography variant="h1">{slug}</Typography>
       </Button>

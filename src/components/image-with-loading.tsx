@@ -26,30 +26,34 @@ export function ImageWithLoading({
   return (
     <div
       style={{
+        backgroundColor: "rgb(229, 229, 229)",
         position: "relative",
-        width: width - padding,
-        height: height - padding,
+        width: width,
+        height: height,
+        padding: padding,
       }}
     >
-      <div style={{
-        display: isLoaded ? "none" : "block",
-        position: "absolute",
-        transform: "translate(-50%, -50%)",
-        top: "50%",
-        left: "50%",
-      }}>
+      <div
+        style={{
+          display: isLoaded ? "none" : "block",
+          position: "absolute",
+          transform: "translate(-50%, -50%)",
+          top: "50%",
+          left: "50%",
+        }}
+      >
         <CircularProgress />
       </div>
       <Image
         style={{
           objectFit: "contain",
-          padding: 10,
+          padding: padding,
         }}
         src={url}
         alt={alt}
-        width={width - padding}
-        height={height - padding}
-        onLoadingComplete={onImageLoad}
+        width={width - 2*padding}
+        height={height - 2*padding}
+        onLoad={onImageLoad}
       />
     </div>
   );
