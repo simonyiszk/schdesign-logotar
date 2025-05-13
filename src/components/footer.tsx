@@ -3,7 +3,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
-import { Button, Container, Grid2, Typography } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 export function Footer() {
@@ -20,7 +20,7 @@ export function Footer() {
       }}
     >
       <Container maxWidth="xl">
-        <Grid2
+        <Grid
           container
           spacing={4}
           justifyContent="center"
@@ -87,10 +87,10 @@ export function Footer() {
               />
             </a>
           </div>
-        </Grid2>
+        </Grid>
       </Container>
       <Container maxWidth="xl">
-        <Grid2
+        <Grid
           container
           spacing={4}
           justifyContent="space-around"
@@ -214,7 +214,7 @@ export function Footer() {
               </Button>
             </div>
           </div>
-        </Grid2>
+        </Grid>
       </Container>
     </footer>
   );

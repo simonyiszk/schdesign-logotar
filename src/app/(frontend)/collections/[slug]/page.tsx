@@ -1,7 +1,7 @@
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { LogoCard } from "~/components/logo-card";
-import { Container, Grid2 } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 async function getData({
   slug,
@@ -48,7 +48,7 @@ export default async function CollectionPage({
       style={{
         flexGrow: 1,
       }}>
-      <Grid2
+      <Grid
         container
         spacing={4}
         justifyContent="center"
@@ -68,7 +68,7 @@ export default async function CollectionPage({
             />
           );
         })}
-      </Grid2>
+      </Grid>
     </Container>
   );
 }
