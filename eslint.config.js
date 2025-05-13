@@ -57,7 +57,6 @@ const tsEslintConfig = tseslint.config(
       "@stylistic/js/arrow-parens": ["warn", "always"],
       "@stylistic/js/semi": ["warn", "always"],
       "@stylistic/js/indent": ["warn", 2],
-      "@stylistic/js/linebreak-style": ["warn", "unix"],
       "@stylistic/js/function-paren-newline": ["warn", "multiline-arguments"],
       "@stylistic/js/no-trailing-spaces": ["warn"],
       "@stylistic/js/eol-last": ["warn", "always"],
