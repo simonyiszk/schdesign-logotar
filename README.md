@@ -17,7 +17,7 @@ Check out live at: [logotar.schdesign.hu](https://logotar.schdesign.hu)
 Install dependencies:
 
 ```bash
-pnpm dev
+pnpm i
 ```
 
 Link your local repository to the Vercel one,
