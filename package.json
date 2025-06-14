@@ -11,39 +11,39 @@
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload"
   },
   "dependencies": {
-    "@mui/icons-material": "7.1.0",
-    "@mui/material": "7.1.0",
-    "@mui/material-nextjs": "7.1.0",
-    "@mui/material-pigment-css": "7.1.0",
-    "@payloadcms/db-postgres": "3.37.0",
-    "@payloadcms/next": "3.37.0",
-    "@payloadcms/richtext-lexical": "3.37.0",
-    "@payloadcms/storage-vercel-blob": "3.37.0",
+    "@mui/icons-material": "7.1.1",
+    "@mui/material": "7.1.1",
+    "@mui/material-nextjs": "7.1.1",
+    "@mui/material-pigment-css": "7.1.1",
+    "@payloadcms/db-postgres": "3.42.0",
+    "@payloadcms/next": "3.42.0",
+    "@payloadcms/richtext-lexical": "3.42.0",
+    "@payloadcms/storage-vercel-blob": "3.42.0",
     "@pigment-css/react": "0.0.30",
-    "@t3-oss/env-nextjs": "0.13.4",
+    "@t3-oss/env-nextjs": "0.13.8",
     "cross-env": "7.0.3",
     "graphql": "16.11.0",
-    "next": "15.3.2",
-    "payload": "3.37.0",
+    "next": "15.3.3",
+    "payload": "3.42.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "sharp": "0.34.1",
-    "zod": "3.24.4"
+    "sharp": "0.34.2",
+    "zod": "3.25.64"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
     "@pigment-css/nextjs-plugin": "0.0.30",
-    "@stylistic/eslint-plugin-js": "4.2.0",
-    "@types/node": "22.15.17",
-    "@types/react": "19.1.4",
-    "@types/react-dom": "19.1.5",
-    "eslint": "9.26.0",
-    "eslint-config-next": "15.3.2",
+    "@stylistic/eslint-plugin-js": "4.4.1",
+    "@types/node": "24.0.1",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "eslint": "9.29.0",
+    "eslint-config-next": "15.3.3",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.32.1"
+    "typescript-eslint": "8.34.0"
   },
   "engines": {
-    "node": "^22",
+    "node": "^24",
     "pnpm": "^10"
   }
 }
