@@ -14,7 +14,7 @@ async function getData({
   const collections = await client.find({
     collection: "collections",
     sort: "name",
-    depth: 4,
+    depth: 3,
     where: {
       slug: {
         equals: slug,
@@ -35,10 +35,10 @@ async function getData({
 
 
 function recursiveLogoArray({
-  elements,
+  items,
   separateLogos,
 }: {
-  elements: ({
+  items: ({
     relationTo: "collections";
     value: number | Collection;
 } | {
@@ -50,13 +50,13 @@ function recursiveLogoArray({
   const result: Logo[][] = [];
   const combinedLogos: Logo[] = [];
 
-  elements.forEach((element) => {
-    if (typeof element.value === "number") {
+  items.forEach((item) => {
+    if (typeof item.value === "number") {
       return;
     }
 
-    if (element.relationTo === "logos") {
-      const logo = element.value;
+    if (item.relationTo === "logos") {
+      const logo = item.value;
 
       if (
         logo.showInCollections === false ||
@@ -74,10 +74,10 @@ function recursiveLogoArray({
       }
     }
 
-    if (element.relationTo === "collections") {
-      const collection = element.value;
+    if (item.relationTo === "collections") {
+      const collection = item.value;
 
-      if (collection.showInParent === false) {
+      if (!collection.showInParent) {
         return;
       }
 
@@ -86,7 +86,7 @@ function recursiveLogoArray({
       }
 
       const childLogos = recursiveLogoArray({
-        elements: collection.children,
+        items: collection.children,
         separateLogos: false, // We don't want to separate logos in child collections
       });
 
@@ -115,40 +115,9 @@ export default async function CollectionPage({
 
   const children = collection.children?.filter((child) => typeof child !== "number");
 
-  const arrayB = recursiveLogoArray({
-    elements: children ?? [],
-    separateLogos: true,
-  });
-
-  const arrayA: (Logo[])[] = [];
-
-  // Note: This should be a recursive function, but for now we just flatten the tree to an array of arrays
-  children?.forEach((child) => {
-    if (child.relationTo === "logos") {
-      if (typeof child.value !== "number") {
-        arrayA.push([child.value as Logo]);
-      }
-    }
-
-    if (child.relationTo === "collections") {
-      if (typeof child.value !== "number") {
-
-        if ((child.value as Collection).showInParent === false) {
-          return;
-        }
-
-        const arr: Logo[] = [];
-
-        ((child.value as Collection).children)?.forEach((grandChild) => {
-          if (grandChild.relationTo === "logos" && typeof grandChild.value !== "number") {
-            arr.push(grandChild.value as Logo);
-          }
-        });
-
-        arrayA.push(arr);
-      }
-    }
-  });
+  if (!children || children.length === 0) {
+    throw new Error(`No logos found in collection: ${slug}`);
+  }
 
   return (
     <Container maxWidth="xl"
@@ -164,7 +133,10 @@ export default async function CollectionPage({
         paddingY={4}
         paddingX={2}
       >
-        {arrayB.map((child, index) => {
+        {recursiveLogoArray({
+          items: children,
+          separateLogos: true,
+        }).map((child, index) => {
           return (
             <LogoCard
               key={index}
