@@ -202,7 +202,7 @@ export interface Logo {
   /**
    * Whether to show this logo in the collections.
    */
-  showInCollections?: boolean | null;
+  showInCollections: boolean;
   createdBy?: (number | null) | User;
   updatedBy?: (number | null) | User;
   updatedAt: string;

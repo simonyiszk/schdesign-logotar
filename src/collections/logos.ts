@@ -83,6 +83,7 @@ export const Logos = {
       name: "showInCollections",
       type: "checkbox",
       defaultValue: true,
+      required: true,
       label: "Show in collections",
       admin: {
         description: "Whether to show this logo in the collections.",

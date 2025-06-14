@@ -33,36 +33,35 @@ async function getData({
   };
 }
 
-
-function recursiveLogoArray({
-  items,
-  separateLogos,
-}: {
-  items: ({
+type LogoCompositeType = {
     relationTo: "collections";
     value: number | Collection;
 } | {
     relationTo: "logos";
     value: number | Logo;
-})[];
+}
+
+function logoTreeToArrayOfLogos({
+  composite,
+  separateLogos,
+}: {
+  composite: LogoCompositeType[];
   separateLogos: boolean;
-}): Logo[][] {
+}) {
   const result: Logo[][] = [];
   const combinedLogos: Logo[] = [];
 
-  items.forEach((item) => {
-    if (typeof item.value === "number") {
-      return;
-    }
+  composite.forEach((item) => {
 
     if (item.relationTo === "logos") {
       const logo = item.value;
 
       if (
-        logo.showInCollections === false ||
+        typeof logo === "number" ||
         typeof logo.previewImage === "number" ||
         typeof logo.masterFile === "number" ||
-        logo.files?.some((file) => typeof file === "number")
+        logo.files?.some((file) => typeof file === "number") ||
+        !logo.showInCollections
       ) {
         return;
       }
@@ -77,16 +76,18 @@ function recursiveLogoArray({
     if (item.relationTo === "collections") {
       const collection = item.value;
 
-      if (!collection.showInParent) {
+      if (
+        typeof collection === "number" ||
+        !collection.children ||
+        collection.children.length === 0 ||
+        collection.children.some((child) => typeof child === "number") ||
+        !collection.showInParent
+      ) {
         return;
       }
 
-      if (!collection.children) {
-        return;
-      }
-
-      const childLogos = recursiveLogoArray({
-        items: collection.children,
+      const childLogos = logoTreeToArrayOfLogos({
+        composite: collection.children,
         separateLogos: false, // We don't want to separate logos in child collections
       });
 
@@ -133,8 +134,8 @@ export default async function CollectionPage({
         paddingY={4}
         paddingX={2}
       >
-        {recursiveLogoArray({
-          items: children,
+        {logoTreeToArrayOfLogos({
+          composite: children,
           separateLogos: true,
         }).map((child, index) => {
           return (
