@@ -14,9 +14,11 @@ const tsEslintConfig = tseslint.config(
       "node_modules",
       "src/app/(payload)",
       "src/payload-types.ts",
+      "eslint.config.js",
     ],
   },
   ...compat.extends("next/core-web-vitals"),
+  ...compat.extends("next/typescript"),
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     extends: [
