@@ -6,7 +6,7 @@ import { createdByField, updatedByField } from "~/utils/payload/fields";
 export const MasterFiles = {
   slug: "master-files",
   admin: {
-    description: "Master files are the original files used to create logos, such as Photoshop/Illustrator/Affinity files.",
+    description: "Master files are the original files used to create logos, such as Photoshop/Illustrator/Affinity etc. files.",
   },
   upload: {
     staticDir: "master-files",
@@ -18,7 +18,7 @@ export const MasterFiles = {
       type: "text",
       label: "Alt text",
       admin: {
-        description: "The alt text for the image.",
+        description: "An alternative text of the image for accessibility purposes.",
       },
     },
     createdByField,

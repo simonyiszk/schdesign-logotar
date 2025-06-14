@@ -2,8 +2,8 @@ import type { CollectionConfig } from "payload";
 import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
 import { createdByField, updatedByField, validateSlug } from "~/utils/payload/fields";
 
-export const LogoCollections = {
-  slug: "logo-collections",
+export const Collections = {
+  slug: "collections",
   admin: {
     description: "Collections of logos grouped together using an arbitrary rule, such as: institution, reszort, kör, etc.",
     useAsTitle: "name",
@@ -30,22 +30,33 @@ export const LogoCollections = {
       },
     },
     {
-      name: "variants",
+      name: "children",
       type: "relationship",
-      relationTo: "logo-variants",
+      relationTo: ["collections", "logos"],
       hasMany: true,
-      label: "Logo variants",
+      label: "Children collections and logos",
       admin: {
-        description: "The collection consists of logo variants.",
+        description: "The child collections and logos of this collection.",
       },
     },
     {
       name: "showInNavbar",
       type: "checkbox",
-      defaultValue: true,
+      defaultValue: false,
+      required: true,
       label: "Show in navbar",
       admin: {
         description: "Whether to show this collection in the navbar",
+      },
+    },
+    {
+      name: "showInParent",
+      type: "checkbox",
+      defaultValue: false,
+      required: true,
+      label: "Show in parent collection",
+      admin: {
+        description: "Whether to show this collection in the parent collection's page. If this is false, the collection will not be displayed in the parent collection's page, but it can still be accessed directly using the slug value.",
       },
     },
     createdByField,

@@ -6,7 +6,7 @@ import { createdByField, updatedByField } from "~/utils/payload/fields";
 export const Media = {
   slug: "media",
   admin: {
-    description: "Files in .png, .webp, .ico, .svg formats.",
+    description: "Files in *.png, *.webp, *.ico, *.svg formats.",
   },
   upload: {
     staticDir: "media",
@@ -20,7 +20,7 @@ export const Media = {
       type: "text",
       label: "Alt text",
       admin: {
-        description: "The alt text for the image.",
+        description: "An alternative text of the image for accessibility purposes.",
       },
     },
     createdByField,

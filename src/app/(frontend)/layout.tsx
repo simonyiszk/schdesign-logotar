@@ -29,7 +29,7 @@ async function getData() {
   const client = await getPayload({ config });
 
   const collections = await client.find({
-    collection: "logo-collections",
+    collection: "collections",
     sort: "name",
     select: {
       name: true,
@@ -52,7 +52,7 @@ export default async function RootLayour({
 }: {
   children: React.ReactNode;
 }) {
-  const { shownCollections, allCollections } = await getData();
+  const { shownCollections } = await getData();
 
   return (
     <html lang="hu">
@@ -68,7 +68,6 @@ export default async function RootLayour({
           <div>
             <Navbar
               shownCollections={shownCollections}
-              allCollections={allCollections}
             />
           </div>
           {children}

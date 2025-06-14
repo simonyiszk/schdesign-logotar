@@ -7,9 +7,8 @@ import { env } from "./env";
 import { fileURLToPath } from "url";
 import path from "path";
 import { Users } from "./collections/users";
-import { LogoCollections } from "./collections/logo-collections";
+import { Collections } from "./collections/collections";
 import { Logos } from "./collections/logos";
-import { LogoVariants } from "./collections/logo-variants";
 import { MasterFiles } from "./collections/master-files";
 import { Media } from "./collections/media";
 
@@ -20,9 +19,8 @@ const dirname = path.dirname(filename);
 export default buildConfig({
   editor: lexicalEditor(),
   collections: [
-    LogoCollections,
+    Collections,
     Logos,
-    LogoVariants,
     MasterFiles,
     Media,
     Users,

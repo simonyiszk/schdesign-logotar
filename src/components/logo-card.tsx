@@ -1,17 +1,15 @@
 "use client";
 
 import { Card, CardActions, CardContent, MenuItem, Select, Typography } from "@mui/material";
-import type { Logo, LogoVariant } from "~/payload-types";
+import type { Logo } from "~/payload-types";
 import { LogoCardDownloadButton } from "./logo-card-download-button";
 import { ImageWithLoading } from "./image-with-loading";
 import { useState } from "react";
 
 export function LogoCard({
   logos,
-  variant,
 }: {
   logos: Logo[];
-  variant: LogoVariant;
 }) {
   const [logo, setLogo] = useState<Logo | undefined>(logos[0]);
 
@@ -51,7 +49,7 @@ export function LogoCard({
         height: 64,
       }}>
         {logos.length === 1 ? (
-          <Typography variant="body1" align={"center"}>{variant.name}</Typography>
+          <Typography variant="body1" align={"center"}>{logo.name}</Typography>
         ) : (
           <Select
             fullWidth

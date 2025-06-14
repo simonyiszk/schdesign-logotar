@@ -67,9 +67,8 @@ export interface Config {
   };
   blocks: {};
   collections: {
-    'logo-collections': LogoCollection;
+    collections: Collection;
     logos: Logo;
-    'logo-variants': LogoVariant;
     'master-files': MasterFile;
     media: Media;
     users: User;
@@ -79,9 +78,8 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
-    'logo-collections': LogoCollectionsSelect<false> | LogoCollectionsSelect<true>;
+    collections: CollectionsSelect<false> | CollectionsSelect<true>;
     logos: LogosSelect<false> | LogosSelect<true>;
-    'logo-variants': LogoVariantsSelect<false> | LogoVariantsSelect<true>;
     'master-files': MasterFilesSelect<false> | MasterFilesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
@@ -125,9 +123,9 @@ export interface UserAuthOperations {
  * Collections of logos grouped together using an arbitrary rule, such as: institution, reszort, kör, etc.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "logo-collections".
+ * via the `definition` "collections".
  */
-export interface LogoCollection {
+export interface Collection {
   id: number;
   /**
    * The name of the collection for example: BME, Schönherz, Simonyi, etc.
@@ -138,42 +136,28 @@ export interface LogoCollection {
    */
   slug: string;
   /**
-   * The collection consists of logo variants.
+   * The child collections and logos of this collection.
    */
-  variants?: (number | LogoVariant)[] | null;
+  children?:
+    | (
+        | {
+            relationTo: 'collections';
+            value: number | Collection;
+          }
+        | {
+            relationTo: 'logos';
+            value: number | Logo;
+          }
+      )[]
+    | null;
   /**
    * Whether to show this collection in the navbar
    */
-  showInNavbar?: boolean | null;
-  createdBy?: (number | null) | User;
-  updatedBy?: (number | null) | User;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * A logo variant is a specific grouping of logos to keep track of different versions of the same logo.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "logo-variants".
- */
-export interface LogoVariant {
-  id: number;
+  showInNavbar: boolean;
   /**
-   * The name of the logo card on the website for example: Kir-Dev, schdesign, KSZK, etc.
+   * Whether to show this collection in the parent collection's page. If this is false, the collection will not be displayed in the parent collection's page, but it can still be accessed directly using the slug value.
    */
-  name: string;
-  /**
-   * The slug of the logo card, must be unique and URL friendly. For example: kir-dev, schdesign, kszk, etc.
-   */
-  slug: string;
-  /**
-   * The logos that are part of this variant.
-   */
-  logos: (number | Logo)[];
-  /**
-   * Whether to show this variant in the collections.
-   */
-  showInCollections?: boolean | null;
+  showInParent: boolean;
   createdBy?: (number | null) | User;
   updatedBy?: (number | null) | User;
   updatedAt: string;
@@ -216,16 +200,16 @@ export interface Logo {
    */
   files?: (number | Media)[] | null;
   /**
-   * Whether to show this logo in the variations.
+   * Whether to show this logo in the collections.
    */
-  showInVariations?: boolean | null;
+  showInCollections?: boolean | null;
   createdBy?: (number | null) | User;
   updatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
 }
 /**
- * Files in .png, .webp, .ico, .svg formats.
+ * Files in *.png, *.webp, *.ico, *.svg formats.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "media".
@@ -233,7 +217,7 @@ export interface Logo {
 export interface Media {
   id: number;
   /**
-   * The alt text for the image.
+   * An alternative text of the image for accessibility purposes.
    */
   alt?: string | null;
   createdBy?: (number | null) | User;
@@ -279,7 +263,7 @@ export interface User {
   password?: string | null;
 }
 /**
- * Master files are the original files used to create logos, such as Photoshop/Illustrator/Affinity files.
+ * Master files are the original files used to create logos, such as Photoshop/Illustrator/Affinity etc. files.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "master-files".
@@ -287,7 +271,7 @@ export interface User {
 export interface MasterFile {
   id: number;
   /**
-   * The alt text for the image.
+   * An alternative text of the image for accessibility purposes.
    */
   alt?: string | null;
   createdBy?: (number | null) | User;
@@ -312,16 +296,12 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
-        relationTo: 'logo-collections';
-        value: number | LogoCollection;
+        relationTo: 'collections';
+        value: number | Collection;
       } | null)
     | ({
         relationTo: 'logos';
         value: number | Logo;
-      } | null)
-    | ({
-        relationTo: 'logo-variants';
-        value: number | LogoVariant;
       } | null)
     | ({
         relationTo: 'master-files';
@@ -379,13 +359,14 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "logo-collections_select".
+ * via the `definition` "collections_select".
  */
-export interface LogoCollectionsSelect<T extends boolean = true> {
+export interface CollectionsSelect<T extends boolean = true> {
   name?: T;
   slug?: T;
-  variants?: T;
+  children?: T;
   showInNavbar?: T;
+  showInParent?: T;
   createdBy?: T;
   updatedBy?: T;
   updatedAt?: T;
@@ -403,20 +384,6 @@ export interface LogosSelect<T extends boolean = true> {
   previewDarkBackgroundColor?: T;
   masterFile?: T;
   files?: T;
-  showInVariations?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "logo-variants_select".
- */
-export interface LogoVariantsSelect<T extends boolean = true> {
-  name?: T;
-  slug?: T;
-  logos?: T;
   showInCollections?: T;
   createdBy?: T;
   updatedBy?: T;

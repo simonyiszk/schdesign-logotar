@@ -80,12 +80,12 @@ export const Logos = {
       },
     },
     {
-      name: "showInVariations",
+      name: "showInCollections",
       type: "checkbox",
       defaultValue: true,
-      label: "Show in variations",
+      label: "Show in collections",
       admin: {
-        description: "Whether to show this logo in the variations.",
+        description: "Whether to show this logo in the collections.",
       },
     },
     createdByField,

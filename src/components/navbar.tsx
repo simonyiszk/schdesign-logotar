@@ -2,18 +2,16 @@
 
 import { AppBar, Container, IconButton, Slide, Tab, Tabs, Toolbar, Typography, useScrollTrigger } from "@mui/material";
 import { SchdesignIcon } from "./schdesign-icon";
-import type { LogoCollection } from "~/payload-types";
+import type { Collection } from "~/payload-types";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-type CollectionsNavbarType = Pick<LogoCollection, "id" | "name" | "showInNavbar" | "slug">;
+type CollectionsNavbarType = Pick<Collection, "id" | "name" | "showInNavbar" | "slug">;
 
 export function Navbar({
   shownCollections,
-  allCollections,
 }: {
   shownCollections: CollectionsNavbarType[];
-  allCollections: CollectionsNavbarType[];
 }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -76,7 +74,7 @@ export function Navbar({
                   allowScrollButtonsMobile
                 >
                   {shownCollections.map((collection) => (
-                    <Tab key={collection.slug} label={collection.name} value={collection.slug} />
+                    <Tab key={collection.id} label={collection.name} value={collection.slug} />
                   ))}
                 </Tabs>
               )}
