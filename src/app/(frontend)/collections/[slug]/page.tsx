@@ -34,12 +34,12 @@ async function getData({
 }
 
 type LogoCompositeType = {
-    relationTo: "collections";
-    value: number | Collection;
+  relationTo: "collections";
+  value: number | Collection;
 } | {
-    relationTo: "logos";
-    value: number | Logo;
-}
+  relationTo: "logos";
+  value: number | Logo;
+};
 
 function logoTreeToArrayOfLogos({
   composite,

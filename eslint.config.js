@@ -1,12 +1,18 @@
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 import tseslint from "typescript-eslint";
-import stylisticJsPlugin from "@stylistic/eslint-plugin-js";
+import stylisticPlugin from "@stylistic/eslint-plugin";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
+  baseDirectory: __dirname,
 });
 
 const tsEslintConfig = tseslint.config(
+  ...compat.extends("next/core-web-vitals"),
   {
     ignores: [
       ".next",
@@ -17,8 +23,6 @@ const tsEslintConfig = tseslint.config(
       "eslint.config.js",
     ],
   },
-  ...compat.extends("next/core-web-vitals"),
-  ...compat.extends("next/typescript"),
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     extends: [
@@ -26,7 +30,7 @@ const tsEslintConfig = tseslint.config(
       ...tseslint.configs.stylisticTypeChecked,
     ],
     plugins: {
-      "@stylistic/js": stylisticJsPlugin,
+      "@stylistic": stylisticPlugin,
     },
     rules: {
       "@typescript-eslint/array-type": ["warn", { default: "array" }],
@@ -45,23 +49,23 @@ const tsEslintConfig = tseslint.config(
           checksVoidReturn: { attributes: false },
         },
       ],
-      "@stylistic/js/array-bracket-newline": ["warn", "consistent"],
-      "@stylistic/js/array-element-newline": ["warn", "consistent"],
-      "@stylistic/js/object-curly-newline": ["warn", { "consistent": true }],
-      "@stylistic/js/quotes": [
+      "@stylistic/array-bracket-newline": ["warn", "consistent"],
+      "@stylistic/array-element-newline": ["warn", "consistent"],
+      "@stylistic/object-curly-newline": ["warn", { "consistent": true }],
+      "@stylistic/quotes": [
         "warn",
         "double",
         { "avoidEscape": true, "allowTemplateLiterals": false },
       ],
-      "@stylistic/js/comma-dangle": ["warn", "always-multiline"],
-      "@stylistic/js/object-curly-spacing": ["warn", "always"],
-      "@stylistic/js/array-bracket-spacing": ["warn", "never"],
-      "@stylistic/js/arrow-parens": ["warn", "always"],
-      "@stylistic/js/semi": ["warn", "always"],
-      "@stylistic/js/indent": ["warn", 2],
-      "@stylistic/js/function-paren-newline": ["warn", "multiline-arguments"],
-      "@stylistic/js/no-trailing-spaces": ["warn"],
-      "@stylistic/js/eol-last": ["warn", "always"],
+      "@stylistic/comma-dangle": ["warn", "always-multiline"],
+      "@stylistic/object-curly-spacing": ["warn", "always"],
+      "@stylistic/array-bracket-spacing": ["warn", "never"],
+      "@stylistic/arrow-parens": ["warn", "always"],
+      "@stylistic/semi": ["warn", "always"],
+      "@stylistic/indent": ["warn", 2],
+      "@stylistic/function-paren-newline": ["warn", "multiline-arguments"],
+      "@stylistic/no-trailing-spaces": ["warn"],
+      "@stylistic/eol-last": ["warn", "always"],
     },
   },
   {
