@@ -33,6 +33,7 @@ export default buildConfig({
     pool: {
       connectionString: env.DATABASE_URL,
     },
+    migrationDir: path.resolve(dirname, "@generated", "migrations"),
   }),
   plugins: [
     vercelBlobStorage({

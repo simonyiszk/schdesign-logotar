@@ -49,3 +49,13 @@ pnpm dev
 
 - Frontend: [localhost:3000](http://localhost:3000)
 - Payload: [localhost:3000/admin](http://localhost:3000/admin)
+
+## Payload
+
+In order to make life easier working with Payload, there's a wrapper script `payload` inside `package.json`.
+
+Generate Payload types:
+
+```bash
+pnpm run payload generate:types
+```
