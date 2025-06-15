@@ -54,5 +54,6 @@
     ".vercel",
     "node_modules",
     "eslint.config.js", // https://github.com/typescript-eslint/typescript-eslint/pull/11304
+    "src/@generated/migrations",
   ]
 }
