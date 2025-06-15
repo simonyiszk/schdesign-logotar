@@ -30,20 +30,21 @@ async function getData() {
 
   const collections = await client.find({
     collection: "collections",
-    sort: "name",
+    sort: "name", // WTF why is this not working?
     select: {
       name: true,
       showInNavbar: true,
       slug: true,
     },
+    where: {
+      showInNavbar: {
+        equals: true,
+      },
+    },
   });
 
-  const shownCollections = collections.docs.filter((collection) => collection.showInNavbar);
-  const allCollections = collections.docs;
-
   return {
-    shownCollections,
-    allCollections,
+    collections: collections.docs.sort((a, b) => a.name.localeCompare(b.name)),
   };
 }
 
@@ -52,7 +53,7 @@ export default async function RootLayour({
 }: {
   children: React.ReactNode;
 }) {
-  const { shownCollections } = await getData();
+  const { collections } = await getData();
 
   return (
     <html lang="hu">
@@ -67,7 +68,7 @@ export default async function RootLayour({
           <CssBaseline />
           <div>
             <Navbar
-              shownCollections={shownCollections}
+              shownCollections={collections}
             />
           </div>
           {children}
