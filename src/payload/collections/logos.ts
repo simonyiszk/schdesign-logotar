@@ -1,6 +1,6 @@
 import type { CollectionConfig } from "payload";
-import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
-import { createdByField, updatedByField, validateColor, validateSlug } from "~/utils/payload/fields";
+import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/payload/collection-hooks";
+import { createdByField, updatedByField, validateColor, validateSlug } from "~/payload/fields";
 
 export const Logos = {
   slug: "logos",

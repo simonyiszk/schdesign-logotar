@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload";
-import { editorAccessCollection, publicAccessCollection } from "~/utils/payload/access-control";
-import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
-import { createdByField, updatedByField } from "~/utils/payload/fields";
+import { editorAccessCollection, publicAccessCollection } from "~/payload/access-control";
+import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/payload/fields";
 
 export const Media = {
   slug: "media",

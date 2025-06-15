@@ -2,7 +2,7 @@
 
 import { AppBar, Container, IconButton, Slide, Tab, Tabs, Toolbar, Typography, useScrollTrigger } from "@mui/material";
 import { SchdesignIcon } from "./schdesign-icon";
-import type { Collection } from "~/payload-types";
+import type { Collection } from "~/@generated/payload-types";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 

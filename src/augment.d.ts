@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-empty-object-type */
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import type { ExtendTheme } from "@pigment-css/react";
 import type { Theme, SxProps } from "@mui/material/styles";
-import type { Config } from "./payload-types";
+import type { Config } from "./@generated/payload-types";
 
 declare module "@pigment-css/react/theme" {
   interface ThemeTokens {
@@ -53,8 +53,4 @@ declare global {
       sx?: SxProps<Theme>;
     }
   }
-}
-
-declare module "payload" {
-  export interface GeneratedTypes extends Config {}
 }

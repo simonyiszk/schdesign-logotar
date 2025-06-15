@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload";
-import { adminAccessCollection, adminAccessField, adminOrSameEmailAccessCollection, loggedInAccessCollection } from "~/utils/payload/access-control";
-import { createdByHook, updatedByHook } from "~/utils/payload/collection-hooks";
-import { createdByField, updatedByField } from "~/utils/payload/fields";
+import { adminAccessCollection, adminAccessField, adminOrSameEmailAccessCollection, loggedInAccessCollection } from "~/payload/access-control";
+import { createdByHook, updatedByHook } from "~/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/payload/fields";
 
 export const Users = {
   slug: "users",

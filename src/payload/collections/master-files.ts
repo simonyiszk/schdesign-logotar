@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload";
-import { publicAccessCollection, editorAccessCollection } from "~/utils/payload/access-control";
-import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/utils/payload/collection-hooks";
-import { createdByField, updatedByField } from "~/utils/payload/fields";
+import { publicAccessCollection, editorAccessCollection } from "~/payload/access-control";
+import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/payload/collection-hooks";
+import { createdByField, updatedByField } from "~/payload/fields";
 
 export const MasterFiles = {
   slug: "master-files",

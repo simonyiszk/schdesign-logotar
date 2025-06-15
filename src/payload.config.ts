@@ -6,11 +6,11 @@ import { buildConfig } from "payload";
 import { env } from "./env";
 import { fileURLToPath } from "url";
 import path from "path";
-import { Users } from "./collections/users";
-import { Collections } from "./collections/collections";
-import { Logos } from "./collections/logos";
-import { MasterFiles } from "./collections/master-files";
-import { Media } from "./collections/media";
+import { Users } from "./payload/collections/users";
+import { Collections } from "./payload/collections/collections";
+import { Logos } from "./payload/collections/logos";
+import { MasterFiles } from "./payload/collections/master-files";
+import { Media } from "./payload/collections/media";
 
 
 const filename = fileURLToPath(import.meta.url);
@@ -27,8 +27,7 @@ export default buildConfig({
   ],
   secret: env.PAYLOAD_SECRET,
   typescript: {
-    declare: false,
-    outputFile: path.resolve(dirname, "payload-types.ts"),
+    outputFile: path.resolve(dirname, "@generated", "payload-types.ts"),
   },
   db: postgresAdapter({
     pool: {

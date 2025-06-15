@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardActions, CardContent, MenuItem, Select, Typography } from "@mui/material";
-import type { Logo } from "~/payload-types";
+import type { Logo } from "~/@generated/payload-types";
 import { LogoCardDownloadButton } from "./logo-card-download-button";
 import { ImageWithLoading } from "./image-with-loading";
 import { useState } from "react";

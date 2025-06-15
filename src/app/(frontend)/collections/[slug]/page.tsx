@@ -2,7 +2,7 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 import { LogoCard } from "~/components/logo-card";
 import { Container, Grid } from "@mui/material";
-import type { Collection, Logo } from "~/payload-types";
+import type { Collection, Logo } from "~/@generated/payload-types";
 
 async function getData({
   slug,
