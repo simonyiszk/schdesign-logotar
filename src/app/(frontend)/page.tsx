@@ -33,7 +33,7 @@ export default function HomePage() {
             }}
           >
             <Typography variant="h2">
-              Új funkciók:
+              Funkciók:
             </Typography>
             <div
               sx={{
@@ -45,8 +45,10 @@ export default function HomePage() {
               <Alert severity="success">CMS</Alert>
               <Alert severity="success">Logók tárolása</Alert>
               <Alert severity="success">Logók verzió követése</Alert>
-              <Alert severity="success">Logók rendszerezése variánsok és kollekciók alapján</Alert>
-              <Alert severity="success">Igényvezérelt megjelenítés, elrejtés</Alert>
+              <Alert severity="success">Logók rendszerezése</Alert>
+              <Alert severity="success">Logók megjelenítése, elrejtése</Alert>
+              <Alert severity="success">Kollekciók megjelenítése, elrejtése</Alert>
+              <Alert severity="success">Kollekciók egymásba ágyazása</Alert>
             </div>
           </div>
           <div
@@ -66,7 +68,8 @@ export default function HomePage() {
                 gap: 2,
               }}
             >
-              <Alert severity="warning">Logók megosztása linken keresztül</Alert>
+              <Alert severity="warning">Egyszerű link megosztás</Alert>
+              <Alert severity="warning">Külön logó oldal</Alert>
               <Alert severity="warning">Keresés</Alert>
             </div>
           </div>

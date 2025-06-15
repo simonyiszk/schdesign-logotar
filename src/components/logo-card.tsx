@@ -35,6 +35,7 @@ export function LogoCard({
   return (
     <Card>
       <ImageWithLoading
+        key={logo.id}
         url={previewImage?.url ?? ""}
         alt={previewImage?.alt ?? ""}
         width={width}

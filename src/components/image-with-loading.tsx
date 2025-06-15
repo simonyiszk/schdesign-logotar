@@ -46,6 +46,7 @@ export function ImageWithLoading({
       </div>
       <Image
         style={{
+          visibility: isLoaded ? "visible" : "hidden",
           objectFit: "contain",
           padding: padding,
         }}
