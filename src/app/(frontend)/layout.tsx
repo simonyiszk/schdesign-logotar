@@ -17,7 +17,10 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Logótár",
+  title: {
+    default: "Logótár",
+    template: "%s - Logótár",
+  },
   description: "Az schdesign Logótár tartalmazza a Schönherz kollégium köreinek logóit.",
 } satisfies Metadata;
 
