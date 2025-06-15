@@ -50,7 +50,7 @@ pnpm dev
 - Frontend: [localhost:3000](http://localhost:3000)
 - Payload: [localhost:3000/admin](http://localhost:3000/admin)
 
-## Payload
+## Using PayloadCMS
 
 In order to make life easier working with Payload, there's a wrapper script `payload` inside `package.json`.
 
@@ -58,4 +58,23 @@ Generate Payload types:
 
 ```bash
 pnpm run payload generate:types
+```
+
+## Data structure
+
+In order to efficiently store and organize the logos, these entities were created:
+
+```typescript
+type Collection = {
+  name: string
+  slug: string
+  children: Array<Collection | Logo>
+}
+
+type Logo = {
+  name: string
+  slug: string
+  masterFile: Media
+  files: Array<Media>
+}
 ```
