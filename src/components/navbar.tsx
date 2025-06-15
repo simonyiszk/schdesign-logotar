@@ -1,10 +1,11 @@
 "use client";
 
-import { AppBar, Container, IconButton, Slide, Tab, Tabs, Toolbar, Typography, useScrollTrigger } from "@mui/material";
+import { AppBar, Container, IconButton, List, ListItemButton, ListItemText, Slide, SwipeableDrawer, Tab, Tabs, Toolbar, Typography, useScrollTrigger } from "@mui/material";
 import { SchdesignIcon } from "./schdesign-icon";
 import type { Collection } from "~/@generated/payload-types";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import MenuIcon from "@mui/icons-material/Menu";
 
 type CollectionsNavbarType = Pick<Collection, "id" | "name" | "showInNavbar" | "slug">;
 
@@ -15,9 +16,17 @@ export function Navbar({
 }) {
   const router = useRouter();
   const pathname = usePathname();
-  const [value, setValue] = useState<string | false>(false);
+  const trigger = useScrollTrigger();
+
+  const [slug, setSlug] = useState<string | false>(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = (newIsDrawerOpen: boolean) => () => {
+    setIsDrawerOpen(newIsDrawerOpen);
+  };
 
   const firstCollection = shownCollections[0];
+  const iOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   useEffect(() => {
     const collectionSlug = pathname.split("/")[2];
@@ -25,59 +34,128 @@ export function Navbar({
     const isSlugValid = shownCollections.some((collection) => collection.slug === collectionSlug);
 
     if (isSlugValid && collectionSlug) {
-      setValue(collectionSlug);
+      setSlug(collectionSlug);
     }
   }, [shownCollections, pathname]);
 
-  const onTabChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
+  const onTabChange = (_event: React.SyntheticEvent, newValue: string) => {
+    setSlug(newValue);
     router.push(`/collections/${newValue}`);
   };
 
   const onLogoClick = () => {
-    setValue(false);
+    setSlug(false);
     router.push("/");
   };
 
-  const trigger = useScrollTrigger();
 
   return (
     <>
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar elevation={1} variant="elevation" color="default">
           <Container maxWidth="xl">
-            <Toolbar>
+            <Toolbar sx={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}>
               <IconButton
                 size="large"
                 color="primary"
                 sx={{
-                  mr: 2,
+                  mr: {
+                    xs: 0,
+                    sm: 2,
+                  },
                 }}
                 onClick={onLogoClick}
               >
                 <SchdesignIcon />
               </IconButton>
-              <Typography variant="h6" sx={{ flexGrow: 1 }}>
+              <Typography variant="h6" sx={{
+                flexGrow: {
+                  xs: 0,
+                  sm: 1,
+                },
+              }}>
                 Logótár
               </Typography>
-              {firstCollection && (
-                <Tabs
-                  value={value}
-                  onChange={onTabChange}
-                  sx={{
-                    ml: 2,
-                  }}
-                  textColor="primary"
-                  indicatorColor="primary"
-                  variant="scrollable"
-                  scrollButtons
-                  allowScrollButtonsMobile
-                >
-                  {shownCollections.map((collection) => (
-                    <Tab key={collection.id} label={collection.name} value={collection.slug} />
-                  ))}
-                </Tabs>
-              )}
+              {firstCollection
+                ? (
+                  <>
+                    <IconButton
+                      size="large"
+                      color="inherit"
+                      aria-label="menu"
+                      onClick={toggleDrawer(true)}
+                      sx={{
+                        display: {
+                          xs: "flex",
+                          md: "none",
+                        },
+                      }}
+                    >
+                      <MenuIcon />
+                    </IconButton>
+                    <SwipeableDrawer
+                      sx={{
+                        display: {
+                          xs: "block",
+                          md: "none",
+                        },
+                      }}
+                      disableBackdropTransition={!iOS}
+                      disableDiscovery={iOS}
+                      anchor={"right"}
+                      open={isDrawerOpen}
+                      onClose={toggleDrawer(false)}
+                      onOpen={toggleDrawer(true)}
+                    >
+                      <div
+                        sx={{ width: 250 }}
+                        role="presentation"
+                        onClick={toggleDrawer(false)}
+                        onKeyDown={toggleDrawer(false)}
+                      >
+                        <List>
+                          {shownCollections.map((collection) => (
+                            <ListItemButton
+                              key={collection.id}
+                              selected={collection.slug === slug}
+                              onClick={(e) => { onTabChange(e, collection.slug); }}
+                            >
+                              <ListItemText
+                                primary={collection.name}
+                                sx={{ textTransform: "uppercase" }}
+                              />
+                            </ListItemButton>
+                          ))}
+                        </List>
+                      </div>
+                    </SwipeableDrawer>
+                    <Tabs
+                      value={slug}
+                      onChange={onTabChange}
+                      sx={{
+                        display: {
+                          xs: "none",
+                          md: "flex",
+                        },
+                        ml: 2,
+                      }}
+                      textColor="primary"
+                      indicatorColor="primary"
+                      variant="scrollable"
+                      scrollButtons
+                      allowScrollButtonsMobile
+                    >
+                      {shownCollections.map((collection) => (
+                        <Tab key={collection.id} label={collection.name} value={collection.slug} />
+                      ))}
+                    </Tabs>
+                  </>
+                ) : (
+                  null
+                )}
             </Toolbar>
           </Container>
         </AppBar>
