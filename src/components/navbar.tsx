@@ -90,7 +90,7 @@ export function Navbar({
                       sx={{
                         display: {
                           xs: "flex",
-                          md: "none",
+                          sm: "none",
                         },
                       }}
                     >
@@ -100,7 +100,7 @@ export function Navbar({
                       sx={{
                         display: {
                           xs: "block",
-                          md: "none",
+                          sm: "none",
                         },
                       }}
                       disableBackdropTransition={!iOS}
@@ -138,7 +138,7 @@ export function Navbar({
                       sx={{
                         display: {
                           xs: "none",
-                          md: "flex",
+                          sm: "flex",
                         },
                         ml: 2,
                       }}
