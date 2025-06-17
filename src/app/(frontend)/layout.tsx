@@ -9,13 +9,6 @@ import config from "@payload-config";
 
 import "@mui/material-pigment-css/styles.css";
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--roboto-font-family",
-});
-
 export const metadata = {
   title: {
     default: "Logótár",
@@ -27,6 +20,15 @@ export const metadata = {
 export const viewport = {
   themeColor: "#f8485e",
 } satisfies Viewport;
+
+export const dynamic = "force-static";
+
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--roboto-font-family",
+});
 
 async function getData() {
   const client = await getPayload({ config });
