@@ -10,6 +10,8 @@ import config from "@payload-config";
 import "@mui/material-pigment-css/styles.css";
 import { unstable_cache } from "next/cache";
 
+export const revalidate = 0;
+
 export const metadata = {
   title: {
     default: "Logótár",
@@ -21,8 +23,6 @@ export const metadata = {
 export const viewport = {
   themeColor: "#f8485e",
 } satisfies Viewport;
-
-export const dynamic = "force-static";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],

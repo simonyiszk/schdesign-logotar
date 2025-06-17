@@ -6,33 +6,45 @@ import { collectionChildrenTo2DArray } from "~/utils/collections";
 import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
 
+export const revalidate = 0;
+
 type Props = {
   params: Promise<{ slug: string }>
   searchParams: Promise<Record<string, string | string[] | undefined>>
 };
 
+const cachedMetadata = unstable_cache(
+  async ({ params }: Pick<Props, "params">) => {
+    const { slug } = await params;
+
+    const client = await getPayload({ config });
+
+    const collections = await client.find({
+      collection: "collections",
+      sort: "name",
+      depth: 0,
+      where: {
+        slug: {
+          equals: slug,
+        },
+      },
+      select: {
+        name: true,
+      },
+
+    });
+
+    const collection = collections.docs[0];
+
+    return collection;
+  },
+);
+
 export async function generateMetadata({
   params,
 }: Props) {
-  const { slug } = await params;
 
-  const client = await getPayload({ config });
-
-  const collections = await client.find({
-    collection: "collections",
-    sort: "name",
-    depth: 0,
-    where: {
-      slug: {
-        equals: slug,
-      },
-    },
-    select: {
-      name: true,
-    },
-  });
-
-  const collection = collections.docs[0];
+  const collection = await cachedMetadata({ params });
 
   if (!collection) {
     return;
@@ -43,12 +55,10 @@ export async function generateMetadata({
   } satisfies Metadata;
 }
 
-
-
 const getData = unstable_cache(async ({
   slug,
 }: {
-  slug: string,
+  slug: string;
 }) => {
   const client = await getPayload({ config });
 
@@ -73,8 +83,6 @@ const getData = unstable_cache(async ({
     collection,
   };
 });
-
-
 
 export default async function CollectionPage({
   params,
