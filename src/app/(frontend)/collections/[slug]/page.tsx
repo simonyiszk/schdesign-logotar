@@ -4,34 +4,47 @@ import { LogoCard } from "~/components/logo-card";
 import { Container, Grid } from "@mui/material";
 import { collectionChildrenTo2DArray } from "~/utils/collections";
 import type { Metadata } from "next";
+import { unstable_cache } from "next/cache";
+
+export const revalidate = 0;
 
 type Props = {
   params: Promise<{ slug: string }>
   searchParams: Promise<Record<string, string | string[] | undefined>>
 };
 
+const cachedMetadata = unstable_cache(
+  async ({ params }: Pick<Props, "params">) => {
+    const { slug } = await params;
+
+    const client = await getPayload({ config });
+
+    const collections = await client.find({
+      collection: "collections",
+      sort: "name",
+      depth: 0,
+      where: {
+        slug: {
+          equals: slug,
+        },
+      },
+      select: {
+        name: true,
+      },
+
+    });
+
+    const collection = collections.docs[0];
+
+    return collection;
+  },
+);
+
 export async function generateMetadata({
   params,
 }: Props) {
-  const { slug } = await params;
 
-  const client = await getPayload({ config });
-
-  const collections = await client.find({
-    collection: "collections",
-    sort: "name",
-    depth: 0,
-    where: {
-      slug: {
-        equals: slug,
-      },
-    },
-    select: {
-      name: true,
-    },
-  });
-
-  const collection = collections.docs[0];
+  const collection = await cachedMetadata({ params });
 
   if (!collection) {
     return;
@@ -42,11 +55,11 @@ export async function generateMetadata({
   } satisfies Metadata;
 }
 
-async function getData({
+const getData = unstable_cache(async ({
   slug,
 }: {
   slug: string;
-}) {
+}) => {
   const client = await getPayload({ config });
 
   const collections = await client.find({
@@ -69,9 +82,7 @@ async function getData({
   return {
     collection,
   };
-}
-
-
+});
 
 export default async function CollectionPage({
   params,

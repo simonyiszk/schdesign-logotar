@@ -8,13 +8,9 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 
 import "@mui/material-pigment-css/styles.css";
+import { unstable_cache } from "next/cache";
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--roboto-font-family",
-});
+export const revalidate = 0;
 
 export const metadata = {
   title: {
@@ -28,7 +24,14 @@ export const viewport = {
   themeColor: "#f8485e",
 } satisfies Viewport;
 
-async function getData() {
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--roboto-font-family",
+});
+
+const getData = unstable_cache(async () => {
   const client = await getPayload({ config });
 
   const collections = await client.find({
@@ -49,7 +52,7 @@ async function getData() {
   return {
     collections: collections.docs.sort((a, b) => a.name.localeCompare(b.name)),
   };
-}
+});
 
 export default async function RootLayour({
   children,
