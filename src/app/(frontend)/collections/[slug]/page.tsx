@@ -6,7 +6,7 @@ import { collectionChildrenTo2DArray } from "~/utils/collections";
 import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
 
-export const revalidate = 0;
+export const revalidate = false;
 
 type Props = {
   params: Promise<{ slug: string }>

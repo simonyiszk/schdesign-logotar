@@ -10,7 +10,7 @@ import config from "@payload-config";
 import "@mui/material-pigment-css/styles.css";
 import { unstable_cache } from "next/cache";
 
-export const revalidate = 0;
+export const revalidate = false;
 
 export const metadata = {
   title: {
