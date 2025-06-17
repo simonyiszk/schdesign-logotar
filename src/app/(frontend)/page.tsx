@@ -1,5 +1,7 @@
 import { Alert, Container, Typography } from "@mui/material";
 
+export const caching = "force-static";
+
 export default function HomePage() {
   return (
     <Container maxWidth="xl">
