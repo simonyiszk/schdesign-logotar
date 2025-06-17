@@ -5,7 +5,7 @@ import { Container, Grid } from "@mui/material";
 import { collectionChildrenTo2DArray } from "~/utils/collections";
 import type { Metadata } from "next";
 
-export const caching = "force-static";
+export const dynamic = "force-static";
 
 type Props = {
   params: Promise<{ slug: string }>
