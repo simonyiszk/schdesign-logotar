@@ -8,6 +8,7 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 
 import "@mui/material-pigment-css/styles.css";
+import { unstable_cache } from "next/cache";
 
 export const metadata = {
   title: {
@@ -30,7 +31,7 @@ const roboto = Roboto({
   variable: "--roboto-font-family",
 });
 
-async function getData() {
+const getData = unstable_cache(async () => {
   const client = await getPayload({ config });
 
   const collections = await client.find({
@@ -51,7 +52,7 @@ async function getData() {
   return {
     collections: collections.docs.sort((a, b) => a.name.localeCompare(b.name)),
   };
-}
+});
 
 export default async function RootLayour({
   children,

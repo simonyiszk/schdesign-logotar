@@ -4,8 +4,7 @@ import { LogoCard } from "~/components/logo-card";
 import { Container, Grid } from "@mui/material";
 import { collectionChildrenTo2DArray } from "~/utils/collections";
 import type { Metadata } from "next";
-
-export const dynamic = "force-static";
+import { unstable_cache } from "next/cache";
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -44,11 +43,13 @@ export async function generateMetadata({
   } satisfies Metadata;
 }
 
-async function getData({
+
+
+const getData = unstable_cache(async ({
   slug,
 }: {
-  slug: string;
-}) {
+  slug: string,
+}) => {
   const client = await getPayload({ config });
 
   const collections = await client.find({
@@ -71,7 +72,7 @@ async function getData({
   return {
     collection,
   };
-}
+});
 
 
 
