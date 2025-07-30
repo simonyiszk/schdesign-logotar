@@ -10,8 +10,6 @@ import config from "@payload-config";
 import "@mui/material-pigment-css/styles.css";
 import { unstable_cache } from "next/cache";
 
-export const revalidate = false;
-
 export const metadata = {
   title: {
     default: "Logótár",
@@ -52,6 +50,9 @@ const getData = unstable_cache(async () => {
   return {
     collections: collections.docs.sort((a, b) => a.name.localeCompare(b.name)),
   };
+}, ["navbar-collections"], {
+  tags: ["collections"],
+  revalidate: false,
 });
 
 export default async function RootLayour({
