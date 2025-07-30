@@ -55,7 +55,7 @@ const tsEslintConfig = tseslint.config(
       "@stylistic/quotes": [
         "warn",
         "double",
-        { "avoidEscape": true, "allowTemplateLiterals": false },
+        { "avoidEscape": true, "allowTemplateLiterals": "never" },
       ],
       "@stylistic/comma-dangle": ["warn", "always-multiline"],
       "@stylistic/object-curly-spacing": ["warn", "always"],
