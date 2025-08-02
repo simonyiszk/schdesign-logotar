@@ -1,6 +1,6 @@
 import type { CollectionConfig } from "payload";
 import { editorAccessCollection, publicAccessCollection } from "~/payload/access-control";
-import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/payload/collection-hooks";
+import { createdByHook, hideSensitiveFieldsHook, invalidateNextCacheAfterChangeHook, invalidateNextCacheAfterDeleteHook, updatedByHook } from "~/payload/collection-hooks";
 import { createdByField, updatedByField } from "~/payload/fields";
 
 export const Media = {
@@ -33,6 +33,12 @@ export const Media = {
     ],
     afterRead: [
       hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
+    ],
+    afterChange: [
+      invalidateNextCacheAfterChangeHook,
+    ],
+    afterDelete: [
+      invalidateNextCacheAfterDeleteHook,
     ],
   },
   access: {

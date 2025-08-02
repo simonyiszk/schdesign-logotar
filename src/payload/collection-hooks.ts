@@ -1,4 +1,5 @@
-import type { CollectionBeforeChangeHook, CollectionAfterReadHook } from "payload";
+import { revalidateTag } from "next/cache";
+import type { CollectionBeforeChangeHook, CollectionAfterReadHook, CollectionAfterChangeHook, CollectionAfterDeleteHook } from "payload";
 
 export const createdByHook: CollectionBeforeChangeHook = ({ req, operation, data }) => {
   if (operation === "create") {
@@ -33,3 +34,11 @@ export function hideSensitiveFieldsHook(fields: string[]): CollectionAfterReadHo
 
   return hideFields;
 }
+
+export const invalidateNextCacheAfterChangeHook: CollectionAfterChangeHook = () => {
+  revalidateTag("collections");
+};
+
+export const invalidateNextCacheAfterDeleteHook: CollectionAfterDeleteHook = () => {
+  revalidateTag("collections");
+};
