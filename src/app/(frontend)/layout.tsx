@@ -4,11 +4,9 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { Navbar } from "~/components/navbar";
 import { CssBaseline } from "@mui/material";
 import { Footer } from "~/components/footer";
-import { getPayload } from "payload";
-import config from "@payload-config";
 
 import "@mui/material-pigment-css/styles.css";
-import { unstable_cache } from "next/cache";
+import { getCachedNavbarCollections } from "~/utils/payload";
 
 export const metadata = {
   title: {
@@ -16,6 +14,29 @@ export const metadata = {
     template: "%s - Logótár",
   },
   description: "Az schdesign Logótár tartalmazza a Schönherz kollégium köreinek logóit.",
+  openGraph: {
+    type: "website",
+    locale: "hu",
+    images: [
+      {
+        url: "/images/thumbnail.png",
+        width: 960,
+        height: 540,
+        alt: "Az schdesign Logótár tartalmazza a Schönherz kollégium köreinek logóit.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: "/images/defaults/cover.png",
+        width: 960,
+        height: 540,
+        alt: "Az schdesign Logótár tartalmazza a Schönherz kollégium köreinek logóit.",
+      },
+    ],
+  },
 } satisfies Metadata;
 
 export const viewport = {
@@ -29,38 +50,12 @@ const roboto = Roboto({
   variable: "--roboto-font-family",
 });
 
-const getData = unstable_cache(async () => {
-  const client = await getPayload({ config });
-
-  const collections = await client.find({
-    collection: "collections",
-    sort: "name", // WTF why is this not working?
-    select: {
-      name: true,
-      showInNavbar: true,
-      slug: true,
-    },
-    where: {
-      showInNavbar: {
-        equals: true,
-      },
-    },
-  });
-
-  return {
-    collections: collections.docs.sort((a, b) => a.name.localeCompare(b.name)),
-  };
-}, ["navbar-collections"], {
-  tags: ["collections"],
-  revalidate: false,
-});
-
 export default async function RootLayour({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const { collections } = await getData();
+  const { collections } = await getCachedNavbarCollections();
 
   return (
     <html lang="hu">

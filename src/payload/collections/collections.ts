@@ -1,5 +1,5 @@
 import type { CollectionConfig } from "payload";
-import { createdByHook, hideSensitiveFieldsHook, updatedByHook } from "~/payload/collection-hooks";
+import { createdByHook, hideSensitiveFieldsHook, invalidateNextCacheAfterChangeHook, invalidateNextCacheAfterDeleteHook, updatedByHook } from "~/payload/collection-hooks";
 import { createdByField, updatedByField, validateSlug } from "~/payload/fields";
 
 export const Collections = {
@@ -69,6 +69,12 @@ export const Collections = {
     ],
     afterRead: [
       hideSensitiveFieldsHook(["createdBy", "updatedBy"]),
+    ],
+    afterChange: [
+      invalidateNextCacheAfterChangeHook,
+    ],
+    afterDelete: [
+      invalidateNextCacheAfterDeleteHook,
     ],
   },
 } satisfies CollectionConfig;

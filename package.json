@@ -8,6 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "check:type": "tsc --noEmit",
+    "check:eslint": "eslint --max-warnings=0",
+    "check": "pnpm run check:type && pnpm run check:eslint",
+    "fix:eslint": "eslint --max-warnings=0 --fix .",
+    "fix": "pnpm run fix:eslint",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload"
   },
   "dependencies": {
