@@ -9,6 +9,7 @@ import "@mui/material-pigment-css/styles.css";
 import { getCachedNavbarCollections } from "~/utils/payload";
 
 export const metadata = {
+  metadataBase: new URL("https://logotar.schdesign.hu"),
   title: {
     default: "Logótár",
     template: "%s - Logótár",
