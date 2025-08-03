@@ -12,7 +12,7 @@ const compat = new FlatCompat({
 });
 
 const tsEslintConfig = tseslint.config(
-  ...compat.extends("next/core-web-vitals"),
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     ignores: [
       ".next",

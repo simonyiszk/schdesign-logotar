@@ -2,7 +2,6 @@
   "name": "schdesign-logotar",
   "version": "3.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -48,7 +47,7 @@
     "typescript-eslint": "8.38.0"
   },
   "engines": {
-    "node": "^22 || ^24",
+    "node": "^22",
     "pnpm": "^10"
   }
 }
