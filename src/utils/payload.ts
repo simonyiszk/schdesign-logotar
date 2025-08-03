@@ -49,6 +49,7 @@ export const getCachedCollectionMetadata = unstable_cache(
       },
       select: {
         name: true,
+        showInParent: true,
       },
 
     });
@@ -99,3 +100,17 @@ export const getCachedCollectionData = unstable_cache(
     revalidate: false,
   },
 );
+
+export const getCollectionSlugs = async () => {
+  const client = await getPayload({ config });
+
+  const collections = await client.find({
+    collection: "collections",
+    depth: 0,
+    select: {
+      slug: true,
+    },
+  });
+
+  return collections.docs.map((collection) => collection.slug);
+};
