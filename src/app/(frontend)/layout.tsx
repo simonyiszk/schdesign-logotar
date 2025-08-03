@@ -20,7 +20,7 @@ export const metadata = {
     locale: "hu",
     images: [
       {
-        url: "/images/thumbnail.png",
+        url: "/thumbnail.png",
         width: 960,
         height: 540,
         alt: "Az schdesign Logótár tartalmazza a Schönherz kollégium köreinek logóit.",
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "/images/defaults/cover.png",
+        url: "/thumbnail.png",
         width: 960,
         height: 540,
         alt: "Az schdesign Logótár tartalmazza a Schönherz kollégium köreinek logóit.",
