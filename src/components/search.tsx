@@ -25,7 +25,9 @@ export function Search() {
       }
 
       const encodedTerm = encodeURIComponent(term.trim());
-      const query = term ? `page=${page}&limit=${limit}&where[or][0][and][0][name][like]=${encodedTerm}&where[or][1][and][0][slug][like]=${encodedTerm}` : `page=${page}&limit=${limit}&sort=name`;
+      const query = term
+        ? `page=${page}&limit=${limit}&where[or][0][and][0][name][like]=${encodedTerm}&where[or][1][and][0][slug][like]=${encodedTerm}&sort=name`
+        : `page=${page}&limit=${limit}&sort=name`;
 
       const response = await fetch(`/api/logos?${query}`);
 
@@ -39,8 +41,6 @@ export function Search() {
       const data = await response.json();
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       setLogos(data.docs as Logo[]);
-
-
     } catch (error) {
       if (error instanceof Error) {
         console.error("Failed to fetch logos:", error);
@@ -48,11 +48,19 @@ export function Search() {
       }
     } finally {
       setLoading(false);
+      localStorage.setItem("searchTerm", term);
     }
   }, []);
 
   useEffect(() => {
+    const savedSearchTerm = localStorage.getItem("searchTerm");
+
+    setSearchTerm(savedSearchTerm ?? "");
+  }, []);
+
+  useEffect(() => {
     const handler = setTimeout(() => {
+
       void fetchLogos(searchTerm);
     }, 300);
 
