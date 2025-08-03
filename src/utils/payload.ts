@@ -49,6 +49,7 @@ export const getCachedCollectionMetadata = unstable_cache(
       },
       select: {
         name: true,
+        showInParent: true,
       },
 
     });

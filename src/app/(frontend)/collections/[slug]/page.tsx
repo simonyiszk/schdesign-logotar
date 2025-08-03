@@ -16,8 +16,14 @@ export async function generateMetadata({
     return;
   }
 
+  const isNoIndex = collection.showInParent;
+
   return {
     title: collection.name,
+    robots: {
+      index: isNoIndex,
+      follow: true,
+    },
   } satisfies Metadata;
 }
 
