@@ -2,16 +2,8 @@ import { LogoCard } from "~/components/logo-card";
 import { Container, Grid } from "@mui/material";
 import { collectionChildrenTo2DArray } from "~/utils/collections";
 import type { Metadata } from "next";
-import type { Params, Props } from "~/utils/types";
-import { getCachedCollectionData, getCachedCollectionMetadata, getCollectionSlugs } from "~/utils/payload";
-
-export async function generateStaticParams() {
-  const collectionSlugs = await getCollectionSlugs();
-
-  return collectionSlugs.map((slug) => ({
-    slug,
-  } satisfies Params));
-}
+import type { Props } from "~/utils/types";
+import { getCachedCollectionData, getCachedCollectionMetadata } from "~/utils/payload";
 
 export async function generateMetadata({
   params,
