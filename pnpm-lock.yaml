@@ -66,6 +66,9 @@ importers:
       '@eslint/eslintrc':
         specifier: 3.3.1
         version: 3.3.1
+      '@next/eslint-plugin-next':
+        specifier: 15.3.5
+        version: 15.3.5
       '@pigment-css/nextjs-plugin':
         specifier: 0.0.30
         version: 0.0.30(@types/react@19.1.9)(next@15.3.5(@babel/core@7.26.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.77.4))(react@19.1.1)(typescript@5.8.3)
