@@ -107,4 +107,17 @@ export const Logos = {
       invalidateNextCacheAfterDeleteHook,
     ],
   },
+  access: {
+    read: ({ req }) => {
+      if (req.user) {
+        return true;
+      }
+
+      return {
+        showInCollections: {
+          equals: true,
+        },
+      };
+    },
+  },
 } satisfies CollectionConfig;
