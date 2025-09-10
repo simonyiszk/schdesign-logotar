@@ -36,7 +36,7 @@ export function collectionChildrenTo2DArray({
       if (
         typeof logo === "number" ||
         typeof logo.previewImage === "number" ||
-        typeof logo.masterFile === "number" ||
+        typeof logo.sourceFile === "number" ||
         logo.files?.some((file) => typeof file === "number") ||
         !logo.showInCollections
       ) {

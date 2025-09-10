@@ -192,13 +192,9 @@ export interface Logo {
    */
   previewDarkBackgroundColor?: string | null;
   /**
-   * The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.
+   * The original file used to create the logo, preferably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.
    */
-  masterFile: number | MasterFile;
-  /**
-   * The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.
-   */
-  masterFile2?: (number | null) | Media;
+  sourceFile?: (number | null) | Media;
   /**
    * Downloadable files for the logo, such as PNG, SVG, etc.
    */
@@ -213,7 +209,7 @@ export interface Logo {
   createdAt: string;
 }
 /**
- * Files in *.png, *.webp, *.ico, *.svg formats.
+ * Source files, export files and preview files. Usually Illustrator, PDF, PNG, SVG, ICO files.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "media".
@@ -393,8 +389,7 @@ export interface LogosSelect<T extends boolean = true> {
   previewImage?: T;
   previewLightBackgroundColor?: T;
   previewDarkBackgroundColor?: T;
-  masterFile?: T;
-  masterFile2?: T;
+  sourceFile?: T;
   files?: T;
   showInCollections?: T;
   createdBy?: T;

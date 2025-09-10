@@ -74,7 +74,7 @@ type Collection = {
 type Logo = {
   name: string
   slug: string
-  masterFile: Media
+  sourceFile: Media
   files: Array<Media>
 }
 ```
