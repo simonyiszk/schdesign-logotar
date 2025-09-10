@@ -70,11 +70,11 @@ export const Logos = {
       },
     },
     {
-      name: "masterFile2",
+      name: "sourceFile",
       type: "relationship",
       relationTo: "media",
       hasMany: false,
-      label: "Master file",
+      label: "Source file",
       admin: {
         description: "The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
       },
