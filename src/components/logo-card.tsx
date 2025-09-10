@@ -18,14 +18,14 @@ export function LogoCard({
   }
 
   const previewImage = typeof logo.previewImage === "number" ? undefined : logo.previewImage;
-  const masterFile = typeof logo.masterFile === "number" ? undefined : logo.masterFile;
+  const sourceFile = typeof logo.sourceFile === "number" ? undefined : logo.sourceFile;
   const files = logo.files?.filter((file) => typeof file !== "number");
 
   const downloadableFiles =
-    masterFile
+    sourceFile
       ? files
-        ? [masterFile, ...files]
-        : [masterFile]
+        ? [sourceFile, ...files]
+        : [sourceFile]
       : files;
 
   const width = 290;
