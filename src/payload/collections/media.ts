@@ -6,13 +6,12 @@ import { createdByField, updatedByField } from "~/payload/fields";
 export const Media = {
   slug: "media",
   admin: {
-    description: "Files in *.png, *.webp, *.ico, *.svg formats.",
+    description: "Source files, export files and preview files. Usually Illustrator, PDF, PNG, SVG, ICO files.",
   },
   upload: {
     staticDir: "media",
     imageSizes: [],
-    // png, webp, ico, svg
-    mimeTypes: ["image/png", "image/webp", "image/x-icon", "image/svg+xml"],
+    mimeTypes: ["image/*", "application/*"],
   },
   fields: [
     {

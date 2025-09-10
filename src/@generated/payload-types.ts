@@ -196,6 +196,10 @@ export interface Logo {
    */
   masterFile: number | MasterFile;
   /**
+   * The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.
+   */
+  masterFile2?: (number | null) | Media;
+  /**
    * Downloadable files for the logo, such as PNG, SVG, etc.
    */
   files?: (number | Media)[] | null;
@@ -390,6 +394,7 @@ export interface LogosSelect<T extends boolean = true> {
   previewLightBackgroundColor?: T;
   previewDarkBackgroundColor?: T;
   masterFile?: T;
+  masterFile2?: T;
   files?: T;
   showInCollections?: T;
   createdBy?: T;
