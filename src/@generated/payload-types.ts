@@ -69,7 +69,6 @@ export interface Config {
   collections: {
     collections: Collection;
     logos: Logo;
-    'master-files': MasterFile;
     media: Media;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
@@ -80,7 +79,6 @@ export interface Config {
   collectionsSelect: {
     collections: CollectionsSelect<false> | CollectionsSelect<true>;
     logos: LogosSelect<false> | LogosSelect<true>;
-    'master-files': MasterFilesSelect<false> | MasterFilesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -270,32 +268,6 @@ export interface User {
   password?: string | null;
 }
 /**
- * Master files are the original files used to create logos, such as Photoshop/Illustrator/Affinity etc. files.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "master-files".
- */
-export interface MasterFile {
-  id: number;
-  /**
-   * An alternative text of the image for accessibility purposes.
-   */
-  alt?: string | null;
-  createdBy?: (number | null) | User;
-  updatedBy?: (number | null) | User;
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-}
-/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
@@ -309,10 +281,6 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'logos';
         value: number | Logo;
-      } | null)
-    | ({
-        relationTo: 'master-files';
-        value: number | MasterFile;
       } | null)
     | ({
         relationTo: 'media';
@@ -396,26 +364,6 @@ export interface LogosSelect<T extends boolean = true> {
   updatedBy?: T;
   updatedAt?: T;
   createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "master-files_select".
- */
-export interface MasterFilesSelect<T extends boolean = true> {
-  alt?: T;
-  createdBy?: T;
-  updatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
