@@ -9,7 +9,6 @@ import path from "path";
 import { Users } from "./payload/collections/users";
 import { Collections } from "./payload/collections/collections";
 import { Logos } from "./payload/collections/logos";
-import { MasterFiles } from "./payload/collections/master-files";
 import { Media } from "./payload/collections/media";
 
 
@@ -21,7 +20,6 @@ export default buildConfig({
   collections: [
     Collections,
     Logos,
-    MasterFiles,
     Media,
     Users,
   ],
