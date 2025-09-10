@@ -38,7 +38,6 @@ export default buildConfig({
       enabled: true,
       collections: {
         media: true,
-        "master-files": true,
       },
       token: env.BLOB_READ_WRITE_TOKEN,
     }),
