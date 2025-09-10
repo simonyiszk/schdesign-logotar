@@ -62,7 +62,7 @@ export const Logos = {
       name: "masterFile",
       type: "relationship",
       relationTo: "master-files",
-      required: true,
+      required: false,
       hasMany: false,
       label: "Master file",
       admin: {
