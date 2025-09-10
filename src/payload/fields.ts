@@ -29,7 +29,7 @@ export const updatedByField = {
 } satisfies Field;
 
 export const validateSlug: TextFieldSingleValidation = (value, options) => {
-  const pattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/; // Matches lowercase letters, numbers, and hyphens, but not starting or ending with a hyphen
+  const pattern = /^[a-z0-9]+(?:[_-][a-z0-9]+)*$/; // Matches lowercase letters, numbers, hyphens, and underscores, but not starting or ending with a hyphen or underscore
 
   if (
     value &&

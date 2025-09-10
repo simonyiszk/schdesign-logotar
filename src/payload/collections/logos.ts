@@ -62,11 +62,21 @@ export const Logos = {
       name: "masterFile",
       type: "relationship",
       relationTo: "master-files",
-      required: true,
+      required: false,
       hasMany: false,
       label: "Master file",
       admin: {
-        description: "The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
+        description: "The original file used to create the logo, preferably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
+      },
+    },
+    {
+      name: "sourceFile",
+      type: "relationship",
+      relationTo: "media",
+      hasMany: false,
+      label: "Source file",
+      admin: {
+        description: "The original file used to create the logo, preferably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
       },
     },
     {
