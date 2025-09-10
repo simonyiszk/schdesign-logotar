@@ -13,7 +13,7 @@ export async function generateMetadata({
   const collection = await getCachedCollectionMetadata({ slug });
 
   if (!collection) {
-    return;
+    return null;
   }
 
   const isNoIndex = collection.showInParent;
