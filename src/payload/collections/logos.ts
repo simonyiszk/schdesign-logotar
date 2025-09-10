@@ -66,7 +66,7 @@ export const Logos = {
       hasMany: false,
       label: "Master file",
       admin: {
-        description: "The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
+        description: "The original file used to create the logo, preferably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
       },
     },
     {
@@ -76,7 +76,7 @@ export const Logos = {
       hasMany: false,
       label: "Source file",
       admin: {
-        description: "The original file used to create the logo, preferrably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
+        description: "The original file used to create the logo, preferably a Photoshop/Illustrator/Affinity file. This file will be downloadable by users.",
       },
     },
     {
