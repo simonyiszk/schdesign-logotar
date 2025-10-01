@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardActions, CardContent, FormControl, MenuItem, Select, Typography } from "@mui/material";
+import { Card, CardActions, CardContent, FormControl, MenuItem, Select, Tooltip, Typography } from "@mui/material";
 import type { Logo } from "~/@generated/payload-types";
 import { LogoCardDownloadButton } from "./logo-card-download-button";
 import { ImageWithLoading } from "./image-with-loading";
@@ -52,7 +52,9 @@ export function LogoCard({
         height: 64,
       }}>
         {logos.length === 1 ? (
-          <Typography variant="body1" align={"center"}>{logo.name}</Typography>
+          <Tooltip title={logo.name}>
+            <Typography variant="body1" align={"center"} sx={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: "250px" }}>{logo.name}</Typography>
+          </Tooltip>
         ) : (
           <FormControl fullWidth sx={{ width: "250px" }}>
             <Select
