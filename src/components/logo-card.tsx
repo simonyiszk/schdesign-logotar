@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardActions, CardContent, MenuItem, Select, Typography } from "@mui/material";
+import { Card, CardActions, CardContent, FormControl, MenuItem, Select, Typography } from "@mui/material";
 import type { Logo } from "~/@generated/payload-types";
 import { LogoCardDownloadButton } from "./logo-card-download-button";
 import { ImageWithLoading } from "./image-with-loading";
@@ -32,6 +32,8 @@ export function LogoCard({
   const height = 210;
   const padding = 20;
 
+  const widthInPx = `${(width - padding).toString()}px`;
+
   return (
     <Card>
       <ImageWithLoading
@@ -52,27 +54,24 @@ export function LogoCard({
         {logos.length === 1 ? (
           <Typography variant="body1" align={"center"}>{logo.name}</Typography>
         ) : (
-          <Select
-            fullWidth
-            value={logo.id}
-            onChange={(e) => {
-              const selectedLogo = logos.find((l) => l.id === e.target.value);
-              setLogo(selectedLogo);
-            }}
-            disabled={logos.length === 1}
-            variant="standard"
-            inputProps={{
-              sx: {
-                textAlign: "center",
-              },
-            }}
-          >
-            {logos.map((l) => (
-              <MenuItem key={l.id} value={l.id}>{l.name}</MenuItem>
-            ))}
-          </Select>
+          <FormControl fullWidth sx={{ width: "250px" }}>
+            <Select
+              value={logo.id}
+              onChange={(e) => {
+                const selectedLogo = logos.find((l) => l.id === e.target.value);
+                setLogo(selectedLogo);
+              }}
+              disabled={logos.length === 1}
+              variant="standard"
+            >
+              {logos.map((l) => (
+                <MenuItem key={l.id} value={l.id}>
+                  <Typography variant="body1" align={"center"} sx={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", paddingRight: "16px" }}>{l.name}</Typography>
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
         )}
-
       </CardContent>
       <CardActions>
         <div style={{
